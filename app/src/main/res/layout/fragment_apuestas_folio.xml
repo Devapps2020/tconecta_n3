@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/section_title"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_apuestas_title"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_20sdp"/>
+
+                <ImageView
+                    android:id="@+id/icon_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_apuestas_deportivas"
+                    android:paddingStart="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.legacy.widget.Space
+                    android:id="@+id/space"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    />
+
+                <include
+                    android:id="@+id/folio_et"
+                    layout="@layout/view_edit_text_sp"
+                    android:layout_below="@id/space"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+
+                <androidx.legacy.widget.Space
+                    android:id="@+id/space2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_below="@id/folio_et"
+                    />
+
+                <include
+                    android:id="@+id/key_et"
+                    layout="@layout/view_edit_text_sp"
+                    android:layout_below="@id/space2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/consult_btn"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/text_button_23"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/payment_btn"
+                    android:visibility="gone"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/text_button_23"
+                    android:textSize="@dimen/_10sdp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

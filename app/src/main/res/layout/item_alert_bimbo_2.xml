@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background_2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Tu oferta ha sido activada*"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_mensaje"
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tú código de redención es 12345"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_15sdp"/>
+
+        <Button
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/background_button_round_white"
+            android:text="Aceptar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBimboAlert"
+            android:textSize="@dimen/_12sdp" />
+
+        <View
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/white" />
+
+        <TextView
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Sujeta a disponibilidad. Tu vendedor confirmará en próxima visita. Recuerda, debes solicitar máximo 48hrs. previas a visita programada."
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

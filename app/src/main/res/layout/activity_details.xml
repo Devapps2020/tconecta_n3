@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Título"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Subtítulo"/>
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:text="Este es un texto que brinda detalles del ítem seleccionado. Cada texto puede ser de distinto tamaño, según el tema de que se trate el carrusel. Para hacer pruebas exhaustivas, será necesario escribir distintos textos en cada uno de los textViews que se encuentran en este layout."/>
+
+        <TextView
+            android:id="@+id/tv_aditional_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Funciones"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--        <FrameLayout-->
+        <!--            android:id="@+id/fl_map_button"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+</LinearLayout>

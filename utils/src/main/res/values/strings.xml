@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="email_welcome_note">Dear Dev Team,\n\nApplication is just crashed, please check following error log for more details.\n\n\n</string>
+    <string name="text_never_ask_again"><![CDATA[ Haz activado la opción:<br/><br/><b>No volver a preguntar permisos</b><br/><br/>Puedes cambiar los permisos a los que pueden acceder en la configuración principal de la app. Ten en cuenta que si desactivas los permisos, la app podría perder su funcionalidad.<br/>]]></string>
+    <string name="ws_error_general">No se pudo contactar\ncon el servidor\nHTTP Status Code</string>
+    <string name="text_localization_disabled"><![CDATA[ La localizacion de tu dispositivo esta desactivada</b><br/><br/>Puedes activar esta opción accediendo en la configuración principal del dispositivo. Ten en cuenta que si desactivas esta opción, la app podría perder su funcionalidad.<br/>]]></string>
+
+    <string name="str_accept">Aceptar</string>
+    <string name="str_cancel">Cancelar</string>
+    <string name="str_close">Cerrar</string>
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background_item_proximamente"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="@dimen/_10sdp">
+
+        <TextView
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Próximamente"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_22sdp"
+            android:padding="@dimen/_15sdp"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_chambitas"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chambitas"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_load_money"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Préstamos"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_aprende"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Aprende"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_fiar"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fiar"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_car_money"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pago a proveedor"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_qiubo_pagos"
+                    android:tint="@color/colorGreen" />
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pagos Conecta"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

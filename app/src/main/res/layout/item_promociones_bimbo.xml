@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_weight="1"
+        android:elevation="@dimen/_5sdp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="@dimen/_4sdp"
+        card_view:cardCornerRadius="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:background="@color/colorTransparency">
+
+                <TextView
+                    style="@style/Graphik_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ofertas y promociones exclusivas para tu negocio"
+                    android:textSize="@dimen/_14sdp"
+                    android:gravity="left"
+                    android:textColor="@color/colorWithe"
+                    android:paddingRight="@dimen/_30sdp"/>
+
+                <Button
+                    android:id="@+id/btn_other"
+                    style="@style/Signika_Semibold"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="Ver más"
+                    android:textAllCaps="false"
+                    android:background="@drawable/background_button_white_selector"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

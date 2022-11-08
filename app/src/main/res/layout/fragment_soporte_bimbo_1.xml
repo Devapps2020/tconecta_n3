@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_1"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_menu_top"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_soporte_11"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_20sdp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/icon_app_tconecta"
+                        android:paddingLeft="@dimen/_20sdp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_soporte_12"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_soporte_13"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"/>
+
+                <include
+                    android:id="@+id/layout_preguntas_frecuentes"
+                    layout="@layout/item_option"/>
+
+                <include
+                    android:id="@+id/layout_whatsapp"
+                    layout="@layout/item_option"/>
+
+                <include
+                    android:id="@+id/layout_chat"
+                    layout="@layout/item_option"/>
+
+                <include
+                    android:id="@+id/layout_llamada"
+                    layout="@layout/item_option"/>
+
+                <include
+                    android:id="@+id/layout_formulario"
+                    layout="@layout/item_option"/>
+
+                <include
+                    android:id="@+id/layout_manual"
+                    layout="@layout/item_option"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_pedir_ayuda"
+                        style="@style/Button.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_button_50"
+                        android:gravity="center"
+                        android:enabled="true"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_menu_support"
+        layout="@layout/view_popup_support"/>
+
+</RelativeLayout>

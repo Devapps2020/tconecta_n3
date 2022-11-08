@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_menu_top" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:gravity="left"
+                            android:text="@string/txt_credit"
+                            android:textColor="@color/FC_blue_6"
+                            android:textSize="@dimen/_20sdp" />
+
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardUseCompatPadding="true"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_icon_report"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:src="@drawable/icons_cr_dito_56_x_56" />
+
+                        <TextView
+                            android:id="@+id/tv_next_payment"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/iv_icon_report"
+                            android:gravity="center"
+                            android:text="Monto desembolsado"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_next_fee"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_next_payment"
+                            android:layout_toRightOf="@+id/iv_icon_report"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="right"
+                            android:text="$200.00"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_payment_date"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_next_fee"
+                            android:layout_toRightOf="@+id/iv_icon_report"
+                            android:gravity="left"
+                            android:text="12/11/2020"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:textColor="@color/FC_grey_1"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_total_pay"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/iv_icon_report"
+                            android:gravity="center"
+                            android:text="Monto a liquidar: "
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_below="@+id/tv_payment_date"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_detail_fee_payment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/tv_payment_date"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginHorizontal="@dimen/_15sdp"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/FC_Regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_icon_report"
+                                android:layout_toRightOf="@+id/iv_icon_report"
+                                android:gravity="center"
+                                android:text="Cuotas pagadas"
+                                android:textColor="@color/FC_grey_1"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginTop="@dimen/_10sdp"/>
+
+                            <TextView
+                                android:id="@+id/tv_cuotas_pagadas"
+                                style="@style/FC_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_icon_report"
+                                android:layout_toRightOf="@+id/iv_icon_report"
+                                android:gravity="center"
+                                android:textSize="@dimen/_12sdp" />
+
+                            <com.google.android.material.slider.Slider
+                                android:id="@+id/sld_frequency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:valueFrom="0.0"
+                                android:valueTo="3.0"
+                                android:stepSize="1.0"
+                                android:theme="@style/MyMaterialTheme"
+                                app:thumbRadius="0dp"
+                                app:haloRadius="0dp"
+                                app:trackHeight="@dimen/_5sdp"
+                                app:trackColorActive="@color/FC_blue_4"
+                                app:trackColorInactive="@color/carolina_blue"
+                                app:tickColorInactive="@color/carolina_blue"
+                                app:labelBehavior="gone"/>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        style="@style/FC_Regular"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:layout_below="@+id/iv_icon_report"
+                                        android:layout_toRightOf="@+id/iv_icon_report"
+                                        android:gravity="left"
+                                        android:text="Cuotas por pagar:"
+                                        android:textColor="@color/FC_grey_1"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <TextView
+                                        style="@style/FC_Regular"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:layout_below="@+id/iv_icon_report"
+                                        android:layout_toRightOf="@+id/iv_icon_report"
+                                        android:gravity="right"
+                                        android:text="Total de cuotas:"
+                                        android:textColor="@color/FC_grey_1"
+                                        android:textSize="@dimen/_11sdp" />
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="1"
+                                    android:layout_marginBottom="@dimen/_10sdp">
+
+                                    <TextView
+                                        android:id="@+id/tv_cuotas_por_pagar"
+                                        style="@style/FC_Medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:layout_below="@+id/iv_icon_report"
+                                        android:layout_toRightOf="@+id/iv_icon_report"
+                                        android:gravity="left"
+                                        android:textSize="@dimen/_12sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_total_cuotas"
+                                        style="@style/FC_Medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:layout_below="@+id/iv_icon_report"
+                                        android:layout_toRightOf="@+id/iv_icon_report"
+                                        android:gravity="right"
+                                        android:textSize="@dimen/_12sdp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+                            <TextView
+                                style="@style/FC_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="MÁS INFORMACIÓN"
+                                android:textColor="@color/FC_blue_4"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_marginVertical="@dimen/_15sdp"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/icons_swift"
+                        app:tint="@color/FC_blue_6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="Datos de su crédito"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_credit_number"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:text="Número de crédito:"
+                            android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:id="@+id/tv_frecuency"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Frecuencia y plazo:"
+                            android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:id="@+id/tv_clabe"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Cuenta CLABE:"
+                            android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:id="@+id/tv_client_number"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Número de cliente:"
+                            android:textSize="@dimen/_11sdp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardUseCompatPadding="true"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_icon_payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:src="@drawable/icons_cuota"
+                            app:tint="@color/FC_blue_6" />
+
+                        <TextView
+                            android:id="@+id/tv_payment"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/iv_icon_payment"
+                            android:gravity="center"
+                            android:text="Total a pagar al día de hoy"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_payment_amount"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_payment"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="right"
+                            android:text="$200.00"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_pago_sin_atraso"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_payment"
+                            android:layout_toRightOf="@+id/iv_icon_payment"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="left"
+                            android:text="Tu pago sin atraso:"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_vencidas"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_pago_sin_atraso"
+                            android:layout_toRightOf="@+id/iv_icon_payment"
+                            android:gravity="left"
+                            android:text="Cuotas vencidas:"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_cobranza"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_vencidas"
+                            android:layout_toRightOf="@+id/iv_icon_payment"
+                            android:gravity="left"
+                            android:text="Gastos por cobranza incluidos:"
+                            android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:id="@+id/tv_interes"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_cobranza"
+                            android:layout_toRightOf="@+id/iv_icon_payment"
+                            android:gravity="left"
+                            android:text="Intereses moratorios incluidos:"
+                            android:textSize="@dimen/_11sdp" />
+                        <TextView
+                            android:id="@+id/tv_date"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_interes"
+                            android:layout_toRightOf="@+id/iv_icon_payment"
+                            android:gravity="left"
+                            android:text="Fecha máxima de pago:"
+                            android:textSize="@dimen/_13sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"/>
+
+
+                        <Button
+                            android:id="@+id/btn_next"
+                            style="@style/FC_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="@dimen/_60sdp"
+                            android:background="@drawable/background_selector_green"
+                            android:text="COMO PAGAR"
+                            android:textColor="@drawable/button_text_color"
+                            android:textSize="@dimen/_11sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_below="@+id/tv_date"/>
+
+
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_detail_fee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardUseCompatPadding="true"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_icon_alert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:src="@drawable/ic_alert"
+                            app:tint="@android:color/holo_red_dark" />
+
+                        <TextView
+                            android:id="@+id/tv_fee_payment"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_icon_alert"
+                            android:layout_toRightOf="@+id/iv_icon_alert"
+                            android:gravity="center"
+                            android:text="1 cuotas pendientes"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_fee"
+                            style="@style/FC_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/iv_icon_alert"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_toRightOf="@+id/tv_fee_payment"
+                            android:gravity="right"
+                            android:text="$200.00"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_total"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_fee"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:gravity="right"
+                            android:text="Total"
+                            android:textColor="@color/FC_grey_1"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_total"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="left"
+                            android:text="Realiza el pago de tus cuotas con el saldo disponible en tu monedero"
+                            android:textColor="@color/FC_grey_1"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <TextView
+                            android:id="@+id/tv_saldo"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_description"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:gravity="left"
+                            android:text="Disponible saldo monedero"
+                            android:textColor="@color/FC_blue_6"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_description"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:layout_toLeftOf="@+id/tv_ammount"
+                            android:src="@drawable/saldo" />
+
+                        <TextView
+                            android:id="@+id/tv_ammount"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_description"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginHorizontal="@dimen/_10sdp"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:gravity="right"
+                            android:text="$200.00"
+                            android:textColor="@color/FC_blue_6"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

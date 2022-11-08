@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/colorBimboAlert"/>
+            <corners android:radius="@dimen/_10sdp"/>
+            <stroke
+                android:width="0.5sp"
+                android:color="@color/colorBimboWithe"/>
+        </shape>
+    </item>
+</selector>

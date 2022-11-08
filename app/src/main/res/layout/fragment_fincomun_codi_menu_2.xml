@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_two"
+    android:clickable="true">
+
+    <Button
+        android:id="@+id/btn_todos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.30"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Ver todos"
+        android:background="@drawable/background_button_dark_enabled"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+    <View
+        android:id="@+id/vw1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_todos"
+        app:layout_constraintLeft_toRightOf="@id/btn_todos"
+        app:layout_constraintRight_toLeftOf="@id/btn_pagos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.05"
+        />
+
+    <Button
+        android:id="@+id/btn_pagos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.30"
+        app:layout_constraintLeft_toRightOf="@id/vw1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Pagos"
+        android:textColor="@color/FC_grey_1"
+        android:background="@drawable/background_button_blue_enabled"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+    <View
+        android:id="@+id/vw2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/btn_pagos"
+        app:layout_constraintRight_toLeftOf="@id/btn_cobros"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.05" />
+
+    <Button
+        android:id="@+id/btn_cobros"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.30"
+        app:layout_constraintLeft_toRightOf="@id/vw2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Cobros"
+        android:textColor="@color/FC_grey_1"
+
+        android:background="@drawable/background_button_blue_enabled"
+        android:fontFamily="@font/roboto_medium"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_movimientos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.775"
+        app:layout_constraintTop_toBottomOf="@id/btn_cobros"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginVertical="@dimen/_10sdp"
+        />
+
+    <Button
+        android:id="@+id/btn_info_cuenta"
+        style="@style/FC_Medium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal|bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:background="@drawable/background_selector_green"
+        android:text="@string/text_ver_informacion_de_cuenta"
+        android:textAllCaps="true"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="@dimen/_14sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

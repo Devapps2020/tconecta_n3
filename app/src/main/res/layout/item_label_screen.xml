@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/label_text_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="Captura Clave Conecta"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/dusk_blue"
+            android:textSize="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

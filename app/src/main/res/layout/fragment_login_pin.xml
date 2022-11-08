@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_style_top_circle"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_option_9"
+        android:textColor="@color/white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:id="@+id/layout_pin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|top"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@string/text_pago_servicios_38"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+
+                <mx.devapps.utils.components.otp.PinView
+                    android:id="@+id/edit_pin"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:hint="****"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/twilight_blue"
+                    android:textColorHint="@color/brownish_grey"
+                    android:textSize="@dimen/_5sdp"
+                    android:shadowColor="@color/white"
+                    app:cursorColor="@color/white"
+                    app:itemCount="4"
+                    app:itemHeight="@dimen/_50sdp"
+                    app:itemWidth="@dimen/_50sdp"
+                    app:itemRadius="@dimen/_5sdp"
+                    app:itemSpacing="@dimen/_18sdp"
+                    app:lineColor="@color/white"
+                    app:lineWidth="@dimen/_1sdp"
+                    app:viewType="rectangle"
+                    android:itemBackground="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_50sdp">
+
+                    <requestFocus />
+
+                </mx.devapps.utils.components.otp.PinView>
+
+                <View
+                    android:id="@+id/line_error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/text_error_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="end|center"
+                    android:text="@string/text_access_5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_biometric"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:gravity="center|top"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@string/text_biometric_message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_biometric"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/fingerprint_24_px"
+                    android:tint="@color/white"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|bottom"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_acceder"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/text_button_23"
+                    android:textSize="@dimen/_10sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:visibility="gone"
+                    android:id="@+id/btn_pin"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="@string/text_button_43"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+
+                <!--androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_close"
+                    style="@style/Button.Secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="@string/text_option_9"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

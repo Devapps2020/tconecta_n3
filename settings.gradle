@@ -1,0 +1,8 @@
+include ':gateway'
+include ':nexgo-smartpos-sdk-v3.03.001_20210412'
+include ':video'
+include ':giraffeplayer'
+include ':ijkplayer-java'
+include ':utils'//include ':app', ':nexgo_mpos_mcx_custom', ':n3_nexgo', ':nexgo-smartpos-sdk-v2.1.1_20190111', ':praga-integration'
+//include ':app', ':nexgo_mpos_mcx_custom', ':nexgo-smartpos-sdk-v2.1.1_20190111', ':praga-integration', ':spectratechlib_api'
+include ':app', ':nexgo_mpos_mcx_custom', ':praga-integration', ':spectratechlib_api'

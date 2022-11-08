@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/logo_7"/>
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="@string/alert_message_register_financial_question"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Aceptar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

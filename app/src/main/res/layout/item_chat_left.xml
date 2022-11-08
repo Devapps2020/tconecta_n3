@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_round_chat_left"
+        android:gravity="center"
+        android:padding="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_30sdp">
+
+        <TextView
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="How can i help?"
+            android:textColor="@color/colorWithe"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="right"
+            android:layout_marginRight="@dimen/_25sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

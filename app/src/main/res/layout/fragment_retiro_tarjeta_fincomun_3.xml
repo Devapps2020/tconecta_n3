@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorAccent"
+            android:layout_margin="@dimen/_10sdp"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fincomún"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_fincomun"
+            android:layout_margin="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <TextView
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:padding="0dp"
+                        android:text="Retiro disponible"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_22sdp" />
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="En las próximas horas recibirás un SMS a tu número celular con la clave de seguridad para completar el retiro sin tarjeta."
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorBimboBlueDark"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/text_title_cuota"
+                            style="@style/Signika_Semibold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Código de seguridad"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16sdp" />
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@color/white">
+
+                            <TextView
+                                android:id="@+id/text_clave"
+                                style="@style/Signika_Semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_25sdp"
+                                android:layout_marginBottom="@dimen/_10sdp"
+                                android:text="1234"
+                                android:textColor="@color/colorBimboBlueDark"
+                                android:textSize="@dimen/_24sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Acude al cajero BBVA de tu preferencia\n para realizar el retiro."
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tu retiro estará disponible 24 horas\ndespués de tu solicitud a partir de"
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/textview_fecha_disponibilidad"
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="29 de noviembre 2019, 18:09 hrs."
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_15sdp"
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fecha de vencimiento:"
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/textview_fecha_vencimiento"
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="06 diciembre 2019."
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_aceptar"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/background_selector_green"
+                        android:text="Aceptar"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/button_text_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

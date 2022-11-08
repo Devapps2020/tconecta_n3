@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/keyboard_backspace_24_px_2"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/FC_Regular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Contratación de préstamo"
+            android:textSize="@dimen/_13sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/live_help_24_px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_30sdp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_recompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/cb_confirm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_blue_4"
+                            android:checked="false" />
+
+                        <TextView
+                            android:id="@+id/tv_offer_recompra"
+                            style="@style/FC_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Confirmo mi nuevo préstamo de $0 recibiendo en efectivo $0"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_view_detail_offer"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:text="@string/txt_detail_offer"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/cb_confirm_personal_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_blue_4"
+                            android:checked="false" />
+
+                        <TextView
+                            style="@style/FC_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Confirmo que mis datos personales siguen vigentes y correctos"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_detail_personal_data"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:text="@string/txt_detail_peronal_data"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_step"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity= "right"
+                        android:text="@string/FC_step_4"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|start"
+                        android:text="Contesta las siguientes preguntas"
+                        android:textSize="@dimen/_13sdp" />
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="¿Quien usará los recursos de la cuenta?"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_who_use_resources"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_me"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="Usted"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/RadioButtonGray" />
+
+                    <RadioButton
+                        android:id="@+id/rb_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/RadioButtonGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Alguien más"
+                        android:textColor="@color/FC_grey_1"/>
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="¿Cúal será el destino del crédito?"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_destino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_destino_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="Bienes personales"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/RadioButtonGray" />
+
+                    <RadioButton
+                        android:id="@+id/rb_destino_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/RadioButtonGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Emergencia personal"
+                        android:textColor="@color/FC_grey_1"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_destino_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:text="Gastos de tu negocio"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:theme="@style/RadioButtonGray" />
+
+                    <RadioButton
+                        android:id="@+id/rb_destino_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/RadioButtonGray"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="Inversión para tu negocio"
+                        android:textColor="@color/FC_grey_1"/>
+
+                </RadioGroup>
+
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Solicitud de préstamo"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Por favor, acepte los siguientes documentos"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <CheckBox
+                        android:id="@+id/cb_contract_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:buttonTint="@color/FC_blue_4"
+                        android:checked="false" />
+
+                    <TextView
+                        style="@style/FC_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="Aceptar todo"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_10sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_contract_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_grey_2"
+                            android:checked="false"/>
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Contrato de cuenta de Depósito y Crédito"
+                            android:textColor="@color/FC_grey_2"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_contract_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_grey_2"
+                            android:checked="false" />
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Carátula del producto de Depósito y Crédito"
+                            android:textColor="@color/FC_grey_2"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_contract_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_grey_2"
+                            android:checked="false" />
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Tabla de amortizacion del crédito"
+                            android:textColor="@color/FC_grey_2"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_contract_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_grey_2"
+                            android:checked="false" />
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Contrato de servicios electrónicos de Crédito"
+                            android:textColor="@color/FC_grey_2"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_contract_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/FC_grey_2"
+                            android:checked="false" />
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Declaro conocer el contenido de los documentos enlistados, mismos que se encuentran disponibles en el Registro de Contratos de Adhesión de la CONDUSEF con el número de RECA: 1555-003-035101/01-03423-0921 y
+1555 439 034631/01 01945 0621"
+                            android:textColor="@color/FC_grey_2"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_datos_bancarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|start"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Datos Bancarios"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Ingresa los datos bancarios que serán utilizados para la transferencia del crédito"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+
+
+                    <include
+                        android:id="@+id/et_clabe"
+                        layout="@layout/fc_edit_text"/>
+
+                    <TextView
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Banco"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+                    <TextView
+                        android:id="@+id/tv_banco"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Firma de tu solicitud"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Realiza tu firma con el dedo"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp">
+
+                    <ImageView
+                        android:id="@+id/img_firm"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/img_contrato"
+                        android:layout_margin="@dimen/_5sdp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/ll_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Para tu seguridad, crea una contraseña para visualizar el crédito"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_user"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Usuario: 123456f"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+                    <include
+                        android:id="@+id/et_password"
+                        layout="@layout/fc_edit_text"/>
+
+                    <TextView
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Tu contraseña debe contener mínimo 8 dígitos, una mayúscula y un número"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/FC_Medium"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/background_selector_green"
+                    android:text="ACEPTAR"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Si tienes alguna duda o deseas obtener más información comunicate al teléfono 55 5200 1610 con la opción #9"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

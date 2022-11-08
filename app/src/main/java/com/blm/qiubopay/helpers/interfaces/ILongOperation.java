@@ -1,0 +1,10 @@
+package com.blm.qiubopay.helpers.interfaces;
+
+public interface ILongOperation<T> {
+
+    String doInBackground();
+
+    void onPreExecute();
+
+    void onPostExecute(int code, String result);
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/white_two"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icons_cuota" />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_credito_personal_21"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_credito_personal_23"
+                        android:gravity="right"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/_12sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:visibility="invisible"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/pago_suministros" />
+
+                    <TextView
+                        android:id="@+id/text_fecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_credito_personal_22"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/dusk_blue"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/carolina_blue"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

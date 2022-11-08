@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash_header_1"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_menu_top"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_20sdp">
+
+                <!-- Alerta amarilla -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/off_white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <!--<ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/fingerprint_dialog_error" />-->
+
+                        <TextView
+                            android:id="@+id/text_title"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_remesas_5"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/text_credito_personal_27"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Documentación"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_14sdp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_remesas_4"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/brownish_grey"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"/>
+
+                <!-- Card Capturar INE -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_ine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_1sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/illustrations_ife_100_x_100"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_1"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusk_blue"
+                                android:textSize="@dimen/_12sdp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_5"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_2sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <!-- Card Capturar IFE -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_ife"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_1sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/illustrations_ine_100_x_100_2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_2"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusk_blue"
+                                android:textSize="@dimen/_12sdp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_5"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_2sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <!-- Card Capturar Pasaporte -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_pasaporte"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_1sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/illustrations_passport_100_x_100"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_3"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusk_blue"
+                                android:textSize="@dimen/_12sdp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_5"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_2sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <!-- Card Ingresar Datos Manualmente -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_ingreso_manual"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="@dimen/_3sdp"
+                    app:cardCornerRadius="@dimen/_5sdp"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_margin="@dimen/_1sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/_10sdp">
+
+                        <!--<ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/illustrations_registro_115_x_95"/>-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_4"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusk_blue"
+                                android:textSize="@dimen/_12sdp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_option_remesas_5"
+                                android:gravity="left"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_2sdp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_cancelar"
+                        style="@style/Button.Secondary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CANCELAR OPERACIÓN"
+                        android:gravity="center"
+                        android:enabled="true"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_2sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_2"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_ticket"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/activity_title"
+                style="@style/Signika_Semibold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resumen de orden"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_20sdp" />
+
+            <!-- Número de orden -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Número de orden: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/order_id"
+                    style="@style/Graphik_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <!-- Monto de la orden -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Monto: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/monto_orden"
+                    style="@style/Graphik_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200.00 MXN"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <!-- Número de clientes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Número de clientes: "
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/numero_clientes"
+                    style="@style/Graphik_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/element_width"
+                android:layout_height="1sp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_edittext_normal" />
+
+            <ListView
+                android:id="@+id/list_comanda"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/fecha_orden"
+                style="@style/Graphik_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="26-02-2019 12:11:16"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|bottom"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_compartir"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_recarga_5"
+                android:gravity="center"
+                android:enabled="true"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_terminar"
+                style="@style/Button.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button_47"
+                android:gravity="center"
+                android:enabled="true"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+        <!--
+        <Button
+            android:id="@+id/btn_terminar"
+            android:text="@string/text_button_47"
+            style="@style/Button.Secondary" />
+            -->
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

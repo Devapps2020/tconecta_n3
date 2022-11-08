@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:gravity="center"
+        android:drawable="@drawable/splash_screen_background_new"
+        android:tint="@color/white"/>
+
+    <item android:gravity="center"
+       android:top="@dimen/_200sdp"
+        android:bottom="@dimen/_200sdp"
+        android:left="@dimen/_80sdp"
+        android:right="@dimen/_80sdp"
+        android:drawable="@drawable/logo_t_conecta"
+        android:tint="@color/white"/>
+
+</layer-list>

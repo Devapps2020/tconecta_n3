@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash_header_1"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingRight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/text_title_marca"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Elige tus productos"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/layout_car"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_50sdp">
+
+                    <ImageView
+                        android:id="@+id/img_buy_car"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/comprar_2" />
+
+                    <TextView
+                        android:id="@+id/text_number_car"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/circle_gray_notification"
+                        android:gravity="center"
+                        android:padding="0dp"
+                        android:text="12"
+                        android:textColor="@color/colorBimboWithe"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_personal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:text="En el caso de productos de “Cuidado Personal” la compra mínima es de $130.00"
+                android:textColor="@color/dusky_blue"
+                android:textSize="@dimen/_10sdp"/>
+
+
+            <TextView
+                android:id="@+id/text_title_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="left"
+                android:text="Pan hamburguesas y Medias Noches"
+                android:textColor="@color/dusky_blue"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+            <ListView
+                android:id="@+id/list_productos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@null"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|bottom"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_seguir"
+                    style="@style/Button.Primary"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Seguir comprando"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:id="@+id/btn_confirmar"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Confirmar pedido"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

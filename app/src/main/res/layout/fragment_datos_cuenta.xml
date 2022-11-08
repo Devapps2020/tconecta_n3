@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_splash_header_3">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:layout_marginTop="@dimen/_30sdp"
+                android:id="@+id/tv_datos_cuenta_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/datos_cuenta_x"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/dusk_blue"/>
+
+            <Space
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_30sdp"
+                android:layout_margin="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/illustrations_pagos_regionales_56_x_56" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_disponible_total"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_14sdp"
+                                android:textColor="@color/dusk_blue"
+                                android:fontFamily="@font/roboto_medium"/>
+
+                            <TextView
+                                android:id="@+id/tv_total_available"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="$1000.00"
+                                android:textSize="@dimen/_14sdp"
+                                android:gravity="right"
+                                android:textColor="@color/clear_blue"
+                                android:fontFamily="@font/roboto_medium"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_mas_informacion"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="@dimen/_12sdp"
+                                android:fontFamily="@font/roboto_regular"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <Space
+                   android:layout_weight="1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_30sdp"
+                android:layout_margin="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_12sdp">
+
+                             <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                 <ImageView
+                                     android:layout_width="@dimen/_20sdp"
+                                     android:layout_height="@dimen/_20sdp"
+                                     android:src="@drawable/icons_iban"
+                                     android:layout_gravity="top"/>
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="wrap_content"
+                                     android:text="@string/text_iban"
+                                     android:textSize="@dimen/_14sdp"
+                                     android:fontFamily="@font/roboto_bold"
+                                     android:textColor="@color/dusk_blue"
+                                     android:layout_marginLeft="@dimen/_5sdp"/>
+
+                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:visibility="invisible"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/icons_iban"
+                                    android:layout_gravity="top"/>
+
+                                <TextView
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:id="@+id/iban_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="ES00 0000 0000 0000 0000 0000"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:lineHeight="@dimen/_22sdp"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:textColor="@color/dusky_blue"
+                                    android:layout_gravity="center_vertical"/>
+
+                                <ImageButton
+                                    android:id="@+id/img_more_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:layout_marginLeft="@dimen/_5sdp"
+                                    android:src="@drawable/icon_menu_paper_copy_5"/>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_12sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/icons_iban"
+                                android:layout_gravity="top"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_1"
+                                android:textSize="@dimen/_14sdp"
+                                android:fontFamily="@font/roboto_bold"
+                                android:textColor="@color/dusk_blue"
+                                android:layout_marginLeft="@dimen/_5sdp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:visibility="invisible"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/icons_iban"
+                                android:layout_gravity="top"/>
+
+                            <TextView
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:id="@+id/text_clabe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="@string/text_2"
+                                android:textSize="@dimen/_12sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusky_blue"
+                                android:layout_gravity="center_vertical"/>
+
+                            <ImageButton
+                                android:id="@+id/img_more_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:src="@drawable/icon_menu_paper_copy_5"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_12sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_margin="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/powder_blue">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/icons_user_outlined_2"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/_12sdp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_12sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_titular_de_la_cuenta"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_16sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/dusk_blue"/>
+
+                            <TextView
+                                android:id="@+id/tv_titular_cuenta"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="Nombre  y apellidos"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_14sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusky_blue"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/icons_date_range"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/_12sdp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_12sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_fecha_de_apertura"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_16sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/dusk_blue"/>
+
+                            <TextView
+                                android:id="@+id/tv_fecha_apertura"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="dd/mm/aaaa"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_14sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusky_blue"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:src="@drawable/icons"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/_12sdp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_12sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_ultimo_movimiento"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_16sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textColor="@color/dusk_blue"/>
+
+                            <TextView
+                                android:id="@+id/tv_ultimo_movimiento"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:text="dd/mm/aaaa"
+                                android:textAlignment="viewStart"
+                                android:textSize="@dimen/_14sdp"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:textColor="@color/dusky_blue"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|bottom"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_ahorrar"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="ver ahorro"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

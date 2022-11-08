@@ -1,0 +1,2417 @@
+<resources>
+
+    <string-array name="time_type_array">
+        <item>min</item>
+        <item>hrs</item>
+    </string-array>
+
+    <string name="app_tag">T-Conecta</string>
+
+    <string name="app_name">T-Conecta</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="file_provider_authority" translatable="false">com.blm.qiuboplus.fileprovider</string>
+    <string name="transfer">trade</string>
+    <string name="cancel_transfer">cancel trade</string>
+    <string name="app_1">app 1</string>
+    <string name="text_login_3">Escribe tu usuario y contraseña\npara acceder a tu cuenta</string>
+    <string name="text_personal_1">Información <b>Personal</b></string>
+    <string name="text_personal_2">¿Ya tienes una cuenta?</string>
+    <string name="text_personal_3">¿Está recibiendo ayuda de un promotor?</string>
+    <string name="text_personal_4">Accede</string>
+    <string name="text_continue">Continuar</string>
+    <string name="draw_sign">Dibuja tu firma</string>
+    <string name="clear_sign">Borrar</string>
+    <string name="text_terms_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+    <string name="text_accept">Aceptar</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="txt_num_cuenta">Cuenta bancaria</string>
+    <string name="text_contrasenia">IMPORTANTE: Su contraseña deberá contener una longitud mínima de 8 caracteres, incluyendo al menos 1 mayúscula, 1 minúscula y 1 número. Sin caracteres especiales.</string>
+    <string name="text_tipo_cuenta"> Número celular </string>
+    <string name="text_enviar_codigo">Se enviará un código de activación\nal número celular</string>
+    <string name="text_vincular">Es necesario que vincule un dispositivo.\n\nPara contiunar seleccione el dispositivo:</string>
+    <string name="desea_continuar">\n¿desea continuar?</string>
+    <string name="desea_cancelar">¿Está seguro de cancelar la\ntransacción por </string>
+    <string name="alert_message_register_financial_question">Actualmente no cuenta\ncon aceptación de tarjetas.\n\n¿Desea registrarte en este momento?\n</string>
+    <string name="text_rewards_1">Comienza a facturar\ny recibe $100 MXN</string>
+    <string name="error_field_size_bank_account">El tamaño del número de cuenta debe ser entre 10 y 18 dígitos.</string>
+    <string name="error_field_size_curp">El tamaño del curp debe ser de 18 caracteres.</string>
+    <string name="error_field_size_rfc">El tamaño del curp debe ser de 13 caracteres.</string>
+    <string name="error_field_size_13">El valor debe ser de 13 dígitos.</string>
+    <string name="alert_message_close_app">¿Desea cerrar la aplicación?</string>
+    <string name="default_notification_channel_id" translatable="false">1234567890</string>
+    <string name="default_notification_channel_name" translatable="true">com.bimbo.conecta</string>
+    <string name="general_error">Se perdió la conexión a internet.</string>
+    <string name="general_error_browser">Falla de conexión, presione aceptar</string>
+    <string name="general_error_internet">Error de Conexión, verifique su reporte para conocer el estado de su transacción.</string>
+    <string name="general_error_catch">Error desconocido al procesar su petición.</string>
+    <string name="general_error_transaction">Ocurrió un error en la entrega de respuesta. Verifica en Reportes si la transacción fue aprobada antes de reintentar el pago.</string>
+    <string name="general_error_url">No puede acceder a la URL</string>
+
+    <string name="message_logout_question">¿Está seguro de cerrar la sesión?</string>
+    <string name="message_logout">Ha iniciado sesión en otro dispositivo.</string>
+    <string name="message_logout_swap">Proceso completado, se va a cerrar la sesión</string>
+    <string name="alert_message_register_user_success">Usuario registrado con éxito, en breve le llegará un correo electrónico para confirmar la cuenta.</string>
+    <string name="alert_message_success_register_user_information">Información almacenada con éxito.</string>
+    <string name="alert_message_success_register_all_information">Su registro financiero fue dado de alta con éxito. En un plazo de 24 horas su cuenta podrá ser activada para realizar cobros.</string>
+    <string name="alert_message_success_register_all_information_mit">¡YA ESTAS LISTO PARA ACEPTAR TARJETAS!</string>
+    <string name="alert_message_success_complete_registration">Registro completado con éxito.</string>
+    <string name="alert_message_register_user_cancel_question">¿Está seguro de cancelar el registro de nuevo usuario?</string>
+    <string name="alert_message_register_dongle_question">No cuenta con un lector de tarjetas emparejado.\n\n¿Desea configurar su lector de tarjetas ahora?</string>
+    <string name="alert_message_finalize_register_question">No ha finalizado su registro inicial.\n\n¿Desea finalizarlo ahora?</string>
+    <string name="alert_message_register_info_cancel_question">¿Está seguro de cancelar la carga de la información?</string>
+    <string name="error_general_evo">Lo sentimos, no podemos procesar tu solicitud. Inténtalo de nuevo más tarde.</string>
+    <string name="error_general_evo_cancel_3ds">Lo sentimos, no podemos procesar tu solicitud. Fallo la autenticación 3DS.</string>
+    <string name="text_title_11">Abono a mi\n<b>cuenta</b></string>
+
+    <!-- Botones -->
+    <string name="accept_button">Aceptar</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="register_button">Registrarme</string>
+    <string name="logout_button">Cerrar Sesión</string>
+    <string name="agreed_button">Entendido</string>
+    <string name="info_button">Más Información</string>
+    <!-- Fragments -->
+    <string name="account_fragment_tab">Mi Cuenta</string>
+    <string name="promotion_fragment_tab">Promociones</string>
+    <string name="vw_fragment_tab">Precios de Servicio</string>
+    <string name="schedule_fragment_tab">Agendar</string>
+    <string name="continue_button">Aceptar</string>
+    <string name="sell_fragment_tab">Venta con tarjeta</string>
+    <string name="deposit_fragment_tab">Depósitos</string>
+    <string name="configuration_fragment_tab">Configuración</string>
+    <string name="tae_fragment_tab">Recargas</string>
+    <string name="services_fragment_tab">Pago de servicios</string>
+
+    <!-- Fragments Titles -->
+
+    <string name="fragment_title_1">Tiempo Aire</string>
+    <string name="fragment_title_2">Pago De Servicios</string>
+    <string name="fragment_title_3">Venta</string>
+    <string name="fragment_title_4">Pagos Móviles</string>
+    <string name="fragment_title_5">Depósitos</string>
+    <string name="fragment_title_6">Ayuda</string>
+    <string name="fragment_title_7">Soporte y Configuración</string>
+    <string name="fragment_title_8">Mi Negocio</string>
+    <string name="fragment_title_9">Conecta Provee</string>
+
+    <!-- Self Register -->
+    <string name="continue_button_text">Continuar</string>
+    <string name="self_register_title">Registro de nuevo usuario</string>
+    <string name="pin_access_title">PIN DE ACCESO</string>
+    <string name="placeholderParameterName">Nombre(s)</string>
+    <string name="placeholderParameterFirstName">Apellido paterno</string>
+    <string name="placeholderParameterLastName">Apellido materno</string>
+    <string name="placeholderParameterCellPhoneNumber">Número celular (10 dígitos)</string>
+    <string name="placeholderParameterMail">Correo electrónico (usuario de acceso)</string>
+    <string name="placeholderParameterPassword1">Contraseña</string>
+    <string name="placeholderParameterPassword2">Confirme la contraseña.</string>
+    <string name="parameter5">Introduce parámetro 5</string>
+    <string name="parameter6">Introduce parámetro 6</string>
+    <string name="parameter7">Introduce parámetro 7</string>
+    <string name="parameter8">Introduce parámetro 8</string>
+    <string name="parameter9">Introduce parámetro 9</string>
+    <string name="parameter10">Introduce parámetro 10</string>
+    <string name="parameter11">Introduce parámetro 11</string>
+    <string name="parameter12">Introduce parámetro 12</string>
+    <string name="select_carrier">Selecciona un operador</string>
+    <string name="error_invalid_password_confirm">Las contraseñas no coinciden.</string>
+    <string name="error_invalid_password">Contraseña inválida.</string>
+    <string name="error_invalid_email">Correo electrónico inválido</string>
+
+    <!-- Keyboard -->
+    <string name="number_0">0</string>
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+    <string name="btn_clear">Limpiar</string>
+    <string name="btn_backspace">Borrar</string>
+
+
+    <string name="sell_button">Pagar</string>
+    <string name="btnConfirmTae">Confirmar Transacción</string>
+    <string name="placeHolderCellPhoneNumber">Introduce el número celular</string>
+    <string name="placeHolderConfirmCellPhoneNumber">Confirma el número celular</string>
+    <string name="tae_select_amount">Selecciona un monto</string>
+    <string name="balance">Saldo $0.00</string>
+    <string name="close_session">Cerrar sesión</string>
+    <string name="privacyTermsAndConditions">He leído y acepto los términos y condiciones.</string>
+    <string name="privacy_title">Terminos y Condiciones</string>
+    <string name="privacy_required">Es necesario que se acepten los términos y condiciones.</string>
+
+    <!-- Progress Dialog -->
+    <string name="progress_register">Procesando...</string>
+    <string name="progress_query">Consultando...</string>
+
+    <!-- Mensajes de error -->
+    <string name="error_invalid_phone_number">Número celular inválido.</string>
+    <string name="error_invalid_name">Nombre inválido.</string>
+    <string name="error_invalid_paternal_surname">Pimer apellido inválido.</string>
+    <string name="error_invalid_maternal_surname">Segundo apellido inválido.</string>
+    <string name="error_invalid_field">Valor de campo inválido.</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="error_field_not_equals">Los números de celular no son iguales</string>
+    <string name="balance_consulting">Consultando saldo...</string>
+    <string name="unknown_device">Unknown device</string>
+
+
+    <string name="already_started">Scanning</string>
+    <string name="application_registeration_failed">Application not registered</string>
+    <string name="internal_error">Internal error</string>
+    <string name="feature_unsupport">Not support</string>
+    <string name="out_of_hardware_resources">Hardware not support</string>
+    <string name="bluetooth_list">Dispositivos disponibles</string>
+    <string name="bluetooth_list_title">Bluetooth</string>
+    <string name="bt_device_connected">Dispositivo conectado</string>
+    <string name="bt_device_unconnected">Dispositivo no conectado</string>
+    <string name="bluetooth_name">Nombre:</string>
+    <string name="bluetooth_addr">Dirección:</string>
+    <string name="bluetooth_device_null">Fallo de conexión Bluetooth.</string>
+    <string name="bluetooth_device_connecting">Conectando con dispositivo...</string>
+    <string name="bluetooth_connected">Conexión bluetooth exitosa</string>
+    <string name="bluetooth_disconnected">Dispositivo desconectado</string>
+    <string name="cancel_read_card">Cancel read</string>
+    <string name="time_out">Timeout</string>
+    <string name="error_read_card">Error,try again</string>
+    <string name="other_err">Other error</string>
+    <string name="success_title">Resultado</string>
+    <string name="welcome_use">Bimbo</string>
+    <string name="read_type">Deslice o inserte tarjeta</string>
+    <string name="self_register_user_data_title">Información del usuario</string>
+    <string name="self_register_user_access_data_title">Información de acceso</string>
+
+    <!-- Activity Login -->
+    <string name="login_title">Login de acceso</string>
+    <string name="password_forget"><u>¿Olvidaste la contraseña?</u></string>
+
+    <!-- Mensajes de Alerts -->
+    <string name="finish_and_continue">Finalizar y continuar</string>
+    <string name="register_information_list_title">Registro de información</string>
+    <string name="info_category_1_title">Información del usuario</string>
+    <string name="info_category_2_title">Información del comercio</string>
+    <string name="info_category_3_title">Información bancaria</string>
+    <string name="financial_activation_title">Activación del servicio financiero</string>
+    <string name="save_and_continue_button_text">GUARDAR Y CONTINUAR</string>
+    <string name="text_fecha">Fecha</string>
+    <string name="text_hora">Hora</string>
+
+    <string name="placeholderParameterGender">Género</string>
+    <string name="placeholderParameterRfc">RFC</string>
+    <string name="placeholderParameterCurp">CURP</string>
+    <string name="placeholderParameterAntiguedad">Fecha de Antigüedad</string>
+    <string name="placeholderParameterBirthCountry">País de nacimiento</string>
+    <string name="placeholderParameterNationality">Nacionalidad</string>
+    <string name="placeholderParameterOcupation">Ocupación</string>
+    <string name="placeholderParameterProfession">Profesión</string>
+    <string name="placeholderParameterBirthState">Entidad de nacimiento</string>
+    <string name="self_register_user_identification_data_title">Identificación del usuario</string>
+    <string name="placeholderParameterID">ID de identificación</string>
+    <string name="placeholderParameterIdType">Tipo de identificación</string>
+    <string name="gender_male">Hombre</string>
+    <string name="gender_female">Mujer</string>
+    <string name="placeholderParameterFrontImage">Fotografía de la identificación por el frente</string>
+    <string name="placeholderParameterBehindImage">Fotografía de la identificación por detrás</string>
+    <string name="self_register_user_proof_address_title">Dirección</string>
+    <string name="placeholderParameterProofOfAddress">Fotografía del comprobante de domicilio</string>
+    <string name="self_register_commerce_data_title">Información del comercio</string>
+    <string name="placeholderParameterCommerceName">Nombre del comercio</string>
+    <string name="placeholderParameterCommerceAddress">Dirección del comercio</string>
+    <string name="placeholderParameterCommerceCity">Ciudad</string>
+    <string name="placeholderParameterCommerceState">Estado</string>
+    <string name="placeholderParameterCommercePostalCode">Código postal</string>
+    <string name="placeholderParameterCommerceNumber">Número de comercio</string>
+    <string name="placeholderParameterCommerceActivity">Giro del comercio</string>
+    <string name="self_register_bank_data_title">Información bancaria.</string>
+    <string name="placeholderParameterAccountNumber">Número de cuenta</string>
+    <string name="placeholderParameterAccountBalance">Fotografía de un estado de cuenta</string>
+    <string name="sign_contract">FIRMAR CONTRATO</string>
+    <string name="sign_here">Firme aquí</string>
+    <string name="bank_account_question">Deseo abrir una cuenta bancaria</string>
+    <string name="placeholderParameterSignAccount">Leer y firmar contrato</string>
+    <string name="contract_title">Contrato</string>
+    <string name="signature_title">Panel de firma</string>
+    <string name="action_accept">Aceptar</string>
+    <string name="action_delete">Borrar</string>
+    <string name="pin_title">Ingrese su PIN</string>
+    <string name="confirm">Confirmar</string>
+    <string name="amount_of_money">Monto de dinero</string>
+    <string name="card_number">Numero de tarjeta</string>
+    <string name="input_password_hint">Ingrese su PIN</string>
+    <string name="ok">Confirmar</string>
+    <string name="rmb">MXN</string>
+    <string name="info_bimbo_title">Información adicional</string>
+    <string name="load_configuration">Cargando configuración.</string>
+    <string name="permission_camera_rationale">Es necesario acceso a la cámara para la detección de texto</string>
+    <string name="no_camera_permission">Esta opción no puede ser ejecutada, ya que la aplicación no tiene permisos para usar la camara.</string>
+    <string name="low_storage_error">La imagen no puede ser procesada, libere espacio en su teléfono y vuelva a intentarlo.</string>
+    <string name="init_register_pin_process">Es necesario que registre un PIN de acceso de 4 dígitos.</string>
+    <string name="init_restore_pin_process">Se ha iniciado el proceso de restauración de PIN. Es necesario que ingrese su PIN de acceso..</string>
+    <string name="register_pin_sucess">PIN registrado con éxito.</string>
+    <string name="alert_message_register_pin_error">Los PIN de acceso no coinciden. Es necesario que repita el proceso.</string>
+    <string name="register_pin_1_sucess">Es necesario que confirme su PIN.</string>
+    <string name="inactive_activation_3">Servicio Financiero Desactivado</string>
+    <string name="self_type_financial_operation_title">Tipo de operación</string>
+    <string name="self_accept_contract_title">Contrato</string>
+    <string name="alert_message_register_financial_cancel_question">¿Está seguro de cancelar la activación del servicio financiero?</string>
+    <string name="mobile_payment_fragment_tab">Pagos Móviles</string>
+    <string name="mobile_reports_fragment_tab">Otros</string>
+    <string name="select_service">Selecciona un servicio</string>
+    <string name="configuration_fragment_deposits_title">Abono a mi cuenta</string>
+    <string name="configuration_fragment_cash_collection">Recolección Bimbo</string>
+    <string name="configuration_fragment_balance">Depósito Bancario</string>
+    <string name="configuration_fragment_help">Soporte</string>
+    <string name="configuration_help_support">Obtener soporte</string>
+    <string name="coming_soon">Próximamente</string>
+    <string name="configuration_fragment_reports">Reportes</string>
+    <string name="configuration_report_1">Reporte de transacciones TAE</string>
+    <string name="configuration_report_2">Reporte de transacciones de pago de servicios</string>
+    <string name="configuration_report_3">Reporte de transacciones financieras</string>
+    <string name="configuration_restore_pin">Restaurar PIN</string>
+    <string name="configuration_faq">FAQ</string>
+    <string name="get_tae_balance">Recuperando saldo...</string>
+    <string name="display_input_pin">Ingresa tu PIN</string>
+
+    <string name="compra_rollos">Compra de\n<b>lector de tarjetas</b></string>
+
+    <!-- <string name="configuration_fragment_dongle_title">Lector de tarjetas</string> -->
+    <string name="configuration_fragment_dongle_title">Lector de tarjetas</string>
+    <string name="alert_message_eliminate_device_question">¿Desea desvincular el lector de tarjetas?</string>
+    <string name="configuration_fragment_dongle">Desvincular lector de tarjetas</string>
+    <string name="alert_message_restore_pin_question">¿Desea iniciar el proceso de cambio de PIN?</string>
+    <string name="alert_message_buy_a_dongle">¿Desea continuar con la compra de lector de tarjetas?. Se restará **monto** de su bolsa de saldo.</string>
+    <string name="alert_message_buy_a_roll_pack">¿Desea continuar con la compra del paquete de rollos?. Se restará **monto** de su bolsa de saldo.</string>
+    <string name="alert_message_cancel_restore_pin_question">¿Está seguro de cancelar el proceso de restauración de PIN?</string>
+    <string name="enter_an_amount">Es necesario que ingrese un monto</string>
+    <string name="progress_sale">Procesando transacción...</string>
+    <string name="transaction_failed">Fallo en la lectura</string>
+    <string name="first_vinculate_a_dongle">Es necesario que vincule un lector de tarjetas.</string>
+    <string name="success_dongle_registration">Su lector de tarjetas se ha vinculado con éxito.</string>
+    <string name="success_txn">Transacción realizada con éxito</string>
+    <string name="sign_txn">Firmar Voucher</string>
+    <string name="send_voucher">Enviar Voucher</string>
+    <string name="send_voucher_again">Reenviar Voucher</string>
+    <string name="finish_txn">Terminar</string>
+    <string name="tsn_end">RESULTADO</string>
+    <string name="first_upload_signature">Es necesario que se ingrese la firma.</string>
+    <string name="progress_upload_signature">Enviando firma...</string>
+    <string name="success_upload_signature">Firma enviada con éxito.</string>
+    <string name="error_upload_signature">Hubo un error al enviar la firma.</string>
+    <string name="placeholderTxnType">Tipo de operación</string>
+    <string name="cashback_min_amount_error">El monto mínimo para retiros de\nefectivo es de $100.00 pesos</string>
+    <string name="cashback_not_found_bin">Tarjeta no autorizada para realizar retiros de efectivo.</string>
+    <string name="activity_txn_list">Transacciones</string>
+    <string name="input_cell_phone">Ingrese el número de celular</string>
+    <string name="txn_list_title">Lista de transacciones</string>
+    <string name="detail_txn_title">Detalle</string>
+    <string name="cancel_txn">Cancelar transacción</string>
+    <string name="txn_detail_title">Detalle de la transacción</string>
+    <string name="alert_message_cancel_txn_question">Esta a punto de cancelar la trancción. ¿Desea continuar?</string>
+    <string name="progress_recover_last_txn">Consultando transacciones...</string>
+    <string name="amount_title">Monto a pagar</string>
+    <string name="addtional_info_title">Información adicional</string>
+    <string name="placeHolderAmount">Ingresa el monto $</string>
+    <string name="placeHolderCheckDigit">Dígito verificador</string>
+    <string name="connect_to_device">Conectando con el lector de tarjetas...</string>
+    <string name="reading_card">Leyendo tarjeta...</string>
+    <string name="alert_message_promotor_helper_question">¿Está recibiendo ayuda de un promotor?</string>
+    <string name="input_promotor_id">Ingrese el número de colaborador.</string>
+    <string name="info_title">Información de la transacción</string>
+    <string name="placeHolderPIN1">COL PIN 1</string>
+    <string name="placeHolderMerchantId">Número de cliente</string>
+    <string name="placeHolderPIN3">COL PIN 3</string>
+    <string name="placeHolderPIN2">COL PIN 2</string>
+    <string name="placeHolderReference">Ingresa la referencia</string>
+    <string name="placeHolderBranch">Ingresa la sucursal</string>
+    <string name="placeholderParameterDate">Fecha de la transacción</string>
+    <string name="bank_title">Banco de déposito</string>
+    <string name="placeholderParameterBank">Elige el banco</string>
+    <string name="placeholderParameterSelectAmount">Selecciona el monto a pagar</string>
+    <string name="progress_check_afiliation">Verificar estado de la afiliación...</string>
+    <string name="first_activate_afiliation">La afiliación financiera aún no se encuentra activa.</string>
+    <string name="error_invalid_cellphone_confirm">El número celular no coincide.</string>
+    <string name="password_recovery_title">Restablecer la contraseña</string>
+    <string name="password_recovery_description">Escriba su correo electrónico.</string>
+    <string name="dialog_restore_password">Restablecer la contraseña</string>
+    <string name="dialog_restore_password_2">Para terminar el proceso, es necesario que defina una nueva contraseña.</string>
+    <string name="password">Contraseña</string>
+    <string name="password_confirm">Confirme la contraseña.</string>
+    <string name="error_field_size_10">El valor debe ser de 10 dígitos.</string>
+    <string name="error_field_size_11">El valor debe ser de 11 dígitos.</string>
+    <string name="error_field_size_12">El valor debe ser de 12 dígitos.</string>
+    <string name="error_field_size_14">El valor debe ser de 14 dígitos.</string>
+    <string name="error_field_size_izzi">El tamaño de la referencia debe ser entre 8 y 10 dígitos.</string>
+    <string name="primary_agency_title">Información del promotor</string>
+    <string name="placeholderPrimaryAgency">ID de agencia (opcional)</string>
+    <string name="no_bluetooth_present">Bluetooth No Detectado.</string>
+    <string name="bluetooth_device_disable">El Bluetooth de su dispositivo se encuentra apagado.</string>
+    <string name="camera_permission_required">Es necesario que otorgue permisos para el uso de la cámara.</string>
+    <string name="error_field_size_4_to_14">El valor del campo debe tener de 4 a 14 caracteres.</string>
+    <string name="placeholderParameterTime">Hora de la transacción</string>
+    <string name="search_title_dish">Búsqueda Dish</string>
+    <string name="placeHolderSearchDish" />
+    <string name="error_field_size_dish_account">El tamaño de la cuenta debe ser entre 5 y 6 dígitos.</string>
+    <string name="error_field_size_dish_coupon">El tamaño del cupón debe ser entre 13 y 16 dígitos.</string>
+
+
+    <!-- New -->
+    <string name="header_layout_1">BIMBO</string>
+    <string name="text_development">¡En desarrollo!</string>
+    <string name="text_configuration">Configurar</string>
+    <string name="text_confirm">Confirmar</string>
+    <string name="text_siguiente">Siguiente</string>
+    <string name="text_isRoot">Su dispositivo ha sido modificado con root y por seguridad no es posible acceder a la aplicación.</string>
+    <string name="text_hasConnection">Comprueba su conexion a internet y vuelve a intentarlo.</string>
+    <string name="text_neverAskAgain"><![CDATA[ Haz activado la opción:<br/><br/><b>No volver a preguntar permisos</b><br/><br/>Puedes cambiar los permisos a los que pueden acceder en la configuración principal de la app. Ten en cuenta que si desactivas los permisos, la app podría perder su funcionalidad.<br/>]]></string>
+    <string name="text_welcome_1">Entrar a mi cuenta</string>
+    <string name="text_welcome_2">Crear una cuenta</string>
+    <string name="text_welcome_3">Migrar cuenta</string>
+    <string name="text_login_1">Acceder</string>
+    <string name="text_recuperar_pwd">Enviar</string>
+    <string name="digit_nip">Es necesario que registres un\nPIN de acceso de 4 dígitos.</string>
+    <string name="digit_nip_rule">El PIN no podrá contener \nnúmeros consecutivos.</string>
+    <string name="digit_nip_rule2">\n</string>
+    <string name="title_NIP">Genera tu PIN </string>
+    <string name="title_access_NIP">PIN de Acceso </string>
+    <string name="acces_pin">Ingresa tu PIN de Acceso</string>
+    <string name="acces_pin_autorizacion">Ingresa tu PIN ACTUAL</string>
+    <string name="next_PIN">Siguiente</string>
+    <string name="confirm_pin">Es necesario que confirme su PIN</string>
+    <string name="text_login_2">Entrar</string>
+    <string name="text_login_4">Olvidé mi contraseña</string>
+    <string name="text_forgot_1">Contraseña\nolvidada</string>
+    <string name="text_forgot_2">Ingresa la siguiente información\npara recibir una contraseña temporal</string>
+    <string name="text_forgot_3">Enviar</string>
+    <string name="text_forgot_4">Nueva contraseña</string>
+    <string name="text_forgot_5">Escribe tu nueva contraseña</string>
+    <string name="text_account_1">¿Con qué quieres\ndarte de alta?</string>
+    <string name="text_whats_1">¡Listo!\n¿Qué sigue?</string>
+    <string name="text_whats_2">Acepta Tarjetas\nde Crédito y Débito.</string>
+    <string name="text_whats_3">Complete tres pasos fáciles ahora y\nObtén $ 100 MXN y comienza a aceptar\ntodas las formas principales de pago</string>
+    <string name="text_register_finish">Has completado tu registro\nEn breve recibirás un mail para\ncompletar tu afiliación.\nSi tienes habilitado el servicio de recolección de efectivo en 24 horas podrás volver a utilizarlo</string>
+    <string name="text_whats_4">Solo tiempo aire\ny pagos de servicios</string>
+    <string name="text_save_and_continue_1">You can continue later, but remember\nto come back: You’ll have 24 hours\nto finish this step or you’ll forefit\nyour $100 reward.</string>
+    <string name="text_before_you_quit_1">Remember, if you leave this for later,\nyou won’t be able to accept debit,\ncredit or food voucher payments and\nyou’ll forefit your $100 reward</string>
+    <string name="text_continue_registration_1">Has completado tu registro y por\nEllo te hemos otorgado este efectivo:</string>
+    <string name="text_mobile_numbre_1">¿Cuál es tu\nnúmero celular?</string>
+    <string name="text_facebook_account">Tu perfil público y dirección\nde email.</string>
+    <string name="text_informacion">Solo completa\nEsta información</string>
+    <string name="text_info_negocios_1">Información de tu negocio</string>
+    <string name="text_info_negocios_2"></string>
+    <string name="text_code_1">Crear una cuenta</string>
+    <string name="text_alert_ready_1"><b>¡Listo!</b></string>
+    <string name="text_alert_ready_2">Ya puedes generar facturas y por\nello te hemos otorgado este efectivo:</string>
+    <string name="text_alert_ready_3">$100.00 MXN</string>
+    <string name="text_alert_continuar_1"><b>Continuar después</b></string>
+    <string name="text_alert_continuar_2">You can continue later, but remember\nto come back: You’ll have 24 hours \nto finish this step or you’ll forefit \nyour $100 reward.</string>
+    <string name="text_ordens_home_1">Porque\nentregar pedidos\na domicilio</string>
+    <string name="text_ordens_home_2">Ibus. Ficiam, conserorum, ut a sum re\nqui consequ untiate mpost, con es \nsum aut que volut offic tem abores \nvent am inuscid igenduntium quam \nadis audipsa qui ditibus tiatemq uaerspe rnamusae odit</string>
+    <string name="text_card_payments_1">Por que\nAceptar pagos\nCon tarjeta</string>
+    <string name="text_card_payments_2">Ibus. Ficiam, conserorum, ut a sum re\nqui consequ untiate mpost, con es\nsum aut que volut offic tem abores\nvent am inuscid igenduntium quam\nadis audipsa qui ditibus tiatemq\nuaerspe rnamusae odit</string>
+    <string name="text_facturacion">Por que\nemitir facturas</string>
+    <string name="text_facturacion_1">Ibus. Ficiam, conserorum, ut a sum re\nqui consequ untiate mpost, con es\nsum aut que volut offic tem abores\nvent am inuscid igenduntium quam\nadis audipsa qui ditibus tiatemq\nuaerspe rnamusae odit</string>
+    <string name="text_fondos">Agregar fondos de\nTDC o Tarjeta de débito</string>
+    <string name="text_numero_identificacion">Encuentra tu número de identifiación\nAl reverso de tu INE y captúralo porfavor:</string>
+    <string name="text_pagos_con_tarjeta">Por que\nAceptar pagos\nCon tarjeta</string>
+    <string name="text_cuenta_banco_1">The personal information of the account holder that will be requested is the following (prefilled)</string>
+    <string name="sign_line">---------------------------------------------------</string>
+    <string name="title_cash_withdrawal">Retiro de efectivo</string>
+    <string name="send_ticket">Enviar Recibo</string>
+    <string name="text_send">Enviar</string>
+    <string name="text_ticket">Recibo</string>
+    <string name="text_sent">Enviado</string>
+    <string name="button_ready">Listo</string>
+    <string name="text_connecting">Conectando con el lector de tarjetas</string>
+    <string name="text_send_data">Enviando datos</string>
+    <string name="text_insert_the">Inserte la</string>
+    <string name="text_card">Tarjeta</string>
+    <string name="title_deposit">Depósito</string>
+    <string name="select_ammount">Elige monto</string>
+    <string name="text_confirm_ammount">Confirmar monto</string>
+    <string name="title_confirmed">Depósito Exitoso</string>
+    <string name="text_finish">Terminar</string>
+    <string name="text_finish_two">Finalizar</string>
+    <string name="title_special_for_you">Especiales para ti</string>
+    <string name="text_select_option">Elige una opción</string>
+    <string name="text_jobs">Chambitas</string>
+    <string name="text_interview">Encuesta</string>
+    <string name="text_photo">Foto</string>
+    <string name="text_training">Entrenamiento</string>
+    <string name="text_new_bill">Nueva factura</string>
+    <string name="text_past_bills">Anteriores</string>
+    <string name="text_balance">Saldo</string>
+    <string name="text_current">Actual</string>
+    <string name="text_home_delivery">Envío a domicilio</string>
+    <string name="text_new_order">Nuevo pedido</string>
+    <string name="text_past_orders">Anteriores</string>
+    <string name="text_order">Pedido</string>
+    <string name="text_confirmed">Confirmado</string>
+    <string name="text_bill">Factura</string>
+    <string name="text_sent_bill">Enviada</string>
+    <string name="text_invoicing">Facturación</string>
+    <string name="text_payment_ammount">Monto a pagar</string>
+    <string name="text_consigment">Remesa</string>
+    <string name="text_confirm_ammount_question">¿Tienes este monto?</string>
+    <string name="text_cancel_transaction">Cancelar transacción</string>
+    <string name="text_select_id">Elige un tipo de identificación oficial</string>
+    <string name="text_ine">INE</string>
+    <string name="text_passport">Pasaporte</string>
+    <string name="text_pesito">Pesito</string>
+    <string name="title_pesito">Crédito Pesito</string>
+    <string name="description_pesito">Explicación de lo que es el préstamo Pesito. Lorem ipsum dolor sit amet, consectetur adipiscing.</string>
+    <string name="text_get_pesito">Solicitar Pesito</string>
+    <string name="text_get_pesito_two">Solicitar Pesito 2</string>
+    <string name="text_scann">Escaneo</string>
+    <string name="text_success">exitoso</string>
+    <string name="text_credit_aproved">Crédito aprobado</string>
+    <string name="text_reports">Reports</string>
+    <string name="text_pending">Pending</string>
+    <string name="text_create_account_first">¿Te creamos</string>
+    <string name="text_create_account_second">una cuenta?</string>
+    <string name="text_yes">Si</string>
+    <string name="text_no">No</string>
+    <string name="text_sign_add">Firmar contrato o adjuntar firma</string>
+    <string name="text_review_agreement">Revisar contrato</string>
+    <string name="text_congratulations">¡Felicidades!</string>
+    <string name="text_description_personal_info">Has completado tu registro y por Ello te hemos otorgado este efectivo:</string>
+    <string name="text_begin">Comenzar</string>
+    <string name="text_description_job_alert">Has completado la Chambita, Te hemos otorgado la cantidad de:</string>
+    <string name="text_cell_time">Tiempo aire</string>
+    <string name="text_select_ammount">Elige monto</string>
+    <string name="text_confirm_payment">Confirmar pago</string>
+    <string name="text_balance_updated">Saldo actualizado</string>
+    <string name="text_got_to_pay">Ir a pagar</string>
+    <string name="text_service_payment">Pago de servicios</string>
+
+    <string name="btnReadCode">Leer código</string>
+    <string name="placeholderParameterCellPhoneNumberTransfer">Número celular, cuenta transfer (10 dígitos)</string>
+    <string name="configuration_fragment_dongle_line">Contenido de la línea</string>
+    <string name="password_recovery_requirements">Ingrese la siguiente información.</string>
+    <string name="placeholderParameterMailR">Correo electrónico.</string>
+    <string name="placeHolderCellPhoneNumberR">Número celular.</string>
+    <string name="placeholderParameterCommercePostalCodeR">Código postal del comercio.</string>
+    <string name="configuration_fragment_account_information">Información de la cuenta</string>
+    <string name="configuration_fragment_account">Información</string>
+    <string name="configuration_fragment_app_information">Información de la aplicación</string>
+    <string name="configuration_fragment_app">¿Acerca de?</string>
+    <string name="configuration_fragment_balance2">Balances</string>
+    <string name="configuration_report_4">Balance de transacciones financieras</string>
+    <string name="configuration_report_5">Balance de transacciones no financieras</string>
+    <string name="hint"><font size="20">TIPO DE OPERACIÓN FINANCIERA</font></string>
+    <string name="non_financial_balance_app_title">Balance no financiero</string>
+    <string name="financial_balance_app_title">Balance financiero</string>
+    <string name="txn_detail_account_title">Información de la cuenta</string>
+    <string name="txn_detail_app_title">¿Acerca de?</string>
+    <string name="wrong_actual_pin">PIN incorrecto, ¿desea intentarlo nuevamente?</string>
+    <string name="faq_title">Preguntas Frecuentes</string>
+    <string name="bluetooth_device_location_permission">Es necesario que otorgue los siguientes permisos antes de continuar.</string>
+    <string name="progress_get_balance">Consultando balance...</string>
+    <string name="error_invalid_postal_code">Código postal inválido.</string>
+    <string name="text_next">Siguiente</string>
+
+    <string name="text_telcel">Llamadas Telcel</string>
+    <string name="text_telcel_datos">Llamadas e internet Telcel</string>
+    <string name="text_telcel_internet">Internet Telcel</string>
+    <string name="text_movistar">Movistar</string>
+    <string name="text_att">AT&amp;T</string>
+    <string name="text_unefon">Unefon</string>
+    <string name="text_virgin">Virgin Mobile</string>
+    <string name="text_mas_recarga">Mas Recarga</string>
+    <string name="text_tuenti">Tuenti</string>
+    <string name="text_freedom">Freedom Pop</string>
+    <string name="text_alo">ALO</string>
+    <string name="text_bueno_cell">Bueno Cell</string>
+    <!-- Servicios MVNO -->
+    <string name="text_mi_movil">Mi Móvil</string>
+    <string name="text_turbored">Turbored</string>
+    <string name="text_turbored_datos">Turbored datos</string>
+    <string name="text_space">Space</string>
+    <string name="text_diri">Diri</string>
+    <string name="text_pillofon">PilloFon</string>
+    <string name="text_fobo">Fobo</string>
+    <string name="text_bait">Bait</string>
+
+    <string name="text_telcel_help">Para dudas marca *264 de tu TELCEL o al 01 800 710 5687</string>
+    <string name="text_telcel_datos_help">Para dudas marca *264 de tu TELCEL</string>
+    <string name="text_telcel_internet_help">Al realizar una recarga de saldo aceptas los términos y condiciones en www.telcel.com o en *264</string>
+    <string name="text_movistar_help">En caso de duda marcar *611 desde tu MOVISTAR</string>
+    <string name="text_att_help">Para dudas marca *8482 desde tu AT&amp;T y al 050 desde tu UNEFON</string>
+    <string name="text_unefon_help">Para dudas marca *8482 desde tu AT&amp;T y al 050 desde tu UNEFON</string>
+    <string name="text_virgin_help">Para dudas marca desde tu VIRGIN MOBILE al *7625</string>
+    <string name="text_mas_recarga_help">Para dudas o aclaraciones de tu recarga marca al 01 800 888 8366</string>
+    <string name="text_tuenti_help">Para dudas o aclaraciones de tu recarga marca al 01 800 888 8366</string>
+    <string name="text_freedom_help">Para dudas marca *3733 desde tu FREEDOMPOP o al 01 800 953 07 43</string>
+    <string name="text_alo_help">Para dudas o aclaraciones de tu recarga marca *611 de tu ALO o al 01 552 581 3388</string>
+    <string name="text_bueno_cell_help">Para aclaraciones o preguntas de tu recarga marca sin costo al *711 o al (55) 7316 6666</string>
+
+    <string name="text_telcel_tags">TELCEL</string>
+    <string name="text_telcel_datos_tags">TELCEL AMIGO SIN LIMITE INTERNET</string>
+    <string name="text_telcel_internet_tags">TELCEL PAQUETE INTERNET AMIGO</string>
+    <string name="text_movistar_tags">MOVISTAR</string>
+    <string name="text_att_tags">AT&amp;T</string>
+    <string name="text_unefon_tags">UNEFON</string>
+    <string name="text_virgin_tags">VIRGIN MOBILE</string>
+    <string name="text_mas_recarga_tags">MAS RECARGA</string>
+    <string name="text_tuenti_tags">TUENTI</string>
+    <string name="text_freedom_tags">FREEDOM POP</string>
+    <string name="text_alo_tags">ALO</string>
+    <string name="text_bueno_cell_tags">BUENO CELL</string>
+    <string name="text_viasat_tags">VIASAT</string>
+    <string name="text_mi_movil_tags">#MI MÓVIL #MOVIL</string>
+    <string name="text_turbored_tags">TURBORED</string>
+    <string name="text_turbored_datos_tags">TURBORED DATOS</string>
+    <string name="text_space_tags">SPACE</string>
+    <string name="text_diri_tags">DIRI</string>
+    <string name="text_pillofon_tags">PILLOFON</string>
+    <string name="text_fobo_tags">FOBO</string>
+    <string name="text_bait_tags">BAIT</string>
+
+
+    <string name="text_telmex">Telmex</string>
+    <string name="text_sky">Sky</string>
+    <string name="text_vtv">VeTV</string>
+    <string name="text_cfe">CFE</string>
+    <string name="text_dish">Dish</string>
+    <string name="text_televia">Televia</string>
+    <string name="text_naturgy">Naturgy</string>
+    <string name="text_izzi">Izzi</string>
+    <string name="text_omnibus">Omnibus</string>
+    <string name="text_megacable">Megacable</string>
+    <string name="text_pase_urbano">Pase Urbano</string>
+    <string name="text_totalplay">Totalplay</string>
+    <string name="text_star_tv">Star TV</string>
+    <string name="text_cea_qro">CEA Queretaro</string>
+    <string name="text_netwey">Netwey</string>
+    <string name="text_veolia">Veolia</string>
+    <string name="text_amazon_cash">Amazon Cash</string>
+    <string name="text_opdm">OPDM Tlalnepantla</string>
+    <string name="text_post_att">Plan AT&amp;T</string>
+    <string name="text_post_movistar">Plan Movistar</string>
+    <string name="text_sacmex">SACMEX</string>
+    <string name="text_gob_mx">Gobierno CDMX</string>
+    <string name="text_siapa_gdl">SIAPA Guadalajara</string>
+    <string name="text_aydm_mty">AyDM Monterrey</string>
+    <string name="text_gob_edomex">Gobierno EDOMEX</string>
+    <string name="text_cespt_tij">CESPT Tijuana</string>
+    <string name="text_blue_tel">Blue Telecomm</string>
+
+    <string name="text_telmex_help">SERVICIO OPERADO POR AKINET. EL PERIODO PARA LA APLICACIÓN DEL PAGO ES DE 25 HRS. PARA CUALQUIER DUDA LLAME AL 01 800 300 0808 O 91770277</string>
+    <string name="text_sky_help">SERVICIO OPERADO POR REGALII. EL PERIODO PARA LA APLICACIÓN DE PAGO ES DE 24 HORAS. PARA CUALQUIER DUDA LLAME A SKY 51690000 Y 01 800 475 9759</string>
+    <string name="text_vtv_help">SERVICIO OPERADO POR REGALII. EL PERIODO PARA LA APLICACIÓN DE PAGO ES DE 24 HORAS. PARA CUALQUIER DUDA LLAME A SKY 51690000 Y 01 800 475 9759</string>
+    <string name="text_cfe_help">GRACIAS POR SU PAGO, EL PERIODO PARA LA APLICACIÓN DEL PAGO ES DE 24 HORAS. PARA CUALQUIER DUDA LLAME A CFE AL 071 O ACUDA A SU CENTRO DE ATENCIÓN MAS CERCANO.</string>
+    <string name="text_dish_help">Para dudas y aclaraciones favor de comunicarse al 5596283474 con atención a clientes Dish</string>
+    <string name="text_televia_help">PARA DUDAS O ACLARACIONES SOBRE SU RECARGA LLAME AL 01 800 347 8238 O INGRESE A WWW.TELEVIA.COM.MX</string>
+    <string name="text_naturgy_help">SERVICIO OPERADO POR DATALOGIC. EL PERIODO PARA LA APLICACIÓN DEL PAGO ES DE 24 HRS. PARA CUALQUIER DUDA LLAME A NATURGY AL 01 800 171 3000</string>
+    <string name="text_izzi_help">SERVICIO OPERADO POR DATALOGIC. CALL CENTER IZZI 01 800 120 5000 HORARIO 24 HORAS 7 DÍAS DE LA SEMANA, PÁGINA WEB WWW.IZZI.MX</string>
+    <string name="text_omnibus_help"> </string>
+    <string name="text_megacable_help">Para dudas y aclaraciones favor de comunicarse al 3396900000 con atención a clientes Megacable</string>
+    <string name="text_pase_urbano_help">PARA ACLARACIONES Y SERVICIOS AL CLIENTE COMUNICARSE AL CENTRO DE ATENCIÓN A CLIENTES DE PASE URBANO DESDE LA CIUDAD DE MÉXICO AL 55 5950 1440 O DESDE INTERIOR DE LA REPÚBLICA AL 01 800 900 7273</string>
+    <string name="text_totalplay_help">PARA DUDAS Y ACLARACIONES COMUNICARSE DESDE LA CIUDAD DE MÉXICO Y ÁREA METROPOLITANA AL 55 1579 8000 O DESDE EL INTERIOR DE LA RÉPUBLICA AL 01 800 5100 510</string>
+    <string name="text_star_tv_help">Para aclaraciones y servicio al cliente comunicarse al 01 800 700 7827, con StarTV</string>
+    <string name="text_cea_qro_help">Para dudas y aclaraciones marque al (01 800) 9090 232 o al (442)211 066 servicio al cliente de CEA Querétaro 5 días de vigencia después de la fecha de pago para cualquier aclaración</string>
+    <string name="text_netwey_help">Para aclaraciones y servicio al cliente comunicarse al 55 4742 1245, con Netwey</string>
+    <string name="text_veolia_help">Para dudas y aclaraciones marque al 073 servicio a clientes Proactiva Medio Ambiente CAASA 5 días de vigencia después de la fecha de pago para cualquier aclaración</string>
+    <string name="text_amazon_cash_help"> </string>
+    <string name="text_opdm_help">Para dudas y aclaraciones marque al 01800-006-6736 servicio a clientes OPDM Tlalnepantla. 5 días de vigencia después de la fecha de pago para cualquier aclaración</string>
+    <string name="text_post_att_help">Para dudas y aclaraciones favor de comunicarse vía whatsapp al 5569329582 o al *611 desde tu AT&amp;T</string>
+    <string name="text_post_movistar_help">Para dudas y aclaraciones favor de comunicarse vía whatsapp al 5616404000 Atención al cliente Movistar</string>
+    <string name="text_sacmex_help">Para atención al cliente favor de comunicarse al 5555883388 con la Secretaria de Administración y Finanzas.</string>
+    <string name="text_gob_mx_help">Para atención al cliente favor de comunicarse al 5555883388 con la Secretaria de Administración y Finanzas.</string>
+    <string name="text_siapa_help">Para dudas y aclaraciones favor de comunicarse al 3336682482 con atención a clientes SIAPA Guadalajara.</string>
+    <string name="text_aydm_help">Para dudas y aclaraciones favor de comunicarse al 8120336999 con atención a clientes Servicios de Agua y Drenaje de Monterrey.</string>
+    <string name="text_gob_edomex_help">Para dudas y aclaraciones favor de comunicarse al 7222261751 con la dirección de atención al contribuyente.</string>
+    <string name="text_cespt_tij_help">Para dudas y aclaraciones favor de comunicarse al 6646226000 con atención a clientes CESPT Tijuana.</string>
+    <string name="text_blue_tel_help">Para dudas y aclaraciones favor de comunicarse al 5540007100 con atención a clientes Blue Telecomm.</string>
+
+    <string name="placeholderParameterMerchantName">Nombre del comercio</string>
+    <string name="placeholderParameterMerchantStreet">Calle del comercio</string>
+    <string name="placeholderParameterUserStreet">Calle</string>
+    <string name="placeholderParameterMerchantExternalNumber">Número exterior</string>
+    <string name="placeholderParameterMerchantInternalNumber">Número interior (Opcional)</string>
+    <string name="placeholderParameterMerchantPostalCode">Código postal</string>
+    <string name="placeholderParameterMerchantSuburb">Colonia</string>
+    <string name="placeholderParameterMerchantState">Estado</string>
+    <string name="placeholderParameterMerchantMunicipality">Municipio</string>
+    <string name="placeholderParameterMerchantBimboId">Código Bimbo</string>
+    <string name="placeholderParameterMerchantQiuboID">Bimbo ID</string>
+
+    <string name="alert_message_register_without_bimbo_id_question">Para una experiencia completa necesitas un código Bimbo.\n\nSi no lo tienes, continúa tu registro e ingrésalo más tarde.</string>
+    <string name="alert_message_confirm_register_question">¿Está seguro que sus datos son correctos?</string>
+
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    <string name="update_tmk">write tmk</string>
+    <string name="update_workkey">write work key</string>
+    <string name="encrypt_workkey">work key encrypt</string>
+    <string name="input_online_pin">input online PIN</string>
+
+    <string name="print_bill">print bill</string>
+
+    <string name="prompt_cardiccrf">inert card or play card</string>
+    <string name="prompt_serachcard_fail">search card fail</string>
+    <string name="prompt_amount_err">the error format of amount</string>
+
+    <string name="prompt_return">the value of return</string>
+    <string name="prompt_cardtype">the final card type</string>
+    <string name="prompt_cardslot">card slot type</string>
+    <string name="prompt_track1">one track</string>
+    <string name="prompt_track2">two track</string>
+    <string name="prompt_track3">three track</string>
+    <string name="prompt_cardno">card number</string>
+
+    <string name="input_amount">input amount</string>
+    <string name="is_ecash">Whether to use electronic cash</string>
+    <string name="ensure_cardno">please ensure card number</string>
+    <string name="input_pin_err">input pin failed</string>
+    <string name="result">result</string>
+
+    <string name="scanner_content">Scan code content</string>
+    <string name="scanner_timeout">Scan code overtime</string>
+    <string name="scanner_customer_exit">customer exit</string>
+    <string name="scanner_fail">Scan code fail</string>
+    <string name="scanner_start_error">start fail</string>
+    <string name="scanner_init_error">init fail</string>
+
+    <string name="print_merchantname">merchant name:app test</string>
+    <string name="print_merchantno">merchant no:123456789012345</string>
+    <string name="print_terminalno">terminal no:12345678</string>
+    <string name="print_operator">operator:01</string>
+    <string name="print_issurebank">issuing bank:icbc</string>
+    <string name="print_shoudan">acquiring bank:icbc</string>
+    <string name="print_expiredate">exp date:26/06</string>
+    <string name="print_cardinfo">621226*********1197/C</string>
+    <string name="print_tradetype">trans type:</string>
+    <string name="print_unsale">unsale</string>
+    <string name="print_batchno">batch no:000938</string>
+    <string name="print_voucher">voucher no:000146</string>
+    <string name="print_authorcode">auth no:012345</string>
+    <string name="print_refrenceno">refer no:150303296481</string>
+    <string name="print_tradedate">date/time:2016/09/21 15:03:03</string>
+    <string name="print_amount">amount:</string>
+    <string name="print_beizhu">reference:</string>
+    <string name="print_originalvoucher">orig voucher no:000145</string>
+    <string name="print_addinfo">additional information(Host):</string>
+    <string name="print_barcode">1234567890</string>
+    <string name="print_qrcode">test qrcode</string>
+    <string name="print_cardhold">CARDER:</string>
+    <string name="print_cardhold_ensure">I ACKNOWLEDGE SATISFACTORY RECEIPT OF RELATIVE  GOODS/SERVICES</string>
+    <string name="print_merchant_dan">MERCHANT COPY</string>
+
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="prompt_enter">enter</string>
+    <string name="prompt_cancel">cancel</string>
+
+    <string name="swipe_again">swipe again</string>
+    <string name="search_toomany_cards">search too many cards</string>
+    <string name="is_iccard">is ICC</string>
+    <string name="serialport_connect_success">serialport connect success</string>
+    <string name="serialport_connect_fail">serialport connect fail</string>
+    <string name="cpucard_poweron_have_return_value">cpucard powerOn have return value</string>
+    <string name="cpucard_test">cpucard test</string>
+    <string name="m1card_readblock_success">M1Card readBlock SUCCESS</string>
+    <string name="m1card_test">M1Card test</string>
+    <string name="getting_datas">getting datas...</string>
+    <string name="encryption_fail">encryption fail</string>
+    <string name="cardnum">Card Num</string>
+    <string name="money">    RMB:123456789.00</string>
+
+    <string name="dukpt">DUKPT</string>
+    <string name="dukptencryptfail">dukpt encrypt fail</string>
+
+    <string name="text_migration_1">Folio de migración</string>
+    <string name="text_migration_2">IMPORTANTE: Se ha detectado que su cuenta \nes susceptible a ser migrada, para esto \nes necesario que proporcione el número de folio \nque le fue dado por nuestra área de soporte.</string>
+    <string name="text_migration_3">Confirmación de correo</string>
+    <string name="text_migration_4">ATENCIÓN: Es necesario que confirme o actualice su correo electrónico para continuar con el proceso.</string>
+    <string name="text_migration_5">Es necesario que finalice el proceso de migración. Por favor vincule un lector de tarjetas.</string>
+    <string name="text_migration_6">Para finalizar el proceso de migración, es necesario que vincule un lector de tarjetas.</string>
+    <string name="text_migration_7">Si no cuenta con uno con un número de folio \nllama al 55-42-12-14-17</string>
+
+    <string name="text_sp530_approved_txr">Para terminar retire la tarjeta del lector.\n\nDespués, presione el botón rojo del lector.\n</string>
+    <string name="title_activity_migracion">MigracionActivity</string>
+
+    <string name="info_dongle">
+        • Compra tu lector con tu bolsa de saldo
+        \n• Acepta Visa, MasterCard, Carnet, Vales de Despensa etc…
+        \n• Tarjeta de apoyos de Gobierno (Bansefi, Prospera, Banco del Bienestar)
+        \n• Tasa de descuento crédito y débito 3% + IVA
+        \n• Ofrece Retiros de efectivo
+        \n• Recibe pagos con Samsung Pay
+        \n• Próximamente American Express
+        \n• Conexión vía Bluetooth
+        \n• Batería de larga duración
+    </string>
+
+    <string-array name="benefits_array">
+        <item>• Compra tu lector con tu bolsa de saldo</item>
+        <item>• Acepta Visa, MasterCard, Carnet, Vales de Despensa etc…</item>
+        <item>• Tarjeta de apoyos de Gobierno (Bansefi, Prospera, Banco del Bienestar)</item>
+        <item>• Tasa de descuento crédito y débito 3% + IVA</item>
+        <item>• Ofrece Retiros de efectivo</item>
+        <item>• Recibe pagos con Samsung Pay</item>
+        <item>• Acepta American Express</item>
+        <item>• Conexión vía Bluetooth</item>
+        <item>• Batería de larga duración</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text_reportar_problema_1">Obtener soporte</string>
+
+    <string name="text_apuestas_title">Apuestas \n<b>Deportivas</b></string>
+    <string name="text_apuestas_deportivas">Apuestas deportivas</string>
+    <string name="text_consultar_premio">Consultar premio</string>
+
+    <!-- Compra de dongle -->
+    <string name="compra_dongle_title">Lector de tarjetas</string>
+    <string name="compra_dongle_1_saldo_insuficiente">"No cuenta con saldo suficiente para realizar esta operación."</string>
+    <string name="compra_dongle_2_confirmacion">¡Compra exitosa!\nEn unos momentos recibirá un correo confirmando su compra.</string>
+
+    <string name="compra_rollos_title">Paquete\n<b>de Rollos</b></string>
+
+    <!-- New financial onboarding -->
+    <string name="registro_financiero_title">Aceptación de tarjetas</string>
+    <string name="financiero_cus_1_title">Cuenta bancaria para depósito de ventas</string>
+    <string name="financiero_cus_1_desc">Para aceptar tarjetas puedes abrir o registrar una cuenta, solo necesitas:  \n\n• Identificación INE \n• Comprobante de domicilio \n• Estado de cuenta (Solo si ya tienes una cuenta que te gustaría registrar)</string>
+    <string name="financiero_cus_1_ya_tengo">Si ya tienes una cuenta bancaria que te gustaría registrar necesitarás un estado de cuenta, un comprobante de domicilio y tu identificación INE</string>
+    <string name="financiero_cus_1_abrir">Para iniciar el proceso para aceptación de tarjetas requieres:  \nIdentificación INE \nComprobante de domicilio \nEstado de cuenta (Solo si ya tienes una cuenta que te gustaría registrar)</string>
+    <string name="financiero_ocr_1_foto">Al abrir la cámara coloca tu identificación de tal forma que la linea roja quede al centro, la foto se tomará automáticamente tras algunos segundos</string>
+    <string name="financiero_ocr_1_foto_frente">Por favor coloca tu identificación de frente y de tal forma que la linea roja que aparecerá en pantalla quede al centro, la foto se tomará automáticamente tras algunos segundos</string>
+    <string name="financiero_ocr_1_foto_detras">Por favor coloca tu identificación al reverso y de tal forma que la linea roja que aparecerá en pantalla quede al centro, la foto se tomará automáticamente tras algunos segundos</string>
+    <string name="financiero_ocr_1_foto_auto_detras">Por favor ahora coloca el reverso de tu identificación, nuevamente la foto se tomará tras algunos segundos</string>
+
+    <string name="allmarcas"><a href="/">Ver todas las marcas</a></string>
+    <string name="allproveedores"><a href="/">Ver todas los vendedores</a></string>
+
+    <string name="text_contacto_cel"><a href="/">55 4631 9740</a></string>
+
+    <string name="alert_message_confirm_send_question">Tu pedido actual es de $ 1250.00 \n El anterior fue de $ 450.00 \n ¿Desea enviar el pedido?</string>
+    <string name="confirmation">Confirmación de pedido</string>
+    <string name="help_upgrade">Ayúdanos a mejorar nuestro servicio</string>
+    <string name="evaluation">Evalúa a tus vendedores</string>
+    <string name="text_deseos_1">Debes ingresar tus pedidos 48 horas antes de tu visita programada. <b>Pedido sujeto a disponibilidad.</b></string>
+    <string name="developing">En desarrollo</string>
+    <string name="btn_send">Enviar</string>
+    <string name="btn_cancel">Cancelar</string>
+    <string name="authorize_fincomun">Autorizo a Fincomún para que realice \nconsultas de mi historial crediticio</string>
+    <string name="consent">Doy mi consentimiento de forma voluntaria y con \nprevio conocimiento del aviso de privacidad de \nFincomún y el del Instituto Nacional Electoral \n(INE) para que los datos contenidos en mi \ncredencial de elector sean proporcionados al INE \npara su verificación y, en su caso, para la \nprestación del servicio que en este acto solicito. </string>
+
+    <!-- Alerts -->
+    <string name="how_payment"><b>¿Cómo pagar?</b>\n\n Pudes realizar tu pago en los siguientes canales:\n\n<b>Referencia OXXO</b>:1234567890098765\n\n <b>Clabe interbancaria</b>:567812345678983\n\n <b>Referencia Chedraui</b>: 12345678900987651\n\n <b>Referencia Telecom</b>: 1223456789\n\n<b>CIE BBVA</b>: 123456789009 convenio 12345678</string>
+    <string name="confirmar">Hemos enviado el  pedido y hemos avisado \n que te gustaria pagar con Crédito pesito.\nRecuerda que está sujeto a disponibilidad</string>
+    <string name="send_evaluation">Evaluación enviada \n\n Gracias, con tu evaluación nos ayudas \n a mejorar</string>
+    <string name="need_help">¿Necesitas ayuda? Si algo salió mal durante la visita  o \n necesitas ayuda, contáctanos</string>
+    <string name="ready_title">¡Listo!</string>
+    <string name="ready">Le avisaremos a tu vendedor que estás interesado en el crédito Pesito</string>
+    <string name="requerimentsTitle">Requisitos</string>
+    <string name="requeriments">Para continuar con tu solicitud es \n necesario contar con los siguientes \n documentos e información \n\n - INE/IFE\n- Comprobante de domicilio \n - Datos de ventas diarias \n - Datos de gastos del negocio\n- Información sobre gastos familiares \n - Subir fotos del negocio </string>
+    <string name="type_ine_"><b>Elige el tipo de INE</b>\n\n Selecciona el tipo de INE que \n corresponde co la que tienes.\n Recuerda que el tipo de INE "nueva" es\n la que tiene códigos QR en la parte\n trasera.</string>
+    <string name="need_help_title">¿Necesitas ayuda?</string>
+    <string name="need_help_phone">Si tienes consultas sobre cómo\n completar el formulario, puedes \n contactar a Soporte el Cliente: \n\n 55 4631 9740 </string>
+    <string name="choose_ine">Elige el tipo de INE \n\n Selecciona el tipo de INE que \n corresponde con la que tienes. \n Recuerda que el tipo de INE ´nueva` es \n la que tiene códigos QR en la parte \n trasera</string>
+    <string name="captured_ine_front">Captura el frente de tu INE \n\n Toma la foto lo más legible posible \n para que tus datos se tomen de \n manera automática y no tengas que \n corregirlos. </string>
+    <string name="captured_ine_reverse">Ahora captura el reverso \n\n de tu INE \n Toma la foto lo más legible posible \n para que tus datos se tomen de \n manera automática y no tengas que \n corregirlos. </string>
+    <string name="front"><b>Captura el frente de tu INE</b></string>
+    <string name="reverse"><b>Captura el reverso \n de tu INE</b></string>
+    <string name="verification"><b>Código de verificación</b></string>
+    <string name="sms">Enviamos un SMS a tu celular \n registrado con un código de\n verificación. Por favor, ingréselo aquí:</string>
+    <string name="time">Segundos restantes para ingresar \nel código de verificación:</string>
+    <string name="hola"><p style="color:#FF0000">Red paragraph text</p></string>
+    <string name="front_reverse">Toma la foto lo más legible posible\n para que tus datos se tomen de\n manera automática y no tengas que\n corregirlos.</string>
+    <string name="solicit_autorization">Conforme al artículo 28 de la Ley para\nRegular las Sociedades de\nInformación Crediticia, en forma\nFirmar de forma digital: expresa autorizo a Fincomún Servicios Financieros Comunitarios, S.A. de C.V., S.F.P., para que por conducto de sus funcionarios facultados, lleve a cabo investigaciones sobre mi comportamiento crediticio en las Sociedades de Información Crediticia que estime convenientes.</string>
+    <string name="captured_viso">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu lectus suscipit, commodo sapien sed, luctus ligula. Morbi at magna convallis, facilisis ex a, sagittis urna. Phasellus eget justo at ipsum volutpat vulputate quis sed dolor.\n\n
+
+    Cras fermentum dui et lorem molestie, eu ultrices ipsum fringilla. Ut sed tristique nisi. Ut volutpat venenatis pellentesque. Etiam tempor mi nibh, vitae imperdiet diam fermentum at. Sed egestas dapibus felis non porttitor.\n\n
+
+    Vivamus efficitur lorem eu nibh mollis, et ultrices sapien mollis. Suspendisse sagittis ac turpis ut egestas. Cras tincidunt rhoncus sollicitudin. Praesent eget mauris leo.\n\n
+
+    Aenean ligula orci, lobortis sed facilisis ac, hendrerit non enim. Integer id ipsum lectus. Praesent eu aliquam justo, sit amet tempor urna. Pellentesque dignissim et ligula sit amet dapibus.\n\n
+
+    Aenean maximus magna at libero dapibus, quis imperdiet purus fringilla. Nam imperdiet scelerisque commodo. Vestibulum aliquam nisi ligula, non tincidunt mauris luctus sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+    </string>
+
+    <string name="ws_error_general">No se pudo contactar\ncon el servidor\nHTTP Status Code</string>
+
+    <string name="anio_registro">Año de registro</string>
+    <string name="anio_emision">Año de emisión</string>
+    <string name="take_document">Toma la foto lo más legible posible\npara que tus datos se tomen sean legible.</string>
+    <string name="title_buro">Aviso importante</string>
+
+    <string name="title_check_17">Declaro conocer el contenido de los documentos enlistados, mismos que se encuentran disponibles en el Registro de Contratos de Adhesión de la CONDUSEF con el número de RECA: <b>1555-003-032225/01-04570-1019 y 1555-439-032675/01-00458-0220</b></string>
+
+    <string name="title_proceso_exitoso">¡Proceso exitoso!</string>
+    <string name="text_proceso_exitoso"> En un periodo no mayor a 24 horas recibirás vía SMS la siguiente información: Pagaré del Crédito 1) Confirmación de Desembolso de tu Crédito Contrato de servicios electrónicos de 2) McounetnotaDedseeDmebpoólsiatodo y Crédito 3) Número de Cliente 4) Número de Crédito Declaro conocer el contenido de los documentos enlistados, mismos que se encuentran disponibles en el Registro de Recuerda que en cualquier momento podrás ponerte en contacto con nosotros a través de nuestros canales de comunicación.</string>
+
+    <string name="text_title_inicio">Bienvenido a T-Conecta</string>
+    <string name="text_mis_prestamos">Para mayor información <b>contacta al\nSoporte al Cliente</b></string>
+    <string name="text_mis_importamte"><b>Importante</b>: Recuerda que tu cuenta solo podrá ser utilizada para realizar pagos a tu crédito</string>
+
+    <string name="win_more"><b>Gana Más</b>\nActivación de Oferta:</string>
+    <string name="increase_sell"><b>Incrementa tus Ventas</b>\nPedidos:</string>
+    <string name="evaluate_sellers"><b>Evalua a tus vendedores</b>\npor evaluación: </string>
+    <string name="advantge_money"><b>Aprovecha tu Dinero:</b></string>
+    <string name="payment_service"><b>Pagos de Servicios:</b></string>
+    <string name="card_payments"><b>Pagos con Tarjeta:</b></string>
+    <string name="punctual_payments"><b>Pagos Puntuales\nCredito Fincomun:</b></string>
+    <string name="updatelabel"><a href="/">Actualizar</a></string>
+
+    <!-- MultiUser -->
+
+    <string name="text_multi_title">Cajero / Patrón</string>
+    <string name="text_multi_title_cajero">Cajero</string>
+    <string name="text_multi_title_patron">Patrón</string>
+
+    <string name="text_multi_1_title">Elige una opción</string>
+    <string name="text_multi_1_option_1">Agregar cajero</string>
+    <string name="text_multi_1_option_2">Agregar patrón</string>
+
+    <string name="text_multi_2_title">Agregar cajero</string>
+    <string name="text_multi_2_desc">Comparte este código de registro con el cajero para que pueda asociarse a tu cuenta.</string>
+    <string name="text_multi_2_code">Código generado</string>
+    <string name="text_multi_2_share">Compartir código</string>
+    <string name="text_multi_2_qr">O muéstrale este QR</string>
+
+    <string name="text_multi_3_title">Agregar patrón</string>
+    <string name="text_multi_3_desc">Ingresa el código de registro que recibiste.</string>
+    <string name="text_multi_3_code">Código de registro</string>
+    <string name="text_multi_3_codehint">Ingresa código</string>
+
+    <string name="text_multi_patron_1_desc">Para desvincularte de tu patrón y su negocio presiona eliminar patrón.</string>
+    <string name="text_multi_patron_1_delete">Eliminar patrón</string>
+
+    <string name="text_multi_cajero_1_title">Mis cajeros</string>
+    <string name="text_multi_cajero_1_add">Agregar nuevo cajero</string>
+
+    <string name="text_multi_cajero_2_alias">Alias</string>
+    <string name="text_multi_cajero_2_desc">Elige qué días de la semana estará atendiendo este cajero y cual es el máximo monto diario que cobrará.</string>
+    <string name="text_multi_cajero_2_dias_operacion">Días disponibles para operar</string>
+    <string name="text_multi_cajero_2_dayshint">LU, MA, MI, JU, VI, SA, DO</string>
+    <string name="text_multi_cajero_2_horario">Horario</string>
+    <string name="text_multi_cajero_2_monto">Monto diario permitido</string>
+    <string name="text_multi_cajero_2_cash">Puede realizar Recolección Bimbo</string>
+    <string name="text_multi_cajero_2_save">Guardar cambios</string>
+    <string name="text_multi_cajero_2_delete">Eliminar cajero</string>
+    <string name="cajero_hora_entrada">Hora entrada</string>
+    <string name="cajero_hora_salida">Hora salida</string>
+
+    <string name="cajero_sin_permiso">Operación no permitida por las restricciones de horario o privilegios declarados por el administrador de la cuenta</string>
+    <string name="cajero_sin_acceso">Operación no permitida debido a las restricciones de tu perfil</string>
+    <string name="text_login_otp_1_desc">Intentas ingresar desde un nuevo dispositivo, por tu seguridad digita el código enviado a tu correo electrónico y por SMS al teléfono registrado con terminación **last**</string>
+    <string name="text_login_otp_1_desc_sn">Intentas ingresar desde un nuevo dispositivo, por tu seguridad digita el código enviado a tu correo electrónico y por SMS al teléfono registrado</string>
+    <string name="texto_sin_transacciones">No existen transacciones registradas.</string>
+
+    <string name="multi_3_confirm_1">¿La información es correcta?\n\nNegocio: **negocio** \nPatrón:  **patron** </string>
+    <string name="multi_3_confirm_2">¿La información es correcta?\n\nPatrón:  **patron** </string>
+    <string name="multi_3_success">Ahora el patrón debe aceptarte como cajero, se te notificará cuando esto suceda</string>
+    <string name="cajero_1_confirm">¿Deseas asociar a este cajero a tu cuenta?</string>
+    <string name="cajero_1_reject">Rechazar</string>
+    <string name="cajero_1_link_success">El cajero se ha asociado a tu cuenta, ahora puedes configurar sus privilegíos de operación</string>
+    <string name="cajero_1_unlink_success">El cajero ha sido rechazado, para invitar a un cajero presiona "Agregar nuevo cajero"</string>
+    <string name="cajero_1_sin_cajeros">Te has quedado sin colaboradores asociados a tu cuenta. Si quieres volver a agregar a un cajero entra a Cajero / Patrón</string>
+    <string name="cajero_1_accept">Configurar ahora</string>
+    <string name="cajero_1_cancel">Mas tarde</string>
+    <string name="cajero_1_status_pending">Pendiente de aprobación</string>
+    <string name="cajero_1_status_linked">Asociado a la cuenta</string>
+    <string name="cajero_2_alertdays_title">Selecciona los días de operación</string>
+    <string name="cajero_2_alertschedule_error">La hora de entrada no debe ser mayor a la hora de salida</string>
+    <string name="placeholderParameterBirthDate">Fecha de nacimiento</string>
+
+    <string-array name="days_array">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miércoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sábado</item>
+        <item>Domingo</item>
+    </string-array>
+
+    <string-array name="short_days_array">
+        <item>LU</item>
+        <item>MA</item>
+        <item>MI</item>
+        <item>JU</item>
+        <item>VI</item>
+        <item>SA</item>
+        <item>DO</item>
+    </string-array>
+
+    <string name="patron_1_confirm">Esta acción desasociará tu cuenta de la cuenta de **patron**</string>
+    <string name="patron_1_success">Has desasociado tu cuenta con exito. Por favor inicia sesión nuevamente</string>
+
+    <!-- Compra de rollos -->
+    <string name="compra_rolls_title">Adquiere\n<b>tus rollos</b></string>
+
+    <!--VAS CON SALDO FINANCIERO -->
+    <string name="alert_message_financial_vas">Tu saldo se está agotando, ¿Deseas hacer uso de tu saldo de ventas con tarjeta?</string>
+
+
+    <string name="pidelo_address_title">Dirección Pídelo</string>
+    <string name="pidelo_address_text">Esta dirección se utiliza para validar los proveedores disponibles en la zona y será la dirección de entrega de tu pedido</string>
+    <string name="pidelo_address_confirm">Es correcto tu dirección de comercio: \n**address**</string>
+    <string name="pidelo_change_address_confirm">Cambiar dirección</string>
+
+    <!-- Operativa Restaurante -->
+    <string name="restaurante_1">Dividir cuenta</string>
+    <string name="restaurante_2">Cuenta</string>
+    <string name="restaurante_3">Monto a cobrar</string>
+    <string name="restaurante_btn_1">Continuar</string>
+    <string name="restaurante_btn_2">Cancelar orden</string>
+    <string name="restaurante_4">¿Dividir cuenta?</string>
+    <string name="restaurante_5">Personas a cubrir</string>
+    <string name="restaurante_percent_10">10%</string>
+    <string name="restaurante_percent_13">13%</string>
+    <string name="restaurante_percent_15">15%</string>
+    <string name="restaurante_percent_other">Otro</string>
+    <string name="restaurante_6">Pago con tarjeta</string>
+    <string name="restaurante_7">Efectivo</string>
+    <string name="restaurante_8">Total</string>
+    <string name="restaurante_9">Propina</string>
+    <string name="restaurante_10">Pago registrado con éxito.</string>
+    <string name="restaurante_11">Orden cerrada con éxito.</string>
+    <string name="restaurante_12">¿Está seguro de cancelar en su totalidad la orden?</string>
+    <string name="restaurante_13">Dividir <b>Cuenta</b></string>
+
+    <string name="promosaplicadas"><a href="/">Promociones aplicadas</a></string>
+
+
+
+    <string name="clic_here">Si tu domicilio no es el mismo que esta en tu INE o IFE <b>da clic aqui</b> para subir tu nuevo comprobante de domicilio</string>
+    <string name="leer_aviso_privacidad"><a href="/">Para leer el aviso de privacidad da clic aqui</a></string>
+
+    <string name="consentimiento">Doy mi consentimiento para contratar los\nservicios del contrato con el nùmero de\n<b>Reca 1555-003-032225/01-04570-1019</b></string>
+    <string name="dialog_image_options">Selecciona una foto</string>
+    <string name="login_new">Por favor inicia sesión con tu\nnuevo usuario y contraseña y <b>disfruta\nde todos nuestros beneficios</b></string>
+    <string name="register_5"><b>Ten a la mano tu credencial de elector vigente para iniciar tu registro</b></string>
+    <string name="b9">9</string>
+    <string name="b8">8</string>
+    <string name="b7">7</string>
+    <string name="b6">6</string>
+    <string name="b5">5</string>
+    <string name="b4">4</string>
+    <string name="b3">3</string>
+    <string name="b2">2</string>
+    <string name="b1">1</string>
+    <string name="b0">0</string>
+    <string name="divide">/</string>
+    <string name="multiply">*</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="ce">ce</string>
+    <string name="equals">=</string>
+
+
+    <string-array name="image_options">
+        <item>Galería</item>
+        <item>Cámara</item>
+    </string-array>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+    <string name="host_rs_dev">http://18.215.153.5:8080/service</string>
+    <string name="host_rs_qa">https://qtcdev2.qiubo.mx/service</string>
+    <string name="host_rs_prd">https://qtc2.qiubo.mx/service</string>
+
+    <string name="host_qtc_dev">http://18.215.153.5:8080/service</string>
+    <string name="host_qtc_qa">https://qtcdev2.qiubo.mx/service</string>
+    <string name="host_qtc_prd">https://qtc2.qiubo.mx/service</string>
+
+    <string name="menu_login">Login</string>
+    <string name="menu_login_record">Login record</string>
+    <string name="menu_recover">Recover password</string>
+    <string name="menu_register_option">Register option</string>
+    <string name="menu_pin">Access PIN</string>
+    <string name="menu_register_pin">Register PIN</string>
+    <string name="menu_payment">Pago de servicios</string>
+    <string name="menu_register">Register</string>
+    <string name="menu">Menu</string>
+
+    <string name="menu_slider">Slider</string>
+    <string name="menu_notification">Notification</string>
+    <string name="menu_quiz">Quiz</string>
+    <string name="menu_register_personal">Register Personal</string>
+    <string name="menu_register_business">Register Business</string>
+    <string name="menu_register_bimbo">Register Bimbo</string>
+
+    <string name="text_access_1">¡Bienvenido a <b>T-Conecta!</b></string>
+    <string name="text_access_2">Dirección de email</string>
+    <string name="text_access_3">Recordar usuario</string>
+    <string name="text_access_4">Contraseña</string>
+    <string name="text_access_5">He olvidado mi contraseña</string>
+    <string name="text_access_6"><b>Recupera tu cuenta</b></string>
+    <string name="text_access_7">Establece y confirma una nueva contraseña</string>
+    <string name="text_access_8">Seguridad de contraseña alta</string>
+    <string name="text_access_9">Bienvenido de nuevo</string>
+    <string name="text_access_10">Gestiona todos tus pagos</string>
+    <string name="text_access_11">Este texto describe los beneficios de\nlos servicios, de los pagos que puede\nrealizar.</string>
+    <string name="text_access_12">Genera tu\n<b>Código PIN</b></string>
+    <string name="text_access_13">Este PIN te servirá para confirmar tus operaciones</string>
+    <string name="text_access_14">Establece tu código PIN</string>
+    <string name="text_access_15">Máximo 4 caracteres numéricos</string>
+    <string name="text_access_16">Código PIN</string>
+    <string name="text_access_17">Confirmar PIN</string>
+    <string name="text_access_18">Los códigos no coinciden</string>
+    <string name="text_access_19">Las contraseñas no coinciden</string>
+    <string name="text_access_20">Introduce el código</string>
+    <string name="text_access_21">El código ingresado no es correcto</string>
+    <string name="text_access_22">Confirmar dirección de correo electronico</string>
+    <string name="text_access_23">Los correos no coinciden</string>
+    <string name="text_access_24"><u>Acepto Términos y Condiciones\ny Aviso de Privacidad</u></string>
+    <string name="text_access_25"><u>Aceptar Aviso de Privacidad</u></string>
+    <string name="text_access_26">Número celular</string>
+    <string name="text_access_27">Crea tu contraseña</string>
+    <string name="text_access_28">Ingresa y confirma los siguientes datos para continuar</string>
+    <string name="text_access_29">Activar huella dactilar</string>
+    <string name="text_access_30"><b>Registrar nuevo dispositivo</b></string>
+    <string name="text_access_31">Marca esta casilla sólo si tu código Bimbo inicia con "GB".</string>
+
+    <string name="personal_info_1">Nombre</string>
+    <string name="personal_info_2">Apellido paterno</string>
+    <string name="personal_info_3">Apellido materno</string>
+    <string name="personal_info_4">Fecha nacimiento</string>
+    <string name="personal_info_5">Género</string>
+    <string name="personal_info_6">Email</string>
+    <string name="personal_info_7">Teléfono</string>
+    <string name="personal_info_8">ID Bimbo</string>
+    <string name="personal_info_9">BLM ID</string>
+    <string name="personal_info_10">DEVICE ID</string>
+    <string name="personal_info_11">Número de cuenta</string>
+
+    <string name="negocio_info_1">Nombre</string>
+    <string name="negocio_info_2">Calle</string>
+    <string name="negocio_info_3">Exterior #</string>
+    <string name="negocio_info_4">Interior #</string>
+    <string name="negocio_info_5">Código postal</string>
+    <string name="negocio_info_6">Estado</string>
+    <string name="negocio_info_7">Municipio</string>
+    <string name="negocio_info_8">Población</string>
+    <string name="negocio_info_9">Entre calles</string>
+    <string name="negocio_info_10">Referencias</string>
+
+
+    <string name="text_alert_access_1"><b>Contraseña modificada</b></string>
+    <string name="text_alert_access_2">Tu contraseña se ha modificado\ncorrectamente</string>
+    <string name="text_alert_access_3"><b>¿No conoces tu Bimbo ID?</b></string>
+    <string name="text_alert_access_4">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, sed do\neiusmod tempor incididunt ut\nlabore et dolore magna aliqua. Ut\nenim ad minim veniam, quis\nnostrud exercitation ullamo.</string>
+    <string name="text_alert_access_5"><b>*Al menos 8 carácteres\n1 carácter en Mayúsculas\n1 Número</b></string>
+    <string name="text_alert_access_7">¿Cómo quieres <b>Registrarte</b>?</string>
+    <string name="text_alert_access_8">¡Registro correcto!</string>
+    <string name="text_alert_access_9">Te has registrado correctamente.\nHemos enviado un correo electrónico y/o sms para confirmar tu afiliacion.\nPara continuar, accede a tu bandeja de\nentrada de correo electrónico y sigue\nlas instrucciones.</string>
+    <string name="text_alert_access_cb_1">¿Qué es el\n<b>código Bimbo?</b></string>
+    <string name="text_alert_access_cb_2">Es el número que identifica a tu vendedor de Grupo Bimbo y esta ligado a tu tienda.\n\nCon este código tienes acceso a promociones y recompensas especiales con T-Conecta\n\nLo puedes encontrar en tu ticket de venta bajo el nombre: <b>\"Código de cliente\"</b> o solicitarlo a tu vendedor Bimbo.</string>
+
+    <string name="text_register_1">Datos\n<b>Personales</b></string>
+    <string name="text_register_2">Confirma tus datos</string>
+    <string name="text_register_3">Datos de acceso</string>
+    <string name="text_register_4">Tus datos personales</string>
+    <string name="text_register_5">Datos de\n<b>Comercio</b></string>
+    <string name="text_register_6">Tus datos personales</string>
+    <string name="text_register_7">Nombre del comercio</string>
+    <string name="text_register_8">Dirección</string>
+    <string name="text_register_9">Comercio</string>
+    <string name="text_register_10">Calle</string>
+    <string name="text_register_11">Número interior</string>
+    <string name="text_register_12">Número exterior</string>
+    <string name="text_register_13">Código postal</string>
+    <string name="text_register_14">Estado</string>
+    <string name="text_register_15">Municipio</string>
+    <string name="text_register_16">Población</string>
+
+
+    <string name="text_register_17">Bienvenido al <b>Registro</b></string>
+    <string name="text_register_18">Registro con Bimbo ID</string>
+    <string name="text_register_19">No conozco mi Bimbo ID</string>
+    <string name="text_register_20">Bimbo ID</string>
+
+    <string name="text_register_21">Otros datos</string>
+    <string name="text_register_22">Canal</string>
+
+    <string name="text_register_24">Sección no disponoble\nNo cuenta con un <b>Código Bimbo</b></string>
+    <string name="text_register_25">Sección no disponoble\nNo cuenta con <b>Proveedores</b></string>
+    <string name="text_register_26">Si alguien te ayudo, ingresa el número de colaborador</string>
+    <string name="text_register_27">Bimbo ID*</string>
+    <string name="text_register_28">¿Qué es mi código de cliente?</string>
+    <string name="text_register_29">Copiar el dato que aparece después de COD CLIENTE:</string>
+    <string name="text_register_30">Bimbo ID</string>
+
+    <string name="text_alert_error_access_1"><b>Bloqueo temporal</b></string>
+    <string name="text_alert_error_access_2">Has superado el limite de intentos\nde acceso. Por favor, prueba más tarde.</string>
+    <string name="text_alert_error_access_3"><b>Ups...</b></string>
+    <string name="text_alert_error_access_4">Algunos de los dos datos de acceso\nes incorrecto. Te queda un intento\nantes de bloquear tu usuario de\nforma temporal.</string>
+    <string name="text_alert_error_access_5"><b>Bloqueo permanente</b></string>
+    <string name="text_alert_error_access_6">Has superado el limite de intentos\nde acceso. Por favor, ponte en\ncontacto con nosotros para\n desbloquear el usuario.</string>
+
+    <string name="text_access_error_1">Usuario o contraseña incorrecto</string>
+    <string name="text_access_error_2">Dirección de email</string>
+    <string name="text_access_error_3"><b>Recupera tu cuenta</b></string>
+    <string name="text_access_error_4">Por favor, establece y confirma una\nnueva contraseña</string>
+    <string name="text_access_error_5">Contraseña</string>
+    <string name="text_access_error_6">Confirma contraseña</string>
+    <string name="text_access_error_7">Seguridad de contraseña muy baja</string>
+    <string name="text_access_error_8">*Al menos 8 carácteres</string>
+    <string name="text_access_error_9">1 carácter en Mayúsculas</string>
+    <string name="text_access_error_10">1 Número</string>
+    <string name="text_access_error_11">Seguridad de contraseña alta</string>
+    <string name="text_access_error_12">Seguridad de contraseña muy baja</string>
+
+    <string name="text_input_hint">Ingresar dato</string>
+    <string name="text_input_required">Campo obligatorio</string>
+    <string name="text_access_error_input_1">La contraseñas no coinciden</string>
+
+    <string name="text_register_50">Código de cliente</string>
+
+
+    <string name="text_pago_servicios_1">Todos los\n<b>pagos</b></string>
+    <string name="text_pago_servicios_2">Mi saldo T-Conecta</string>
+    <string name="text_pago_servicios_3">Generado en pagos</string>
+    <string name="text_pago_servicios_4">Cobros con tarjeta</string>
+    <string name="text_pago_servicios_5">Lorem ipsum dolor sit aemet</string>
+    <string name="text_pago_servicios_6">Pagos regionales</string>
+    <string name="text_pago_servicios_7"><b>ESCANEAR CÓDIGO DE BARRAS</b></string>
+    <string name="text_pago_servicios_8">Pago de\n<b>Suministros</b></string>
+    <string name="text_pago_servicios_9">Pago de\n<b>Tiempo aire</b></string>
+    <string name="text_pago_servicios_10"><b>CAMBIAR OPERATIVA</b></string>
+    <string name="text_pago_servicios_11">Selecciona monto</string>
+    <string name="text_pago_servicios_12">Selecciona cantidad</string>
+    <string name="text_pago_servicios_13">CONCEDER</string>
+    <string name="text_pago_servicios_14">Mínimo</string>
+    <string name="text_pago_servicios_15">Máximo</string>
+    <string name="text_pago_servicios_16"><b>Selecciona compañia</b></string>
+    <string name="text_pago_servicios_17">Debes de escoger una marca para realizar el pago</string>
+    <string name="text_pago_servicios_18">Pago de todos los servicios</string>
+    <string name="text_pago_servicios_19">Número de teléfono</string>
+    <string name="text_pago_servicios_20">Confirma número de teléfono</string>
+    <string name="text_pago_servicios_21">Pago de\n<b>tiempo servicios</b></string>
+    <string name="text_pago_servicios_22"><b>Lorem Ipsum</b></string>
+    <string name="text_pago_servicios_22_1">Lorem Ipsum</string>
+    <string name="text_pago_servicios_22_2">0.00</string>
+    <string name="text_pago_servicios_23">Debes escoger una opción</string>
+    <string name="text_pago_servicios_24">Pagos\n<b>Regionales</b></string>
+    <string name="text_pago_servicios_25"><b>Ingresa los campos requeridos</b></string>
+    <string name="text_pago_servicios_26">CFE 1 (10 dígitos)</string>
+    <string name="text_pago_servicios_27">CFE 2 (10 dígitos)</string>
+    <string name="text_pago_servicios_28">CFE 3 (10 dígitos)</string>
+    <string name="text_pago_servicios_29">Ingresa referencia</string>
+    <string name="text_pago_servicios_30">Número de teléfono</string>
+    <string name="text_pago_servicios_31">Confirma número de teléfono</string>
+    <string name="text_pago_servicios_32">Confirmación\n<b>de pago</b></string>
+    <string name="text_pago_servicios_33"><b>Confirmación de petición</b></string>
+    <string name="text_pago_servicios_34">Confirma que todo es correcto</string>
+    <string name="text_pago_servicios_35"><b>Tipo de pago:</b></string>
+    <string name="text_pago_servicios_36"><b>Referencia:</b></string>
+    <string name="text_pago_servicios_37"><b>Monto total:</b></string>
+    <string name="text_pago_servicios_38">Ingresa PIN de confirmación</string>
+    <string name="text_pago_servicios_39"><b>Filtrado de movimientos.</b></string>
+    <string name="text_pago_servicios_40">Filtra tus movimientos según el tipo de servicio, el\ntipo de operación y según la fecha.</string>
+    <string name="text_pago_servicios_41">Tipo de servicio</string>
+    <string name="text_pago_servicios_42">Tiempo servicios</string>
+    <string name="text_pago_servicios_43">Venta de Tiempo aire</string>
+    <string name="text_pago_servicios_44">Pagos\n<b>regionales</b></string>
+    <string name="text_pago_servicios_45">Tipo de operación</string>
+    <string name="text_pago_servicios_46">Cobro con tarjeta</string>
+    <string name="text_pago_servicios_47">Retiro de efectivo</string>
+    <string name="text_pago_servicios_48">Cancelar operación</string>
+    <string name="text_pago_servicios_49">Fecha</string>
+    <string name="text_pago_servicios_50">Desde</string>
+    <string name="text_pago_servicios_51">Hasta</string>
+    <string name="text_pago_servicios_52">Resumen de\n<b>movimiento</b></string>
+    <string name="text_pago_servicios_53">Pago de servicios telefónicos</string>
+    <string name="text_pago_servicios_54">Pago de todos los servicios</string>
+    <string name="text_pago_servicios_55">Pago de servicios regionales</string>
+    <string name="text_pago_servicios_56">$0.00</string>
+    <string name="text_pago_servicios_57"><b>$0,00</b></string>
+    <string name="text_pago_servicios_58"><b>TODOS</b></string>
+    <string name="text_pago_servicios_59"><b>MIS MOVIMIENTOS</b></string>
+    <string name="text_pago_servicios_60">Servicios</string>
+    <string name="text_pago_servicios_61">Regionales</string>
+    <string name="text_pago_servicios_62">Liquidados</string>
+    <string name="text_pago_servicios_63">12/11/2020</string>
+    <string name="text_pago_servicios_64">Bienvenido a\n<b>Mis Operativas</b></string>
+    <string name="text_pago_servicios_65">Pago de\n<b>tiempo aire</b></string>
+    <string name="text_pago_servicios_66">Debes escoger una marca para realizar el pago</string>
+    <string name="text_pago_servicios_67">Virgin Mobile</string>
+    <string name="text_pago_servicios_68"><b>Tiempo aire</b></string>
+    <string name="text_pago_servicios_69"><b>1234567890</b></string>
+    <string name="text_pago_servicios_70">Pagos regionales</string>
+    <string name="text_pago_servicios_71"><b>$0.00</b></string>
+    <string name="text_pago_servicios_72">TODOS</string>
+    <string name="text_pago_servicios_73"><b>$0.00</b></string>
+    <string name="text_pago_servicios_74">Recargas y pago de servicios</string>
+    <string name="text_pago_servicios_75">Pagos, retiros y cancelaciones</string>
+    <string name="text_pago_servicios_76">Recargas y\n<b>Pago de Servicios</b></string>
+    <string name="text_pago_servicios_77">Pagos de servicios</string>
+    <string name="text_pago_servicios_78">Cobros con\n<b>Tarjeta</b></string>
+    <string name="text_pago_servicios_79">Retiro de efectivo</string>
+    <string name="text_pago_servicios_80">Cancelación</string>
+    <string name="text_pago_servicios_81">Depósitos</string>
+    <string name="text_pago_servicios_82">Abono a\n<b>Mi cuenta</b></string>
+    <string name="text_pago_servicios_83">Crédito personal</string>
+    <string name="text_pago_servicios_84">Depositar a mi cuenta</string>
+    <string name="text_pago_servicios_85">Solicitar crédito Fincomún</string>
+    <string name="text_pago_servicios_86">Venta de\n<b>Tiempo aire</b></string>
+    <string name="text_pago_servicios_87">Selecciona compañía</string>
+    <string name="text_pago_servicios_88">Debes escoger una marca para realizar el pago</string>
+    <string name="text_pago_servicios_89">Pago de\n<b>Servicios</b></string>
+    <string name="text_pago_servicios_90">Ingresa monto</string>
+    <string name="text_pago_servicios_90_1">Monto</string>
+    <string name="text_pago_servicios_91">Ingresa datos</string>
+    <string name="text_pago_servicios_92">Pagos \n<b>Regionales</b></string>
+    <string name="text_pago_servicios_93">Vincular\n<b>Dispositivo</b></string>
+    <string name="text_pago_servicios_94">Pago con\n<b>Tarjeta</b></string>
+    <string name="text_pago_servicios_95">Retiro de\n<b>Efectivo</b></string>
+    <string name="text_pago_servicios_96">¿Qué operación quieres realizar?</string>
+    <string name="text_pago_servicios_97">Realiza tus pagos y recargas</string>
+    <string name="text_pago_servicios_98">Cancela Operativas</string>
+    <string name="text_pago_servicios_99">Opera y retira efectivo</string>
+    <string name="text_pago_servicios_100">Línea de\n<b>Crédito</b></string>
+    <string name="text_pago_servicios_101">Escoge tipo de búsqueda</string>
+    <string name="text_pago_servicios_102">Mis\n<b>Reportes</b></string>
+    <string name="text_pago_servicios_103">Cobros del día</string>
+    <string name="text_pago_servicios_104"><b>Transacciones</b></string>
+    <string name="text_pago_servicios_105">Remesas</string>
+    <string name="text_pago_servicios_106">Pago y consulta de remesas</string>
+
+    <string name="text_servicio_title">Pago de Servicios</string>
+
+    <string name="text_servicios_confirma_1">Confirma que todo es correcto</string>
+    <string name="text_servicios_confirma_2">Tipo de pago:</string>
+    <string name="text_servicios_confirma_2_1">Pago de Servicios</string>
+    <string name="text_servicios_confirma_3">Tipo de servicio:</string>
+    <string name="text_servicios_confirma_4">Referencia:</string>
+    <string name="text_servicios_confirma_5">Monto Total:</string>
+    <string name="text_servicios_confirma_6">*En caso de ser aplicable, se agregará la comisión del usuario al confirmar el pago</string>
+
+    <string name="text_recarga_title">Recarga Tiempo Aire</string>
+    <string name="text_recarga_paso_1">Paso 1 de 3</string>
+    <string name="text_recarga_paso_2">Paso 2 de 3</string>
+    <string name="text_recarga_paso_3">Paso 3 de 3</string>
+    <string name="text_recarga_buscar">Buscar</string>
+    <string name="text_recarga_seleccion_1">Selecciona compañía</string>
+    <string name="text_recarga_seleccion_2">Selecciona monto</string>
+    <string name="text_recarga_seleccion_3">Digita el número de celular</string>
+    <string name="text_recarga_seleccionado_1">Compañía seleccionada</string>
+    <string name="text_recarga_seleccionado_2">Monto a recargar</string>
+    <string name="text_recarga_sin_paquetes">Sin paquetes disponibles para el proveedor seleccionado</string>
+    <string name="text_recarga_confirma_1">Confirma que todo es correcto</string>
+    <string name="text_recarga_confirma_2">Tipo de pago:</string>
+    <string name="text_recarga_confirma_2_1">Recarga de tiempo aire</string>
+    <string name="text_recarga_confirma_3">Compañia:</string>
+    <string name="text_recarga_confirma_4">Número de celular:</string>
+    <string name="text_recarga_confirma_5">Monto total:</string>
+
+    <string name="text_recarga_ticket_monto">Monto:</string>
+    <string name="text_recarga_ticket_tel">Teléfono:</string>
+    <string name="text_recarga_ticket_autorizacion">Autorización:</string>
+    <string name="text_recarga_ticket_folio">Folio:</string>
+    <string name="text_recarga_ticket_transaccion">No. Transacción:</string>
+    <string name="text_recarga_ticket_tienda">Tienda:</string>
+    <string name="text_recarga_ticket_recuerda">Recuerda que en T-Conecta también puedes pagar Dish, Sky, CFE, Telmex, VeTV y Televia.</string>
+    <string name="text_recarga_ticket_gracias">¡GRACIAS POR SU VISITA!</string>
+    <string name="text_recarga_ticket_comprobante">ESTE NO ES UN COMPROBANTE FISCAL.</string>
+
+    <string name="text_operativas_1">Ver Todos</string>
+    <string name="text_operativas_2">Recargas</string>
+    <string name="text_operativas_3">Pago de servicios</string>
+    <string name="text_operativas_4">Operaciones con tarjeta</string>
+    <string name="text_operativas_5">Cargos y abonos</string>
+    <string name="text_operativas_6">Pagos Regionales</string>
+    <string name="text_operativas_7">Total de tiempo aire y pago de servicios</string>
+    <string name="text_operativas_8">Total de pagos y retiros con tarjeta</string>
+    <string name="text_operativas_9">Reporte financiero</string>
+
+    <string name="text_soporte_0">Reportar un\n<b>Problema</b></string>
+    <string name="text_soporte_1">Enviar \n<b>Formulario</b></string>
+    <string name="text_soporte_2">Motivo de contacto</string>
+    <string name="text_soporte_3">Categoria</string>
+    <string name="text_soporte_4">Número de Cliente Bimbo</string>
+    <string name="text_soporte_5">Nombre del negocio</string>
+    <string name="text_soporte_6">Código postal</string>
+    <string name="text_soporte_7">Celular</string>
+    <string name="text_soporte_8">Motivo de contacto</string>
+    <string name="text_soporte_9">Categoría</string>
+    <string name="text_soporte_10">Mensaje</string>
+    <string name="text_soporte_11">Ayuda\n<b>T-Conecta</b></string>
+    <string name="text_soporte_12">¿Cómo podemos ayudarte?</string>
+    <string name="text_soporte_13">Si tienes cualquier duda respecto al uso o funcionalidad de la aplicación, nos puedes contactar a través del teléfono de contacto o rellenando un formulario.</string>
+    <string name="text_soporte_14">Preguntas Frecuentes</string>
+    <string name="text_soporte_15">Mi histórico de ayudas</string>
+    <string name="text_soporte_16">¿Cómo deseas pedir ayuda?</string>
+    <string name="text_soporte_17">Reportar un problema</string>
+    <string name="text_soporte_18">A través de chat</string>
+    <string name="text_soporte_19">Llamar a soporte</string>
+    <string name="text_soporte_20">WhatsApp</string>
+    <string name="text_soporte_21">Chat</string>
+    <string name="text_soporte_22">Llámanos por teléfono al *phone*</string>
+    <string name="text_soporte_23">Escribenos por whatsapp (*phone*)</string>
+    <string name="text_soporte_24">Manual de usuario</string>
+    <string name="text_soporte_25">Tipo de error</string>
+    <string name="text_soporte_26">Descripción del error (opcional)</string>
+    <string name="text_soporte_27">Descripción del error</string>
+
+    <string name="text_alert_pago_servicios_1"><b>Operación realizada con\néxito</b></string>
+    <string name="text_alert_pago_servicios_2">Tras la recarga su saldo es de:</string>
+
+    <string name="text_error_pago_servicios_1">CFE 1 (10 dígitos)</string>
+    <string name="text_error_pago_servicios_2">CFE 2 (10 dígitos)</string>
+    <string name="text_error_pago_servicios_3">CFE 3 (10 dígitos)</string>
+    <string name="text_error_pago_servicios_4">Error en los datos introducidos</string>
+    <string name="text_error_pago_servicios_5">Los campos no coinciden</string>
+    <string name="text_error_pago_servicios_6">Los números no coinciden</string>
+
+    <string name="text_pedidos_1">Realiza tus\n<b>Pedidos</b></string>
+    <string name="text_pedidos_2"><b>Ofertas para ti</b></string>
+    <string name="text_pedidos_3">Estas son tus ofertas</string>
+    <string name="text_pedidos_4">Ofertas por marcas</string>
+    <string name="text_pedidos_5">Producto destacado</string>
+    <string name="text_pedidos_6">Mis pedidos</string>
+    <string name="text_pedidos_7">Mis últimas compras</string>
+    <string name="text_pedidos_8">Realizado el</string>
+    <string name="text_pedidos_9"><b>Compra por marca</b></string>
+    <string name="text_pedidos_10">Compra productos de tus marcas deseadas</string>
+    <string name="text_pedidos_11"><b>Compra por categoría</b></string>
+    <string name="text_pedidos_12">Estas son las categorías de producto</string>
+    <string name="text_pedidos_13">Pedidos</string>
+    <string name="text_pedidos_14"><b>Ofertas para todos</b></string>
+    <string name="text_pedidos_15">Estas son las ofertas</string>
+    <string name="text_pedidos_16"><b>Ofertas marca 1</b></string>
+    <string name="text_pedidos_17"><b>Ofertas marca 2</b></string>
+    <string name="text_pedidos_18"><b>Categoría 01</b></string>
+    <string name="text_pedidos_19">Estos son los productos</string>
+    <string name="text_pedidos_20"><b>Categoría 02</b></string>
+    <string name="text_pedidos_21"><b>Categoría 03</b></string>
+    <string name="text_pedidos_22"><b>Categoría 04</b></string>
+    <string name="text_pedidos_23"><b>Pedido 01</b></string>
+    <string name="text_pedidos_24">Esta es tu compra</string>
+    <string name="text_pedidos_25"><b>Pedido 02</b></string>
+    <string name="text_pedidos_26"><b>Pedido 03</b></string>
+    <string name="text_pedidos_27"><b>Pedido 04</b></string>
+    <string name="text_pedidos_28"><b>Marca 01</b></string>
+    <string name="text_pedidos_29">Estas son las ofertas para ti</string>
+    <string name="text_pedidos_30"><b>Marca 02</b></string>
+    <string name="text_pedidos_31"><b>Marca 03</b></string>
+    <string name="text_pedidos_32">Estas son las ofertas</string>
+    <string name="text_pedidos_33">Las ofertas por marca</string>
+    <string name="text_pedidos_34">Pide tu<b>\ntarjeta\nT-Conecta</b> </string>
+
+    <string name="text_proceso_pedidos_1">Por solo $2 mes\n<b>hazte premium</b></string>
+    <string name="text_proceso_pedidos_2"><b>MÁS INFORMACIÓN</b></string>
+    <string name="text_proceso_pedidos_3"><b>Elige método de pago premium</b></string>
+    <string name="text_proceso_pedidos_4">Método de pago premium</string>
+    <string name="text_proceso_pedidos_5">Cargar a mi monedero</string>
+    <string name="text_proceso_pedidos_6">Lorem ipsum dolor sit aemet</string>
+    <string name="text_proceso_pedidos_7"><b>Tus datos personales</b></string>
+    <string name="text_proceso_pedidos_8">Estos son tus datos para hacerte Premium</string>
+
+    <string name="text_proceso_pedidos_09">Nombre</string>
+    <string name="text_proceso_pedidos_010">Primer apellido</string>
+    <string name="text_proceso_pedidos_011">Segundo apellido</string>
+    <string name="text_proceso_pedidos_012"><b>Tus datos de comercio</b></string>
+
+    <string name="text_proceso_pedidos_9">Nombre de tienda</string>
+    <string name="text_proceso_pedidos_10">Dirección</string>
+    <string name="text_proceso_pedidos_11">Cobrar con tarjeta</string>
+    <string name="text_proceso_pedidos_12">Pagar en punto de entrega</string>
+
+    <string name="text_proceso_pedidos_13">Pagar con puntos Bimbo</string>
+    <string name="text_proceso_pedidos_14"><b>Tramitando\npago</b></string>
+    <string name="text_proceso_pedidos_15"><b>Coste total</b></string>
+    <string name="text_proceso_pedidos_16">Élige método de pago</string>
+    <string name="text_proceso_pedidos_17">Todos los productos categorizados</string>
+    <string name="text_proceso_pedidos_18"><b>Datos de tarjeta</b></string>
+    <string name="text_proceso_pedidos_19">Lorem ipsum</string>
+    <string name="text_proceso_pedidos_20">Número de tarjeta</string>
+    <string name="text_proceso_pedidos_21">Fecha de caducidad</string>
+    <string name="text_proceso_pedidos_22">CCV</string>
+    <string name="text_proceso_pedidos_23">Guardar tarjeta</string>
+    <string name="text_proceso_pedidos_24"><b>Pedido realizado\ncon éxito</b></string>
+    <string name="text_proceso_pedidos_25"><b>Datos de tarjeta</b></string>
+    <string name="text_proceso_pedidos_26">Gracias por usar nuestro servicio.\nTu compra ha sido añadida a los gastos\nde tu libreta y los productos restados a\ntu stock</string>
+    <string name="text_proceso_pedidos_27">¿Quieres enviar tu pedido a la aplicación de clientes para que puedan\nseguir comprando?</string>
+    <string name="text_proceso_pedidos_28"><b>Pagar en entrega</b></string>
+    <string name="text_proceso_pedidos_29"><b>Datos de entrega</b></string>
+    <string name="text_proceso_pedidos_30">Código postal</string>
+    <string name="text_proceso_pedidos_31">Ciudad</string>
+    <string name="text_proceso_pedidos_32">Guardar dirección de entrega</string>
+    <string name="text_proceso_pedidos_33">Usar puntos Bimbo</string>
+    <string name="text_proceso_pedidos_34"><b>Mi\nPedido</b></string>
+    <string name="text_proceso_pedidos_35">Tu pedido</string>
+    <string name="text_proceso_pedidos_36">Estos son tus productos seleccionados</string>
+    <string name="text_proceso_pedidos_37">Nombre del producto</string>
+    <string name="text_proceso_pedidos_38">Más info si hace falta</string>
+    <string name="text_proceso_pedidos_39"><b>Hazte Premium</b></string>
+    <string name="text_proceso_pedidos_40">Hazte premium por $2 al mes y obtén tu\npedido en menos de 4h</string>
+    <string name="text_proceso_pedidos_41">QUIERO SER PREMIUM</string>
+    <string name="text_proceso_pedidos_42"><b>Resumen de pedido</b></string>
+    <string name="text_proceso_pedidos_43">Confirmación de pedido</string>
+    <string name="text_proceso_pedidos_44">Total artículos:</string>
+    <string name="text_proceso_pedidos_45">Fecha de entrega estimada:</string>
+    <string name="text_proceso_pedidos_46">Monto total del pedido:</string>
+    <string name="text_proceso_pedidos_47"><b>Tramitando su pedido con Premium</b></string>
+    <string name="text_proceso_pedidos_48">Su pedido llegará en menos de 4 horas</string>
+    <string name="text_proceso_pedidos_49">ENTENDIDO</string>
+    <string name="text_proceso_pedidos_50"><b>Introduce tu código PIN</b></string>
+    <string name="text_proceso_pedidos_51">Obligatorio por motivos de seguridad</string>
+    <string name="text_proceso_pedidos_52">PIN</string>
+    <string name="text_proceso_pedidos_53">He olvidado mi código PIN</string>
+    <string name="text_proceso_pedidos_54">Código PIN</string>
+    <string name="text_proceso_pedidos_55"><b>Lorem ipsum</b></string>
+    <string name="text_proceso_pedidos_56"><b>Mi\nPedido</b></string>
+    <string name="text_proceso_pedidos_57"><b>dd/mm/aa</b></string>
+    <string name="text_proceso_pedidos_58"><b>140</b></string>
+    <string name="text_proceso_pedidos_59">Ver todos</string>
+    <string name="text_pedidos_60">MIS PEDIDOS</string>
+    <string name="text_pedidos_61">OFERTAS</string>
+    <string name="text_pedidos_62">MARCAS</string>
+    <string name="text_proceso_pedidos_63"><b>VER TODO</b></string>
+    <string name="text_pedidos_64">CATEGORÍAS</string>
+    <string name="text_pedidos_65">Pan de molde\nintegral</string>
+    <string name="text_pedidos_66">Verduras y\nhortalizas</string>
+    <string name="text_pedidos_67">VER TODO</string>
+
+
+    <string name="text_pedidos_68">Mis\n<b>Comisiones</b></string>
+    <string name="text_pedidos_69">Estas son tus comisiones del día</string>
+    <string name="text_pedidos_70">Saldo de tiempo aire y pago de servicios</string>
+    <string name="text_pedidos_71">Mi\n<b>Saldo</b></string>
+    <string name="text_pedidos_72">Saldo de pagos y retiros con tarjeta</string>
+
+    <string name="text_alert_proceso_pedidos_1"><b>Gracias por usar pedido\nPremium</b></string>
+    <string name="text_alert_proceso_pedidos_2">Tu compra por valor de $100\nllegará en menos de 4 horas</string>
+    <string name="text_alert_proceso_pedidos_3"><b>Bienvenido a Premium</b></string>
+    <string name="text_alert_proceso_pedidos_4">Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, sed do\neiusmod tempor incididunt ut\nlabore et dolore magna aliqua. Ut\nenim ad minim veniam, quis\nnostrud exercitation ullamco.</string>
+
+    <string name="text_quiz_1">Responder\n<b>pregunta 1/3</b></string>
+    <string name="text_quiz_2">Pregunta número uno para poder extraer datos sobre el usuario</string>
+    <string name="text_quiz_3">Respuesta número 1</string>
+
+    <string name="text_button_1">ACCEDER</string>
+    <string name="text_button_2">CREAR UNA CUENTA</string>
+    <string name="text_button_3">CAMBIAR CONTRASEÑA</string>
+    <string name="text_button_5">LLAMAR</string>
+    <string name="text_button_6">REGISTRO CON FB</string>
+    <string name="text_button_7">ACEPTAR</string>
+    <string name="text_button_10">CAMBIAR CONTRASEÑA</string>
+    <string name="text_button_11">CARGAR SALDO</string>
+    <string name="text_button_13">CANCELAR</string>
+
+    <string name="text_button_14">HACERME PREMIUM</string>
+    <string name="text_button_15">FINALIZAR PEDIDO</string>
+    <string name="text_button_16">ACEPTAR</string>
+    <string name="text_button_17">SUMAR PEDIDO PARA CLIENTES</string>
+    <string name="text_button_18">SEGUIR COMPRANDO</string>
+
+    <string name="text_button_19">CARGAR SALDO</string>
+    <string name="text_button_20">REALIZAR PAGO</string>
+    <string name="text_button_21">SELECCIONAR</string>
+    <string name="text_button_22">CONFIRMAR PAGO</string>
+    <string name="text_button_23">CONFIRMAR</string>
+    <string name="text_button_23_1">REALIZAR RECARGA</string>
+    <string name="text_button_24">APLICAR FILTROS</string>
+    <string name="text_button_25">DESCARGAR MOVIMIENTOS</string>
+    <string name="text_button_26">BIMBO ID</string>
+    <string name="text_button_27">FACEBOOK</string>
+    <string name="text_button_28">GOOGLE</string>
+    <string name="text_button_29">Este no es mi usuario</string>
+
+    <string name="text_button_30">OMITIR</string>
+    <string name="text_button_31">VALIDAR PIN</string>
+
+    <string name="text_button_32">SIGUIENTE</string>
+    <string name="text_button_33">ENVIAR DATOS</string>
+    <string name="text_button_34">CONFIRMAR DATOS</string>
+    <string name="text_button_35">VALIDAR BIMBO ID</string>
+
+    <string name="text_button_36">OK</string>
+    <string name="text_button_37">CONTINUAR</string>
+    <string name="text_button_38">ENVIAR</string>
+
+    <string name="text_button_39">EMAIL</string>
+
+    <string name="text_button_40">ACCEDER CON EMAIL</string>
+    <string name="text_button_41">ACCEDER CON FACEBOOK</string>
+    <string name="text_button_42">ACCEDER CON GMAIL</string>
+    <string name="text_button_43">INGRESAR PIN</string>
+    <string name="text_button_44">CONSULTAR</string>
+    <string name="text_button_45">REALIZAR RETIRO</string>
+    <string name="text_button_46">OMITIR</string>
+    <string name="text_button_47">TERMINAR</string>
+    <string name="text_button_48">QUIERO SABER MAS</string>
+    <string name="text_button_49">BUSCAR</string>
+    <string name="text_button_50">PEDIR AYUDA</string>
+    <string name="text_button_51">OPERATIVAS</string>
+    <string name="text_button_52">REPORTES</string>
+    <string name="text_button_53">CORTE DE CAJA</string>
+    <string name="text_button_54">CERRAR</string>
+    <string name="text_button_55">Cancelar</string>
+    <string name="text_button_56">Confirmar</string>
+
+    <!-- Remesas -->
+    <string name="text_button_57">SÍ, CONTINUAR</string>
+    <string name="text_button_58">NO, CANCELAR OPERACIÓN</string>
+
+    <string name="text_menu_1">Inicio</string>
+    <string name="text_menu_2">Mi Tienda</string>
+    <string name="text_menu_3">Reportes</string>
+    <string name="text_menu_4">Mi Caja</string>
+    <string name="text_menu_5">Mis tickets Bimbo</string>
+
+    <string name="facebook_app_id">474846310571535</string>
+    <string name="fb_login_protocol_scheme">fb474846310571535</string>
+    <string name="text_menu_no_disponible">Sección no disponible</string>
+    <string name="Finger">Registrar Huella</string>
+    <string name="text_biometric_message">Toca aquí para ingresar con tu huella dactilar</string>
+
+    <string name="text_option_1">Datos Personales</string>
+    <string name="text_option_2">Datos de Comercio</string>
+    <string name="text_option_3">Desvincular Lector</string>
+    <string name="text_option_4">Restablecer PIN</string>
+    <string name="text_negocio_1">Información\n<b>Negocio</b></string>
+
+    <string name="text_option_5">Compra de Lector</string>
+    <string name="text_option_6">Cajero / Patrón</string>
+    <string name="text_option_7">Acerca de</string>
+    <string name="text_option_8">Preguntas Frecuentes</string>
+    <string name="text_option_9">Cerrar sesión</string>
+    <string name="text_option_10">Encuestas</string>
+    <string name="text_option_11">Compra de Rollos</string>
+    <string name="text_option_12">Compra de Material</string>
+
+
+    <string name="text_recarga_4">Recarga\n<b>Exitosa</b></string>
+    <string name="text_recarga_5">Enviar recibo</string>
+
+
+    <string name="text_pago_financiero_1">Cargo\n<b>Exitoso</b></string>
+
+    <string name="text_codi_1">tomar foto</string>
+
+    <string name="text_registro_financiero_1">Nombre del negocio</string>
+    <string name="text_registro_financiero_2">Calle</string>
+    <string name="text_registro_financiero_3">Exterior #</string>
+    <string name="text_registro_financiero_4">Interior #</string>
+    <string name="text_registro_financiero_5">Código postal</string>
+    <string name="text_registro_financiero_6">Estado</string>
+    <string name="text_registro_financiero_7">Municipio</string>
+    <string name="text_registro_financiero_8">Población</string>
+    <string name="text_registro_financiero_9">ID identificacion</string>
+    <string name="text_registro_financiero_10">Fecha nacimiento</string>
+    <string name="text_registro_financiero_11">CURP</string>
+    <string name="text_registro_financiero_12">Nombre</string>
+    <string name="text_registro_financiero_13">Apellido paterno</string>
+    <string name="text_registro_financiero_14">Apellido materno</string>
+    <string name="text_registro_financiero_15">Registro\n<b>Financiero</b></string>
+    <string name="text_registro_financiero_16">RFC</string>
+
+    <string name="text_inicio_1">Cobrar con Tarjeta</string>
+    <string name="text_inicio_2">Realiza tus cobros de\nforma rápida y segura</string>
+    <string name="text_inicio_3">Cargar Saldo</string>
+    <string name="text_inicio_4">Cargar saldo para\npoder operar</string>
+    <string name="text_inicio_5">Servicios T-Conecta</string>
+    <string name="text_inicio_6">Mi saldo</string>
+    <string name="text_inicio_7">Comisiones del día</string>
+    <string name="text_inicio_8">Mis ventas</string>
+    <string name="text_inicio_9">Mi\n<b>Tienda</b></string>
+    <string name="text_inicio_10">Servicios de mis\n<b>Proveedores</b></string>
+
+    <string name="text_evalua_1">Bienvenido a\n<b>Mi Tienda</b></string>
+    <string name="text_evalua_2">SERVICIOS</string>
+    <string name="text_evalua_3">MIS PRODUCTOS</string>
+    <string name="text_evalua_4">Mis tickets Bimbo</string>
+    <string name="text_evalua_5">Histórico de tus compras</string>
+    <string name="text_evalua_6">Ofertas y promociones</string>
+    <string name="text_evalua_7">Catalogo con ofertas para ti</string>
+    <string name="text_evalua_8">Crédito pesito</string>
+    <string name="text_evalua_9">Consulta tu crédito de forma sencilla</string>
+    <string name="text_evalua_10">Evalúa a tu vendedor</string>
+    <string name="text_evalua_11">Pide tu creéito de forma sencilla</string>
+
+    <string name="text_evalua_12">Evalúa a\n<b>Tu Vendedor</b></string>
+    <string name="text_evalua_13">Estos son tus vendedores</string>
+    <string name="text_evalua_14">Escoge a uno para su evaluación</string>
+    <string name="text_evalua_15">Nombre y Apellido</string>
+    <string name="text_evalua_16">Manuel\n<b>López López</b></string>
+    <string name="text_evalua_17">Vendedor ya valorado</string>
+    <string name="text_evalua_18">Valoraste a este vendedor el</string>
+    <string name="text_evalua_19">dd/mm/aaaa</string>
+    <string name="text_evalua_20">Tu valoración fue:</string>
+    <string name="text_evalua_21">Valora al vendedor</string>
+    <string name="text_evalua_22">Escriba su reseña</string>
+
+    <string name="text_evalua_23">Capacitación</string>
+    <string name="text_evalua_24">Mejora la gestión de tu negocio</string>
+    <string name="text_evalua_25">IR A LA CALCULADORA</string>
+    <string name="text_evalua_26"></string>
+    <string name="text_evalua_27">Ricolino</string>
+    <string name="text_evalua_28">Comprar con Ricolino</string>
+    <string name="text_evalua_30">Ayúdanos a mejorar tu experiencia</string>
+    <string name="text_evalua_35">Chambitas</string>
+    <string name="text_evalua_36">¡Responde y gana!</string>
+    <string name="text_evalua_37">Fiado</string>
+    <string name="text_evalua_38">Registra los prestamos</string>
+
+    <string name="text_evalua_31">Servicios para mis clientes</string>
+    <string name="text_evalua_32">Atrae mas clientes a tu negocio</string>
+    <string name="text_evalua_33">Servicios de mis proveedores</string>
+    <string name="text_evalua_34">Agiliza y administra tus compras</string>
+
+    <string name="text_credito_1">Consultar\n<b>Crédito Pesito</b></string>
+    <string name="text_credito_2">CONCEDER</string>
+    <string name="text_credito_3">Selecciona vendedor</string>
+    <string name="text_credito_4">Lorem Ipsum</string>
+    <string name="text_credito_4_1">De</string>
+    <string name="text_credito_5">Nombre</string>
+    <string name="text_credito_6">Apellidos</string>
+    <string name="text_credito_7">TODOS</string>
+    <string name="text_credito_8">CREDITOS ANTERIORES</string>
+    <string name="text_credito_9">Pide tu Crédito Pesito</string>
+    <string name="text_credito_10">PEDIR CRÉDITO</string>
+    <string name="text_credito_11">Detalle del <b>movimiento</b></string>
+    <string name="text_credito_12">Información de tu movimiento</string>
+    <string name="text_credito_13">Crédito Pesito</string>
+    <string name="text_credito_14">$200,000.00</string>
+    <string name="text_credito_15">Pedido a: Manuel López López </string>
+    <string name="text_credito_16">Número de referencia</string>
+    <string name="text_credito_17">00000000000</string>
+    <string name="text_credito_18">Fecha de petición</string>
+    <string name="text_credito_19">dd/mm/aaaa</string>
+    <string name="text_credito_20">Compañía</string>
+    <string name="text_credito_21">Nombre compañía</string>
+    <string name="text_credito_22">Confirmación de <b>crédito pesito</b></string>
+    <string name="text_credito_23">Tipo de crédito:</string>
+    <string name="text_credito_24">Crédito Pesito</string>
+    <string name="text_credito_25">Crédito solicitado a:</string>
+    <string name="text_credito_26">Lorem Ipsum</string>
+    <string name="text_credito_27">Monto total:</string>
+    <string name="text_credito_28">$1000.00</string>
+    <string name="text_credito_29">Lo recibirás el:</string>
+    <string name="text_credito_30">dd/mm/aaaa</string>
+    <string name="text_credito_31">Te lo entregará:</string>
+    <string name="text_credito_32">Nombre y Apellido</string>
+    <string name="text_credito_33">Devolución:</string>
+    <string name="text_credito_34">VER CONDICIONES</string>
+
+    <string name="text_transcacciones_1">Mis\n<b>Transacciones</b></string>
+    <string name="text_transcacciones_2">Saldo disponible en monedero</string>
+    <string name="text_transcacciones_3">Cobros y retiros con tarjeta</string>
+    <string name="text_transcacciones_4">Cargos y abonos</string>
+    <string name="text_transcacciones_5">Lorem Ipsum</string>
+    <string name="text_transcacciones_6">$100.00</string>
+    <string name="text_transcacciones_7">12/11/2020</string>
+    <string name="text_transcacciones_8">Operacion con\n<b>Tarjeta</b></string>
+
+    <string name="text_depositos_1"></string>
+    <string name="text_depositos_2">Recolección Bimbo</string>
+    <string name="text_depositos_2_2">Compra recarga de saldo a tu vendedor</string>
+    <string name="text_depositos_3">Depósito Bancario</string>
+    <string name="text_depositos_3_3">Deposita saldo en tu sucursal bancaria mas cercana</string>
+    <string name="text_depositos_4">Usar saldo de mis ventas con tarjeta</string>
+    <string name="text_depositos_4_4">Traspasa saldo desde tus ventas con tarjeta del dia</string>
+    <string name="text_depositos_5">Línea de crédito</string>
+    <string name="text_depositos_5_5">Si eres cliente Fincomun usa tu línea de sobregiro</string>
+    <string name="text_depositos_6">Cargo a tarjetas</string>
+    <string name="text_depositos_6_1">Visa y Mastercard</string>
+    <string name="text_depositos_7">Financieras</string>
+    <string name="text_depositos_8">Línea de Sobregiro</string>
+    <string name="text_depositos_9">Pin 1</string>
+    <string name="text_depositos_10">Pin 2</string>
+    <string name="text_depositos_11">Pin 3</string>
+    <string name="text_depositos_12">Ingresa los campos requeridos</string>
+    <string name="text_depositos_13">ESCANEAR CÓDIGO QR</string>
+    <string name="text_depositos_14">Cuentas para depositar:</string>
+    <string name="text_depositos_15">Banamex</string>
+    <string name="text_depositos_16">433136596\n234719017</string>
+    <string name="text_depositos_17">BBVA</string>
+    <string name="text_depositos_18">0108603359</string>
+    <string name="text_depositos_19">Santander </string>
+    <string name="text_depositos_20">65502428831</string>
+    <string name="text_depositos_21">Monto</string>
+    <string name="text_depositos_22">Referencia</string>
+    <string name="text_depositos_23">Número de sucursal</string>
+    <string name="text_depositos_24">Fecha transacción</string>
+    <string name="text_depositos_25">$100.00</string>
+    <string name="text_depositos_26">$200.00</string>
+    <string name="text_depositos_27">$300.00</string>
+    <string name="text_depositos_28">$400.00</string>
+    <string name="text_depositos_29">$500.00</string>
+    <string name="text_depositos_30">Otro monto</string>
+
+    <string name="text_notificacion_1">Tus\n<b>Notificaciones</b></string>
+    <string name="text_proveedores_1">*Máximo 300 caracteres</string>
+    <string name="text_proveedores_2">Mensaje</string>
+
+    <string name="text_ofertas_1">Takis Inferno sabor barbacoa</string>
+    <string name="text_ofertas_2">$3.99</string>
+    <string name="text_ofertas_3">Lorem Ipsum</string>
+    <string name="text_ofertas_4">Senserit mediocrem vis ex, et dicunt deleniti gubergren mei</string>
+    <string name="text_ofertas_5">Vence el dd/mm/aaaa</string>
+    <string name="text_ofertas_6">Ofertas y\n<b>Promociones</b></string>
+    <string name="text_ofertas_7">OFERTAS</string>
+    <string name="text_ofertas_8">HISTORIAL</string>
+    <string name="text_ofertas_9">Estas son las ofertas vigentes para tí</string>
+    <string name="text_ofertas_10">Número de unidades</string>
+    <string name="text_ofertas_11">Ofertas aplicadas</string>
+    <string name="text_ofertas_12">Fecha de visita</string>
+
+    <string name="text_dongle_1"><b>¡Compra tu Lector de Tarjetas</b> y\nempieza a gestionar todos tus\ncobros de forma sencilla!</string>
+    <string name="text_dongle_2">Lector de tarjetas</string>
+    <string name="text_dongle_3">$199.00 MXN</string>
+    <string name="text_dongle_4">Senserit mediocrem vis ex, et dicunt\ndeleniti gubergren mei. Mel id clita mollis\nrepudiare. Sed ad nostro delicatissimi,\npostea pertinax est an. Adhuc sensibus\npercipitur sed te, eirmod tritani debitis nec\nea. Cu vis quis gubergren.</string>
+    <string name="text_dongle_5">SABER MÁS</string>
+    <string name="text_dongle_6">Lector de\n<b>Tarjetas</b></string>
+    <string name="text_dongle_7"><item>• Acepta Visa, MasterCard, Carnet, Vales de Despensa etc…</item>
+        <item>\n• Tarjeta de apoyos de Gobierno (Bansefi, Prospera, Banco del Bienestar)</item>
+        <item>\n• Tasa de descuento crédito y débito 3% + IVA</item>
+        <item>\n• Ofrece Retiros de efectivo</item>
+        <item>\n• Recibe pagos con Samsung Pay</item>
+        <item>\n• Acepta American Express</item>
+        <item>\n• Conexión vía Bluetooth</item>
+        <item>\n• Batería de larga duración</item>
+    </string>
+
+
+    <string name="text_credtio_1">PEDIR CRÉDITO</string>
+    <string name="text_credtio_2">Consultar\n<b>Crédito Pesito</b></string>
+    <string name="text_credtio_3">Selecciona monto</string>
+    <string name="text_credtio_4">Selecciona cantidad</string>
+    <string name="text_credtio_5">Selecciona vendedor</string>
+    <string name="text_credtio_6">Lorem Ipsum</string>
+    <string name="text_cajer_patron_1">Agregar \n<b>Cajero / Patron</b></string>
+    <string name="text_cajer_patron_2">Agregar \n<b>Patron</b></string>
+    <string name="text_cajer_patron_22">Agregar \n<b>Cajero</b></string>
+    <string name="text_cajer_patron_3"><b>¡Comparte este código </b>de\nregistro con el cajero para que\npueda asociarse a tu cuenta o\nmuéstrale el QR!</string>
+    <string name="text_cajer_patron_4">Código generado</string>
+    <string name="text_cajer_patron_5">2500000000</string>
+    <string name="text_cajer_patron_6"><b>¡Ingresa el código de registro</b>\nque has recibido!</string>
+    <string name="text_cajer_patron_7">Código de registro</string>
+
+
+    <string name="text_title_1">Cancelación\n<b>de pagos</b></string>
+    <string name="text_title_2">Mis\n<b>Cajeros</b></string>
+    <string name="text_title_3">Cargar\n<b>Saldo</b></string>
+    <string name="text_title_4">Recolección\n<b>Bimbo</b></string>
+    <string name="text_title_5">Depósito\n<b>Bancario</b></string>
+    <string name="text_title_6">Dirección de mi\n<b>Negocio</b></string>
+    <string name="text_title_7">Depósito a\n<b>Bolsa de saldo</b></string>
+    <string name="text_title_8">Compra de \n<b>dispositivo</b></string>
+    <string name="text_title_9">Código de\n<b>Cliente Bimbo</b></string>
+    <string name="text_title_10">Tus datos\n<b>de Registro</b></string>
+    <string name="text_title_12">Pago\n<b>de remesa</b></string>
+
+    <string name="text_registro_1">Fecha nacimiento</string>
+    <string name="text_registro_2">Género</string>
+    <string name="text_registro_3">Hombre</string>
+    <string name="text_registro_4">Mujer</string>
+    <string name="text_registro_5">Nombre del negocio</string>
+    <string name="text_registro_6">Calle</string>
+    <string name="text_registro_7">Exterior #</string>
+    <string name="text_registro_8">Interior #</string>
+    <string name="text_registro_9">Código postal</string>
+    <string name="text_registro_10">Estado</string>
+    <string name="text_registro_11">Municipio</string>
+    <string name="text_registro_12">Población</string>
+    <string name="text_registro_13">Información de\n<b>Negocio</b></string>
+    <string name="text_registro_14">CLABE</string>
+    <string name="text_registro_15">Banco</string>
+    <string name="text_registro_16">Registrar\n<b>Cuenta CLABE</b></string>
+
+    <string name="text_movimiento_1">Fecha de operación</string>
+
+    <string name="text_credito_personal_1">Introduce tu correo electrónico</string>
+    <string name="text_credito_personal_2">Confirma o crea\n<b>tu Usuario</b></string>
+    <string name="text_credito_personal_3">Establece una contraseña</string>
+    <string name="text_credito_personal_4">Confirma tu contraseña</string>
+    <string name="text_credito_personal_5">Crea tu <b>clave de\nacceso</b></string>
+    <string name="text_credito_personal_6">¡Bienvenido\n<b>Manuel</b>!</string>
+    <string name="text_credito_personal_7">Accede con tu huella dactilar</string>
+    <string name="text_credito_personal_8">Introduce tu contraseña</string>
+    <string name="text_credito_personal_9">Recupera<b>\ntu contraseña</b></string>
+    <string name="text_credito_personal_10">Por favor, ingresa el correo electrónico o número de celular con el que te registraste para recuperar la contraseña</string>
+    <string name="text_credito_personal_11">Introduce tu correo electrónico</string>
+    <string name="text_credito_personal_12">Crédito\n<b>Personal</b></string>
+    <string name="text_credito_personal_13">TODOS</string>
+    <string name="text_credito_personal_14">CRÉDITOS ANTERIORES</string>
+    <string name="text_credito_personal_15">Pide tu Crédito Personal</string>
+    <string name="text_credito_personal_16">PEDIR CRÉDITO</string>
+    <string name="text_credito_personal_17">Mi crédito Personal</string>
+    <string name="text_credito_personal_18">Solicitado el dd/mm/aa</string>
+    <string name="text_credito_personal_19">$300,000$</string>
+    <string name="text_credito_personal_20">Pendiente</string>
+    <string name="text_credito_personal_21">Cuota</string>
+    <string name="text_credito_personal_22">12/11/2020</string>
+    <string name="text_credito_personal_23">$-100,00</string>
+    <string name="text_credito_personal_24">X cuotas pendientes</string>
+    <string name="text_credito_personal_25">$200.00</string>
+    <string name="text_credito_personal_26">Total</string>
+    <string name="text_credito_personal_27">Realiza el pago de tus cuotas con el saldo disponible en tu monedero</string>
+    <string name="text_credito_personal_28">Disponible saldo monedero</string>
+    <string name="text_credito_personal_29">$200.00</string>
+    <string name="text_credito_personal_30">Mi\n<b>Crédito Personal</b></string>
+    <string name="text_credito_personal_31">Próxima Cuota a pagar</string>
+    <string name="text_credito_personal_32">Cuotas pagadas:</string>
+    <string name="text_credito_personal_33">11</string>
+    <string name="text_credito_personal_34">Cuotas por pagar:</string>
+    <string name="text_credito_personal_35">Total de cuotas:</string>
+    <string name="text_credito_personal_36">9</string>
+    <string name="text_credito_personal_37">20</string>
+    <string name="text_credito_personal_38">MÁS INFORMACIÓN</string>
+    <string name="text_credito_personal_39">CUOTAS IMPAGADAS</string>
+    <string name="text_credito_personal_40">PAGADAS</string>
+    <string name="text_credito_personal_41">Mis cuotas</string>
+    <string name="text_credito_personal_42">Estas son tus cuotas pagadas</string>
+    <string name="text_credito_personal_43">Pago de tus\n<b>cuotas</b></string>
+    <string name="text_credito_personal_44">Total de cuotas a pagar</string>
+    <string name="text_credito_personal_45">Pago de cuotas impagadas</string>
+    <string name="text_credito_personal_46">Total</string>
+    <string name="text_credito_personal_47">Elige una opción</string>
+    <string name="text_credito_personal_48">¿Desde dónde quieres realizar el pago de tus cuotas?</string>
+    <string name="text_credito_personal_49">Bolsa T-Conecta</string>
+    <string name="text_credito_personal_50">200$ disponibles</string>
+    <string name="text_credito_personal_51">Número de Referencia</string>
+    <string name="text_credito_personal_52">000 000 000 000</string>
+    <string name="text_credito_personal_53">Muestra el código de barras en la sucursal</string>
+    <string name="text_credito_personal_54"></string>
+
+    <string name="register_pop_1">Quiero <b>registrarme con</b></string>
+    <string name="register_pop_2">Correo electrónico</string>
+    <string name="register_pop_3">Continuar con Facebook</string>
+    <string name="register_pop_4">Continuar con Google</string>
+    <string name="register_pop_5">Ya tengo cuenta</string>
+    <string name="register_pop_6">INICIA SESION</string>
+    <string name="register_pop_7">NO TENGO CUENTA DE T-CONECTA</string>
+    <string name="register_pop_8">¿No tienes cuenta?</string>
+
+    <string name="select_proveedor_1">Disfruta de una mayor atención</string>
+    <string name="select_proveedor_2">Escoge las marcas de las que seas cliente para disfrutar de una atención personalizada</string>
+    <string name="select_proveedor_3">Ingresa o escanea tu código de cliente</string>
+    <string name="select_proveedor_4">¿Qué es mi código de cliente?</string>
+    <string name="select_proveedor_5">NO SOY CLIENTE</string>
+    <string name="select_proveedor_6">CONTINUAR</string>
+    <string name="select_proveedor_7">HACER MÁS TARDE</string>
+    <string name="select_proveedor_8">NO SOY CLIENTE</string>
+
+    <string name="register_new_1">Envía tus datos personales</string>
+    <string name="register_new_2">Tus datos personales</string>
+    <string name="register_new_3">Tu número de celular</string>
+    <string name="register_new_4">Tu dirección de correo electrónico</string>
+    <string name="register_new_5">Introduce CURP</string>
+    <string name="register_new_6">Introduce RFC</string>
+    <string name="register_new_7">Tus datos\n<b>de Registro</b></string>
+    <string name="register_new_8">Envía tus datos de negocio</string>
+    <string name="register_new_9">Introduce el nombre de tu negocio</string>
+    <string name="register_new_10">Dirección del negocio</string>
+    <string name="register_new_11">Interior</string>
+    <string name="register_new_12">Exterior</string>
+
+    <string name="text_creditos_1">Correo electrónico</string>
+    <string name="text_creditos_2">Contraseña</string>
+    <string name="text_creditos_3">orreo electrónico</string>
+
+    <string name="text_bienvenido">Nombre\n<b>Patrón</b></string>
+
+    <string name="text_bienvenido_a_dinero_ya">Bienvenido a\n<b>¡Dinero Ya!</b></string>
+    <string name="text_quieres_empezar_a_ahorrar">¿Quieres empezar\n<b>a ahorrar?</b></string>
+    <string name="text_quieres_empezar">Mi solicitud de\n<b>Ahorro</b></string>
+    <string name="text_s_cale_partido_a_tus_operaciones_y_comienza_a_lograr_tus_sue_os">Sácale partido a tus operaciones y comienza a lograr tus sueños</string>
+    <string name="text_empezar_a_ahorrar">EMPEZAR A AHORRAR</string>
+    <string name="text_saldo">Saldo</string>
+    <string name="text_cobrar_con_qr">Cobrar con QR</string>
+    <string name="text_realiza_cobros_con_qr">Realiza cobros con QR</string>
+    <string name="text_pagos_con_qr">Pagos con QR</string>
+    <string name="text_realiza_pagos_con_qr">Realiza pagos con QR</string>
+    <string name="text_financiamos_tus_sue_os">Financiamos tus sueños</string>
+    <string name="text_realiza_1">Cuenta Básica Común Digital</string>
+    <string name="text_realiza_12">Mi cuenta\ncon CoDi</string>
+    <string name="text_realiza_2">Mi crédito\npreaprobado</string>
+    <string name="text_realiza_3">Mi cuenta</string>
+    <string name="text_realiza_2.1">Solicitud Crédito Fincomún</string>
+    <string name="text_gestionar_mi_ahorro">Gestionar mi ahorro</string>
+    <string name="text_abono_por_referencia_bbva">Abono por referencia BBVA</string>
+    <string name="text_abono_por_spei">Abono por SPEI</string>
+    <string name="text_abono_por_porcentaje_de_mis_ventas_con_tarjeta">Abono por porcentaje de mis ventas con tarjeta</string>
+    <string name="text_saldo_disponible_en_monedero">Saldo disponible en monedero</string>
+    <string name="text_selecciona_monto_a_abonar_a_tu_cuenta">Selecciona monto a abonar a tu cuenta</string>
+    <string name="text_selecciona_el_porcentaje_de_tus_ventas_que_quieres_destinar_al_ahorro">Selecciona el porcentaje de tus ventas que quieres destinar al ahorro</string>
+    <string name="text_numero_de_referencia">Número de referencia:</string>
+    <string name="tetx_numero_de_convenio">Número de convenio:</string>
+    <string name="text_dirigete_a_la_sucursal_y_muestra_la_siguiente_informacion">Dirígete a la sucursal y muestra la siguiente información:</string>
+    <string name="text_ingrese_la_siguiente_referencia_en_su_cuenta_clabe">Ingrese la siguiente referencia en su cuenta CLABE</string>
+    <string name="tetx_numero_de_referencia">Número de referencia:</string>
+    <string name="text_confirmacion_orden_de_ahorro">Confirmación Orden de Ahorro</string>
+    <string name="text_confirmacion_de_orden_de_ahorro_t_conecta">Confirmación de orden de ahorro T-Conecta</string>
+    <string name="text_numero_de_cliente">Número de cliente:</string>
+    <string name="text_numero_de_la_cuenta">Número de la cuenta:</string>
+    <string name="text_tipo_de_ahorro">Tipo de ahorro:</string>
+    <string name="text_orden_de_ahorro">Orden de ahorro:</string>
+    <string name="text_gestion_de_mi_ahorro">Gestión de Mi Ahorro</string>
+    <string name="text_orden_de_ahorro_de_mis_ventas_con_tarjeta">Orden de ahorro de mis ventas con tarjeta</string>
+    <string name="text_seleccionar_cobro">Seleccionar cobro</string>
+    <string name="text_pago_con_qr">Pago con QR</string>
+    <string name="text_cobro_con_qr">Cobro con QR</string>
+    <string name="btn_generar_codigo">GENERAR CÓDIGO</string>
+    <string name="text_escoge_cada_cuanto_pagaras">Escoge cada cuanto pagarás</string>
+    <string name="text_selecciona_frecuencia_y_plazo_de_devolucion">Selecciona frecuencia y plazo de devolución</string>
+    <string name="text_selecciona_cantidad">Selecciona cantidad</string>
+    <string name="text_indica_monto_a_cobrar">Indica monto a cobrar</string>
+    <string name="text_solicitud_cobro_con_qr">Solicitud cobro con QR</string>
+    <string name="text_codigo_cobro_con_qr">Código cobro con QR</string>
+    <string name="text_resumen_de_peticion">Resumen de petición</string>
+    <string name="text_confirma_que_todo_es_correcto">Confirma que todo es correcto</string>
+    <string name="text_monto_a_pagar">Monto a pagar :</string>
+    <string name="text_referencia">Referencia :</string>
+    <string name="text_concepto">Concepto :</string>
+    <string name="text_compartir_codigo">Compartir código</string>
+    <string name="text_solicitud_pago_con_qr">Solicitud pago con QR</string>
+    <string name="text_escoge_origen_de_codigo_qr">Escoge origen de código QR</string>
+    <string name="text_escoge_el_origen_del_codigo_a_escanear">Escoge el origen del código a escanear</string>
+    <string name="text_abrir_camara">Abrir cámara</string>
+    <string name="text_seleccionar">Seleccionar</string>
+    <string name="text_abrir_mi_galeria">Abrir Mi Galería</string>
+    <string name="btn_realizar_pago">Realizar Pago</string>
+    <string name="text_confirmacion_pago_con_qr">Confirmación pago con QR</string>
+    <string name="text_ver_informacion_de_cuenta">Ver información de cuenta</string>
+    <string name="text_informacion_del_movimiento">Información del movimiento</string>
+    <string name="text_mi_credito_personal">Mi crédito Personal</string>
+    <string name="text_realiza_el_pago_de_tus_cuotas">Realiza el pago de tus cuotas</string>
+    <string name="text_pago_de_mi_credito">Pago de mi crédito</string>
+    <string name="text_mi_codigo"><b>Código Cliente</b>\n\nEl código de clientes te lo proporciona tu vendedor</string>
+
+
+    <string name="text_pago_1">Cobrar con QR</string>
+    <string name="text_pago_2">Realizar cobros con QR</string>
+    <string name="text_pago_3">Pagos con QR</string>
+    <string name="text_pago_4">Realizar pagos con QR</string>
+    <string name="text_pago_5"></string>
+    <string name="text_pago_6"></string>
+    <string name="text_pago_7"></string>
+    <string name="text_pago_8"></string>
+
+    <string name="text_purchase_1">Mis\n<b>Compras</b></string>
+    <string name="text_purchase_2">Mis compras Bimbo</string>
+    <string name="text_purchase_3">Tus últimas compras</string>
+    <string name="text_purchase_4">$600</string>
+    <string name="text_purchase_5">Monto total</string>
+    <string name="text_purchase_6">Mis compras Barcel</string>
+    <string name="text_purchase_7">Mis compras Ricolino</string>
+    <string name="text_purchase_8">Estas son tus compras de los últimos 30 días</string>
+    <string name="text_purchase_9">Estas son tus compras de los últimos 30 días</string>
+    <string name="text_purchase_10">Mis Compras\n<b>Bimbo</b></string>
+    <string name="text_purchase_11">dd/mm/aaaa</string>
+    <string name="text_purchase_12">Información de ruta</string>
+    <string name="text_purchase_13">$100</string>
+    <string name="text_purchase_14">Mi ticket\n<b>de compra</b></string>
+    <string name="text_purchase_15">*Esta informacion no tiene\nvalidez fiscal</string>
+    <string name="text_purchase_16">Información</string>
+    <string name="text_purchase_17">Codigo del producto</string>
+    <string name="text_purchase_18">B9834738473</string>
+    <string name="text_purchase_19">Descripción</string>
+    <string name="text_purchase_20">Número de productos</string>
+    <string name="text_purchase_21">Precio del producto</string>
+    <string name="text_purchase_22">Impuesto</string>
+    <string name="text_purchase_23">Datos de factura</string>
+    <string name="text_purchase_24">Impuesto Perc</string>
+    <string name="text_purchase_25">Importe de linea factura</string>
+    <string name="text_purchase_26">Codigo de impuesto</string>
+    <string name="text_purchase_27">Datos facturación de cliente</string>
+    <string name="text_purchase_28">Tipo de impuesto</string>
+    <string name="text_purchase_29">Razón social</string>
+    <string name="text_purchase_30">Fecha</string>
+    <string name="text_purchase_31">Nombre de tienda</string>
+    <string name="text_purchase_32">Código cliente</string>
+    <string name="text_purchase_33">Dirección</string>
+    <string name="text_purchase_34">Datos de ruta</string>
+    <string name="text_purchase_35">Vendedor</string>
+    <string name="text_purchase_36">Código de ruta</string>
+    <string name="text_purchase_37">Tipo de operación</string>
+    <string name="text_purchase_38">Desglose de productos</string>
+    <string name="text_purchase_39">Piezas en venta</string>
+    <string name="text_purchase_40">Desglose de totales</string>
+    <string name="text_purchase_41">Total venta</string>
+    <string name="text_purchase_42">Lorem Ipsum</string>
+    <string name="text_purchase_43">280000</string>
+    <string name="text_purchase_44">000 000 000</string>
+    <string name="text_purchase_45">B9834738473</string>
+    <string name="text_purchase_46">dd mm aaaa</string>
+    <string name="text_purchase_47">dd mm aaaa</string>
+    <string name="text_purchase_48">2</string>
+    <string name="text_purchase_49">* Esta información no tiene validez fiscal</string>
+
+    <string name="text_swap_menu">Opciones de \n<b>Dispositivo</b></string>
+    <string name="text_swap_menu_ligar">Ligar a Terminal</string>
+    <string name="text_swap_menu_ligar_2">Dale mas funcionalidad a tu antigua terminal</string>
+    <string name="text_swap_menu_cambiar">Cambiar Terminal</string>
+    <string name="text_swap_menu_cambiar_2">Haz de este equipo tu nueva terminal</string>
+    <string name="text_swap_menu_migrar">Migrar Terminal</string>
+    <string name="text_swap_menu_migrar_2">Hora de actualizar tu antigua terminal</string>
+
+    <!-- SWAP T1000 -->
+    <string name="text_swapt1000_title">Migrar \n<b>Terminal</b></string>
+    <string name="text_swapt1000_step1">Paso 1 de 2</string>
+    <string name="text_swapt1000_step2">Paso 2 de 2</string>
+    <string name="text_swapt1000_login_title">Migrar \n<b>Terminal</b></string>
+    <string name="text_swapt1000_login_description">Ingresa la clave de folio que se ha enviado a tu dispositivo Terminal y el número de colaborador.</string>
+    <string name="text_swapt1000_login_datos">Ingresar datos</string>
+    <string name="text_swapt1000_login_folio">Folio del ticket</string>
+    <string name="text_swapt1000_login_colaborador">No. colaborador</string>
+    <string name="text_swapt1000_address_description">Actualización o confirmación de datos.</string>
+    <string name="text_swapt1000_finish_title">¡Listo!</string>
+    <string name="text_swapt1000_finish_subtitle">Terminal migrada exitosamente.</string>
+
+    <!-- Swap N3 to N3 -->
+    <string name="text_swapn3_title">Cambio de \n<b>Terminal</b></string>
+    <string name="text_swapn3_out_title">Cambio de \n<b>Terminal</b></string>
+    <string name="text_swapn3_out_description">Ingresar datos para desvincular cuenta de terminal</string>
+    <string name="text_swapn3_out_colaborador">No. colaborador</string>
+    <string name="text_swapn3_out_colaborador_hint">12345678</string>
+    <string name="text_swapn3_out_pass">Contraseña</string>
+    <string name="text_swapn3_out_pass_hint">******</string>
+    <string name="text_swapn3_out_confirm">Promotor confirmado, ¿Desea comenzar con el proceso?</string>
+    <string name="text_swapn3_out_finish">Proceso finalizado.\nPor favor conserve el folio en el ticket impreso</string>
+    <string name="text_swapn3_out_message">Terminal inactiva</string>
+    <string name="text_swapn3_out_in_description">Ingresar datos para vincular cuenta a terminal</string>
+    <string name="text_swapn3_in_title">Cambio de \n<b>Terminal</b></string>
+    <string name="text_swapn3_in_description">Ingresa el folio en el ticket impreso para iniciar el proceso de vinculación</string>
+    <string name="text_swapn3_in_folio">No. de folio</string>
+    <string name="text_swapn3_in_folio_hint">12345678</string>
+    <string name="text_swapn3_in_finish">Proceso finalizado.</string>
+
+    <!-- MultiDevice T1000 -->
+    <string name="text_multi_t1000_title">Ligar a \n<b>Terminal</b></string>
+    <string name="text_multi_t1000_1_description">Ingresa el BLM ID que puedes localizar en tu terminal</string>
+    <string name="text_multi_t1000_1_blmid">Ingresar BLM ID</string>
+    <string name="text_multi_t1000_1_blmid_hint">BLM ID</string>
+    <string name="text_multi_t1000_1_blmid_help">¿Qué es el BLM ID?</string>
+    <string name="text_multi_t1000_2_description">Ingresa la clave o folio que se envío a tu terminal</string>
+    <string name="text_multi_t1000_2_folio">Ingresar Folio</string>
+    <string name="text_multi_t1000_2_folio_hint">Folio</string>
+    <string name="text_multi_t1000_finish_title">¡Listo!</string>
+    <string name="text_multi_t1000_finish_subtitle">Terminal asociada exitosamente.</string>
+
+    <string name="text_otros">Otros</string>
+    <string name="text_deposito_t_conecta">Depósito T-Conecta</string>
+    <string name="datos_cuenta_x">Datos de su <b>cuenta Fincomún</b></string>
+    <string name="text_datos_cuenta_fincomun_descripcion">Estos son los datos de su cuenta Fincomún</string>
+    <string name="text_iban">Cuenta Fincomún</string>
+    <string name="text_editar">Editar</string>
+    <string name="text_bic_swift">BIC/SWIFT</string>
+    <string name="text_titular_de_la_cuenta">Titular de la cuenta</string>
+    <string name="text_fecha_de_apertura">Fecha de apertura</string>
+    <string name="text_ultimo_movimiento">Último movimiento</string>
+    <string name="text_descargar_recibo">Descargar Recibo</string>
+    <string name="text_mi_cuenta">Mi Cuenta</string>
+    <string name="text_disponible_total">Disponible en cuenta</string>
+    <string name="text_mas_informacion">**********00000</string>
+    <string name="text_total">Total</string>
+
+    <string name="text_1">CLABE</string>
+    <string name="text_2">CC00000000000</string>
+    <string name="text_3">Saldo disponible en monedero</string>
+    <string name="text_4">Ingresa el monto a abonar a tu cuenta</string>
+    <string name="text_5">*Minimo de $50 y máximo de $300</string>
+    <string name="text_6">Confirmación\n<b>de ahorro</b></string>
+    <string name="text_7">Monto</string>
+    <string name="text_8">Orden de ahorro de mis\nventas con tarjeta</string>
+    <string name="text_9">55% de ahorro</string>
+    <string name="text_10">Número de cuenta</string>
+
+    <string name="text_register_bimbo_title">Código \n<b>Bimbo</b></string>
+    <string name="text_register_bimbo_description">Introduce tu código bimbo</string>
+    <string name="text_register_bimbo_id">Código Bimbo</string>
+
+    <string name="text_register_colaborador">Número de colaborador</string>
+    <string name="text_register_help">Ingresa tus datos personales</string>
+
+    <!-- Reporte Financiero -->
+    <string name="text_rf_fecha">Fecha</string>
+    <string name="text_rf_tasa">Tasa de descuento acumulada: </string>
+    <string name="text_rf_importe">Importe neto: </string>
+    <string name="text_rf_liquidacion">Liquidación Bimbonet: </string>
+    <string name="text_rf_mensaje">* Esta consulta de movimientos no es un documento oficial</string>
+    <string name="text_rf_alert_sin_registros">Sin movimientos para la fecha establecida</string>
+    <string name="text_rf_item_tasa">Tasa de descuento: </string>
+    <string name="text_rf_item_importe_neto">Importe neto: </string>
+
+    <string name="text_chambitas_1">¡Responde\n<b>y gana!</b></string>
+    <string name="text_chambitas_1_2">Nuevos\n<b>Retos</b></string>
+    <string name="text_chambitas_1_3">Reto\n<b>Bimbo</b></string>
+    <string name="text_chambitas_1_4">Responder\n<b>Encuesta</b></string>
+    <string name="text_chambitas_1_5"><b>Chambitas</b></string>
+    <string name="text_chambitas_2">Elige una opción</string>
+    <string name="text_chambitas_3">Chambitas Nuevas</string>
+    <string name="text_chambitas_5">Chambitas Activas</string>
+    <string name="text_chambitas_6">Chambitas Cumplidas</string>
+    <string name="text_chambitas_7">Reto bimbo</string>
+    <string name="text_chambitas_8">Premio</string>
+    <string name="text_chambitas_9">Descripcion</string>
+    <string name="text_chambitas_10">Tomar foto</string>
+    <string name="text_chambitas_11">Escanear codigo</string>
+    <string name="text_chambitas_12">Video</string>
+    <string name="text_chambitas_13">Encuesta</string>
+    <string name="text_chambitas_14">Lorem ipsum dolor sit amet, consectetur adipiscing</string>
+    <string name="text_chambitas_15">Chambitas disponibles para que ganes premios</string>
+    <string name="text_chambitas_16">Chambitas disponibles para que ganes premios</string>
+    <string name="text_chambitas_17">No te olvides de terminar tus chambitas para ganar premios</string>
+    <string name="text_chambitas_18">Consulta si tu chambita fue ganadora.</string>
+    <string name="text_chambitas_19"></string>
+    <string name="text_chambitas_20">Para los productos Bimbo, Barcel y Ricolino, la fecha de entrega será en tu próximo día de
+    visita a partir del segundo día hábil siguiente al que fue realizado el pedido, en un periodo
+    máximo de 7 días. Para el resto de los productos de tu proveedor GUNA, tus pedidos llegarán
+    en 48hrs (2 días) contados a partir del día/hora en que realice tu pedido.</string>
+    <string name="text_chambitas_21">Respuesta</string>
+    <string name="text_chambitas_22">Enviar</string>
+    <string name="text_chambitas_23">Felicidades por tu logro, tu premio será entregado en tu bolsa de saldo en 24 horas</string>
+    <string name="text_chambitas_24">Contesta las siguientes preguntas</string>
+    <string name="text_chambitas_25">CONTINUAR</string>
+    <string name="text_chambitas_26">¡Responde\n y gana!</string>
+    <string name="text_chambitas_27">¡Responde y gana!</string>
+
+
+
+    <string name="text_trans_1">Transacciones\n<b>Recargas</b></string>
+    <string name="text_aprende_1">Aprende\n<b>ENKO</b></string>
+
+    <!-- Compra de material publicitario -->
+    <string name="compra_material_title">Material publicitario</string>
+    <string name="compra_material_1_btn">Comprar con mi saldo</string>
+    <string name="alert_message_buy_equipment">¿Desea continuar con la compra?. Se restará **monto** de su bolsa de saldo.</string>
+    <string name="compra_material_title_2">Adquiere\n<b>material publicitario</b></string>
+
+    <string name="text_currency">MXN</string>
+
+    <string name="text_sobregiro_consulta">Consulta adeudo de la línea de crédito</string>
+    <string name="text_sobregiro_disposicion">Disposición de la línea de crédito</string>
+    
+    
+    <string name="text_fiado_1">Elige una\n<b>opción</b></string>
+    <string name="text_fiado_2">Nuevo fiado</string>
+    <string name="text_fiado_3">Clientes con adeudos</string>
+    <string name="text_fiado_4">Todos los clientes</string>
+    <string name="text_fiado_5">Nuevo <b>fiado</b></string>
+    <string name="text_fiado_6">Nuevo cliente</string>
+    <string name="text_fiado_7">Cliente existente</string>
+    <string name="text_fiado_8">Cliente <b>existente</b></string>
+    <string name="text_fiado_9">Nuevo <b>cliente</b></string>
+    <string name="text_fiado_10">Cliente</string>
+    <string name="text_fiado_11">Detalle</string>
+    <string name="text_fiado_12">$0.00</string>
+    <string name="text_fiado_13">Pago\n<b>Exitoso</b></string>
+    <string name="text_fiado_14"><b>Enviar recibo</b></string>
+    <string name="text_fiado_15">Email</string>
+    <string name="text_fiado_16">SMS</string>
+    <string name="text_fiado_17">Monto a fiar</string>
+    <string name="text_fiado_18">Total</string>
+    <string name="text_fiado_19">Deuda total</string>
+    <string name="text_fiado_20">Pago parcial o total</string>
+    <string name="text_fiado_21">Saldo pendiente</string>
+    <string name="text_fiado_22">Pago parcial o total</string>
+    
+    <string name="text_never_ask_again"><![CDATA[ Haz activado la opción:<br/><br/><b>No volver a preguntar permisos</b><br/><br/>Puedes cambiar los permisos a los que pueden acceder en la configuración principal de la app. Ten en cuenta que si desactivas los permisos, la app podría perder su funcionalidad.<br/>]]></string>
+
+    <!-- Remesas -->
+    <string name="text_remesas_1">Código</string>
+    <string name="text_remesas_2">Primer nombre</string>
+    <string name="text_remesas_3">Primer apellido</string>
+    <string name="text_remesas_4">Captura la documentación para acelerar la captación de datos del cliente o ingrésalos de forma manual.</string>
+    <string name="text_remesas_5">Recuerda revisar que tienes $100.00 en caja.</string>
+    <string name="text_remesas_6">Captura de\n<b>datos</b></string>
+    <string name="text_remesas_7">Ingresa o revisa los datos del cliente.</string>
+    <string name="text_remesas_8">Ingresa los datos del cliente.</string>
+    <string name="text_remesas_9">Segundo nombre</string>
+    <string name="text_remesas_10">Segundo apellido</string>
+    <string name="text_remesas_11">ID</string>
+    <string name="text_remesas_12">Fecha de nacimiento</string>
+    <string name="text_remesas_13">No. de celular</string>
+    <string name="text_remesas_14">Realiza tu firma con el dedo</string>
+    <string name="text_remesas_15"><b>Ingresa la firma del\ncliente</b></string>
+    <string name="text_remesas_16"><b>Acepto los términos y condiciones de Cloud Transfer</b></string>
+    <string name="text_remesas_17"><b>Pago realizado con\néxito</b></string>
+    <string name="text_remesas_18"><b>¿Desea enviar el recibo?</b></string>
+    <string name="text_remesas_19">Pago de remesa</string>
+    <string name="text_remesas_20">Ticket de\n<b>remesa</b></string>
+
+    <string name="alert_message_remesas_1">Revisa que dispones de la cantidad que solicita el cliente en efectivo antes de continuar.</string>
+    <string name="alert_message_remesas_2">Escanea con tu celular el siguiente código QR para consultar los términos y condiciones de Cloud Transfer</string>
+    <string name="alert_message_remesas_3">El módulo de remesas estará inactivo por 30 minutos debido a que se excedió el número de intentos erróneos. Volverá a estar disponible el %s</string>
+    <string name="alert_message_remesas_4">Es necesario que se tome fotografías de la identificación por el frente y por el reverso.</string>
+    <string name="alert_message_remesas_5">Es necesario que se tome fotografía de los datos del pasaporte.</string>
+
+    <string name="text_option_remesas_1">Capturar INE</string>
+    <string name="text_option_remesas_2">Capturar IFE</string>
+    <string name="text_option_remesas_3">Capturar Pasaporte</string>
+    <string name="text_option_remesas_4">Ingresar datos manualmente</string>
+    <string name="text_option_remesas_5">Seleccionar</string>
+
+    <string name="text_button_remesas_1">PAGAR REMESA</string>
+
+
+    <string name="text_repo_tips_title">Publicidad y Promociones</string>
+    <string name="text_repo_tips_no_info">No existen promociones activas para este usuario</string>
+
+    <!-- FINCOMUN-->
+    <string name="txt_title_offer_0"> es una empresa con más de 27 años</string>
+    <string name="txt_title_offer_1"> apoyando el crecimiento de miles de negocios como el tuyo a través del crédito.</string>
+    <string name="txt_competition"><b>más barato</b> que la competencia</string>
+    <string name="txt_other_simulator"><u>Simula otro monto</u></string>
+    <string name="txt_cat">Tasa de interés 75% promedio ponderado, CAT promedio de 110.6% sin IVA (CAT: Costo Anual Total), para fines informativos y de comparación. Comparativo realizado a partir de información de tasas de interés promedio declaradas en fichas técnicas del Buro de Entidades Financieras segundo trimestre 2021, producto microcrédito sin aval ni garantía.</string>
+    <string name="fc_step_1">Paso <b>1</b> de 4</string>
+    <string name="FC_step_2">Paso <b>2</b> de 4</string>
+    <string name="FC_step_3">Paso <b>3</b> de 4</string>
+    <string name="FC_step_4">Paso <b>4</b> de 4</string>
+    <string name="FC_code_sms"><u>Volver a enviar código SMS</u></string>
+    <string name="FC_txt_requeriments_personal_data">Para llevar a cabo el proceso necesitarás:</string>
+    <string name="FC_txt_no_offer">Recuerda que comprando más mercancía con Grupo Bimbo o usando los servicios de T-Conecta podrás tener este beneficio.</string>
+    <string name="FC_txt_success_credit_request">Te contactaremos vía telefónica al número registrado, es <b>muy importante</b> que atiendas la llamada para poder liberar tu préstamo.</string>
+    <string name="FC_txt_credit_success_1">Podrás ver el estatus de tu solicitud dando clic en <b>Dinero Ya</b>.</string>
+    <string name="FC_txt_credit_success_2">Recibirás un aviso por <b>correo electrónico</b> en cuanto tu crédito este autorizado.</string>
+    <string name="FC_txt_credit_success_3">Se transferirá vía <b>SPEI</b> el dinero en la cuenta que indicaste.</string>
+    <string name="FC_txt_credit_success_4">En su defecto, entregarán tu dinero en cualquier <b>ventanilla de BBVA</b> con la orden de pago que recibiste y tu identificación</string>
+    <string name="txt_forgot_password"><u>He olvidado mi contraseña</u></string>
+    <string name="txt_request_analisis">Un ejecutivo revisa tu solicitud, te llamará para confirmar las características del préstamo que solicitaste y liberarlo.\n\nRecuerda usar la orden de pago que recibirás por correo en cualquier ventanilla de BBVA en cuanto se libera tu préstamo.\n\n<b>¡Gracias!</b></string>
+    <string name="txt_no_offfer_send">Un ejecutivo revisará tu caso y te contactará para atender tu solicitud</string>
+    <string name="txt_recompra">"Liquida tu crédito actual y disfruta de tu préstamo preaprobado de "</string>
+    <string name="txt_detail_offer"><u>Ver el detalle del préstamo</u></string>
+    <string name="txt_detail_peronal_data"><u>Ver mis datos personales</u></string>
+    <string name="txt_credit">Información de su <b>préstamo</b></string>
+    <string name="txt_definition_benef">El beneficiario no tiene ninguna obligación en relación al crédito solicitado\n\n<i>Todos los campos son obligatorios</i></string>
+    <string name="txt_more_information"><u>Más información</u></string>
+    <string name="txt_call"><u>Solicitar llamada telefónica</u></string>
+
+    <string name="FC_txt_operacion_qr">Operación\n<br/><b>con QR</b></string>
+    <string name="FC_txt_qr_servicios_codi">SERVICIOS CODI</string>
+    <string name="FC_txt_qr_movimientos">MIS MOVIMIENTOS</string>
+    <string name="FC_txt_qr_cobro"><b>Cobro con QR</b></string>
+    <string name="FC_txt_qr_seleccionar_cobro">Seleccionar cobro</string>
+    <string name="FC_txt_qr_pago"><b>Pago con QR</b></string>
+    <string name="FC_txt_qr_seleccionar_pago">Seleccionar pago</string>
+    <string name="FC_txt_qr_solicitud_cobro">Solicitud <br/><b>cobro con QR</b></string>
+    <string name="FC_txt_codi_cobro_monto">Indica monto a cobrar</string>
+    <string name="FC_txt_qr_sel_cantidad">Selecciona cantidad</string>
+    <string name="FC_txt_qr_monto_min">*Monto mínimo $100 y máximo de $450</string>
+    <string name="FC_txt_qr_sel_frecuencia">Selecciona frecuencia y plazo de devolución</string>
+    <string name="FC_txt_qr_sel_pago">Escoge cada cuanto pagarás</string>
+    <string name="FC_txt_qr_max_car">Máximo 200 caracteres</string>
+    <string name="FC_btn_qr_gen_cod">Generar Código</string>
+
+    <string name="FC_txt_qr_cobro_header">Código\n<br/><b>cobro con QR</b></string>
+    <string name="FC_txt_qr_cobro_resumen">Resumen de la petición</string>
+    <string name="FC_txt_qr_confirmacion">Confirma que todo es correcto</string>
+    <string name="FC_btn_qr_compartir">Compartir código</string>
+    <string name="FC_txt_qr_pago_header">Solicitud\n<br/><b>pago con QR</b></string>
+    <string name="FC_txt_qr_pago_sel_origen_header">Escoge origen de código QR</string>
+    <string name="FC_txt_qr_pago_sel_origen">Escoge el origen del código a escanear</string>
+    <string name="FC_txt_qr_pago_abrir_camara">Abrir cámara</string>
+    <string name="FC_txt_qr_pago_abrir_galeria">Abrir galería</string>
+    <string name="FC_txt_qr_pago_seleccionar">Seleccionar</string>
+    <string name="FC_btn_qr_pago">Realizar pago</string>
+    <string name="FC_txt_qr_resumen_pago">Resumen de la petición</string>
+    <string name="FC_txt_qr_confirmar_pago_header">Confirmación\n<br/><b>pago con QR</b></string>
+    <string name="FC_txt_qr_resumen_confirmacion">Confirma que todo es correcto</string>
+    <string name="FC_btn_qr_confirmar_pago">Confirmar pago</string>
+    <string name="FC_btn_qr_info_cuenta">Ver información de cuenta</string>
+    <string name="FC_txt_detalle_movimiento_header">Detalle del <b>movimiento</b></string>
+    <string name="FC_txt_info_movimiento">Información de tu movimiento</string>
+    <string name="FC_txt_info_referencia">Número de referencia</string>
+    <string name="FC_txt_info_fecha">Fecha de operación</string>
+    <string name="FC_btn_desc_recibo_codi">Descargar recibo</string>
+    <string name="FC_txt_exito_header">Operación realizada con éxito</string>
+    <string name="FC_txt_exito_desc">El proceso ha sido concluído de manera exitosa.</string>
+    <string name="FC_txt_error_header">Parece que ha habido algún error</string>
+    <string name="FC_txt_error_desc">Ha habido algún error en tu solicitud. Por favor, ponte en contacto con nosotros o inténtalo de nuevo más tarde.</string>
+    <string name="FC_txt_notificaciones_cobro">Notificaciones</string>
+    <string name="FC_txt_ver_detalle"><u>Ver detalle</u></string>
+    <string name="FC_txt_registra_cuenta"><u>Registra tu cuenta CoDi</u></string>
+
+    <string name="txt_monto_oxxo"><u>Abonar monto diferente</u></string>
+
+    <string name="order_map_location">Ver ubicación en el mapa</string>
+    <string name="orders_title">Pedidos de mis clientes</string>
+    <string name="order_increase_sales">Aumenta tus ventas a través de</string>
+    <string name="order_receive_orders">Recibe los pedidos de tus clientes y verifíca el pedido a través de T-Conecta</string>
+    <string name="order_multiply_sales">¡Multiplica tus ventas!</string>
+    <string name="order_activate_sales">Activar pedidos</string>
+    <string name="order_detail_of">Detalle de</string>
+    <string name="order_order">pedido</string>
+    <string name="order_no_valid">*Esta información no tiene validez fiscal</string>
+    <string name="order_client_data">Datos del cliente</string>
+    <string name="order_cel_name">Número de celular / nombre</string>
+    <string name="order_date">Fecha de pedido</string>
+    <string name="order_status_label">Estado del pedido</string>
+    <string name="order_deliver_address">Dirección de entrega</string>
+    <string name="order_data">Datos del pedido</string>
+    <string name="order_invoice_number">Número de factura</string>
+    <string name="order_reference_number">Número de referencia factura</string>
+    <string name="order_invoice">Número de folio</string>
+    <string name="order_rfc">*RFC</string>
+    <string name="order_business_name">Nombre del negocio</string>
+    <string name="order_date_label">Fecha</string>
+    <string name="order_store_name_label">Nombre de la tienda</string>
+    <string name="order_client_code">Código de cliente</string>
+    <string name="order_route_data">Datos de ruta</string>
+    <string name="order_seller">Vendedor</string>
+    <string name="order_route_code">Código de ruta</string>
+    <string name="order_transaction_type">Tipo de transacción</string>
+    <string name="order_products_list">Desglose de productos</string>
+    <string name="order_products">Productos</string>
+    <string name="order_totals">Desglose de totales</string>
+    <string name="order_total">Total venta</string>
+    <string name="order_available_products">¿Tienes estos productos disponibles?</string>
+    <string name="order_deliver_order_in">La entrega se realizará a</string>
+    <string name="order_x">XX</string>
+    <string name="order_distance">mts. lineales de tu negocio</string>
+    <string name="order_write_quantity">Ingresa la cantidad de piezas a entregar y el precio unitario</string>
+    <string name="order_fill_fields_error">Por favor llena todas las cantidades y precios</string>
+    <string name="order_total_label">Total: </string>
+    <string name="order_dollar_symbol">$</string>
+    <string name="order_fill_time">Por favor, ingresa el tiempo aproximado de entrega del pedido</string>
+    <string name="order_deliver_time">Tiempo de entrega</string>
+    <string name="order_deliver_time_error">Por favor ingresa un tiempo de entrega mínimo de 5 minutos</string>
+    <string name="order_deliver_order">ENTREGAR ENVÍO</string>
+    <string name="order_reject_order">RECHAZAR ENVÍO</string>
+    <string name="order_send_confirmation">Confirmación de Envío</string>
+    <string name="order_client_accepted_prices">El cliente aceptó los precios y\n el tiempo estimado de entrega</string>
+    <string name="order_order_label">Pedido</string>
+    <string name="order_client_name">Nombre del cliente</string>
+    <string name="order_deliver_order_label">Realiza la entrega en</string>
+    <string name="order_minutes_in">minutos en:</string>
+    <string name="order_address">Dirección</string>
+    <string name="order_accept">Aceptar</string>
+    <string name="order_success">Operación realizada con éxito</string>
+    <string name="order_deliver_order_text">Tu entrega será realizada en</string>
+    <string name="order_minutes">minutos</string>
+    <string name="order_deliver_rejected">El cliente ha rechazado el pedido</string>
+    <string name="order_deliver_orders_activated">El envío de pedidos está activado</string>
+    <string name="order_slopes">PENDIENTES</string>
+    <string name="order_delivered_orders">ENTREGADOS</string>
+    <string name="order_search">Buscar</string>
+    <string name="order_you_have_new_order">Tienes un nuevo pedido</string>
+    <string name="order_data_request">Estos son los datos de la solicitud</string>
+    <string name="order_date_hour">Fecha y hora de la solicitud</string>
+    <string name="order_details_for_order">Ver detalles de pedido</string>
+    <string name="order_reject_order_to_send">Rechazar pedido</string>
+    <string name="coupons_congratulations_tag">¡Felicidades por obtener este premio con</string>
+    <string name="coupons_change_coupon">Para canjear tu premio, imprime el cupón y entrégalo a tu vendedor en la siguiente visita.</string>
+    <string name="coupons_print">Imprimir</string>
+    <string name="coupons_chambita_name">Nombre de la chambita</string>
+    <string name="coupons_validity">Vigencia</string>
+    <string name="coupons_description">Descripción</string>
+    <string name="coupons_only_terminal">Este cupón es redimible únicamente en tu terminal ya que necesitas imprimirlo.</string>
+    <string name="coupons_change_device">Cambia de dispositivo</string>
+    <string name="coupons_redeem_before">Canjear antes del </string>
+    <string name="coupons_printed_coupon_title">Este cupón ya se imprimió</string>
+    <string name="coupons_printed_coupon_description">Recuerda que únicamente se puede imprimir una vez</string>
+    <string name="coupons_oops">¡Oops!</string>
+    <string name="coupons_no_bimboid">Notamos que hay un problema con tu código de cliente Bimbo y por el momento no es posible canjear este premio.</string>
+
+</resources>
+
+
+

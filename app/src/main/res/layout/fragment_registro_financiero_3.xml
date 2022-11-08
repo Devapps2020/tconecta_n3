@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorAccent"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="invisible"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Activación financiera"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_16sdp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/img_exit"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_power"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_30sdp">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/element_width"
+                    android:layout_height="@dimen/_42sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="Abrir cuenta bancaria"
+                        android:textColor="@color/colorWithe"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true">
+
+                        <RadioButton
+                            android:id="@+id/rad_si"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:text="SI"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_14sdp"
+                            android:theme="@style/RadioButton" />
+
+                        <RadioButton
+                            android:id="@+id/rad_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="NO"
+                            android:checked="true"
+                            android:textColor="@color/colorAccent"/>
+
+                    </RadioGroup>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@drawable/background_edittext_green"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_cuenta"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/element_width"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:text="@string/txt_num_cuenta"
+                            android:textColor="@color/colorWithe"
+                            android:textSize="@dimen/_12sdp"
+                            android:gravity="left"
+                            android:lineSpacingMultiplier="1.2"/>
+
+                        <EditText
+                            android:id="@+id/edit_numero_cuenta"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_edittext_green"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:textCursorDrawable="@drawable/cursor_green"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/text_error_numero_cuenta"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/colorRed"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="@dimen/element_width"
+                        android:layout_height="@dimen/_140sdp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:text="Fotografía estado de cuenta"
+                            android:textColor="@color/colorWithe"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <ImageView
+                            android:id="@+id/img_add_photo_estado_cuenta"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="-1dp"
+                            android:src="@drawable/ic_add_photo"
+                            android:tint="@color/colorAccent" />
+
+                        <ImageView
+                            android:id="@+id/img_photo_estado_cuenta"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/img_add_photo_estado_cuenta"
+                            android:layout_margin="@dimen/_5sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@drawable/background_edittext_green"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_cuenta_nueva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/element_width"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:gravity="left"
+                            android:text="@string/text_tipo_cuenta"
+                            android:textColor="@color/colorWithe"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_cuenta_transfer"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_edittext_green"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:textCursorDrawable="@drawable/cursor_green"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="@dimen/element_width"
+                        android:layout_height="@dimen/_140sdp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:text="Leer y firmar contrato"
+                            android:textColor="@color/colorWithe"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <ImageView
+                            android:id="@+id/img_contrato"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_file"
+                            android:padding="@dimen/_2sdp"
+                            android:tint="@color/colorAccent"/>
+
+                        <ImageView
+                            android:id="@+id/img_firm"
+                            android:scaleType="fitXY"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/img_contrato"
+                            android:layout_margin="@dimen/_5sdp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@drawable/background_edittext_green"
+                            android:layout_alignParentBottom="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_confirmar"
+                    style="@style/Signika_Semibold"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="Continuar"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/background_selector_green"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@drawable/button_text_color" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBimboWithe">
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/img_user"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorAccent"
+            android:layout_margin="@dimen/_10sdp"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Fincomún"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_16sdp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/img_exit"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_power"
+            android:layout_margin="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp">
+
+                <TextView
+                    style="@style/Signika_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retiro sin tarjeta"
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:padding="0dp"/>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Todos los retiro sin tarjetas realizados desde este medio solo se podrán completar en cajeros BBVA."
+                    android:textColor="@color/colorBimboGrayDark"
+                    android:textSize="@dimen/_14sdp"
+                    android:padding="@dimen/_30sdp"/>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Seleccione la cuenta de retiro"
+                    android:gravity="left"
+                    android:textColor="@color/colorBimboGrayLight1"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@drawable/ic_down"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <com.reginald.editspinner.EditSpinner
+                        android:id="@+id/edit_select_cuenta"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_edittext_green"
+                        android:digits="0123456789"
+                        android:gravity="right|center_vertical"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:paddingRight="@dimen/_25sdp"
+                        android:singleLine="false"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_green"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/text_error_select_cuenta"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorRed"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="left"
+                    android:text="2. Seleccione monto"
+                    android:textColor="@color/colorBimboGrayLight1"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_monto_cien"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/button_height"
+                            android:text="$100"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/background_button_blue_ligth"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorGray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_monto_docientos"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/button_height"
+                            android:text="$200"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/background_button_blue_ligth"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorGray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_monto_trecientos"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/button_height"
+                            android:text="$300"
+                            android:textAllCaps="false"
+                            android:layout_marginTop="@dimen/_30sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/background_button_blue_ligth"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorGray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_monto_quinientos"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/button_height"
+                            android:text="$500"
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/background_button_blue_ligth"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorGray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_monto_mil"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/button_height"
+                            android:text="$1000"
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/background_button_blue_ligth"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorGray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/button_monto_milquinientos"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/button_height"
+                            android:text="$1500"
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:background="@drawable/background_button_blue_ligth"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/colorGray" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. O escriba la cantidad deseada "
+                        android:textColor="@color/colorBimboGrayLight1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <EditText
+                        android:id="@+id/edit_monto"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:digits="0123456789"
+                        android:background="@drawable/background_edittext_green"
+                        android:textCursorDrawable="@drawable/cursor_green"
+                        android:gravity="right|bottom"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/text_error_monto"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorRed"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monto diario máximo $8,000, Introduce solo\nmúltiplos de 100 ejemplo: $1200"
+                    android:gravity="left"
+                    android:textColor="@color/colorBimboRedBimbo"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:alpha="0.6"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_45sdp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. Concepto de retiro "
+                        android:textColor="@color/colorBimboGrayLight1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <EditText
+                        android:id="@+id/edit_concepto"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_edittext_green"
+                        android:digits="0123456789"
+                        android:gravity="right|bottom"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_green"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_error_concepto"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorRed"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_siguiente"
+                    style="@style/Signika_Semibold"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:text="Siguiente"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/background_selector_blue"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@drawable/button_text_color" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_30sdp">
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Información de depósito"
+            android:textColor="@color/colorWithe"
+            android:textSize="@dimen/_16sdp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/background_round_red"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp">
+
+            <TextView
+                style="@style/Graphik_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Cuenta no verificada"
+                android:textColor="@color/colorWithe"
+                android:textSize="@dimen/_12sdp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_alert"
+                android:tint="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Banco"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_nombre"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="CLABE"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_apellido"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="No. Cuenta"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_nacimiento"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Estado de cuenta"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="ID oficial"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Firma"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_round_gray_black"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                style="@style/Graphik_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingExtra="@dimen/_5sdp"
+                android:text="@string/text_informacion"
+                android:textColor="@color/colorWithe"
+                android:textSize="@dimen/_16sdp" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/element_width"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:text="RFC"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_edittext_green"
+                    android:gravity="right"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorAccent"
+                    android:textCursorDrawable="@drawable/cursor_green"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/element_width"
+                android:layout_height="@dimen/_35sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:padding="0dp"
+                    android:text="CURP"
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    style="@style/Graphik_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|bottom"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:text="POSG84110677G6"
+                    android:textColor="@color/colorAccent"
+                    android:textCursorDrawable="@drawable/cursor_green"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <Button
+                style="@style/Signika_Semibold"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/background_button_round_green"
+                android:text="Guardar cambios"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="País de origen"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Ocupación"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_confirmar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/background_button_round_green"
+            android:text="Cambiar cuenta de banco"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_cancelar"
+                style="@style/Signika_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_cancel"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/item_menu_opciones_bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

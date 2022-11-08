@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_login">
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.blm.qiubopay.modules.login.Fragment_login_user"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login_1" />
+
+    <fragment
+        android:id="@+id/nav_recover"
+        android:name="com.blm.qiubopay.modules.login.Fragment_recuperar_pass"
+        android:label="@string/menu_recover"
+        tools:layout="@layout/fragment_recuperar_2" />
+
+    <fragment
+        android:id="@+id/nav_pin"
+        android:name="com.blm.qiubopay.modules.registro.Fragment_registro_pin"
+        android:label="@string/menu_pin"
+        tools:layout="@layout/fragment_registro_pin" />
+
+    <fragment
+        android:id="@+id/nav_register_option"
+        android:name="com.blm.qiubopay.modules.registro.Fragment_registro_option"
+        android:label="@string/menu_register_option"
+        tools:layout="@layout/fragment_registro_option" />
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.blm.qiubopay.modules.registro.Fragment_registro_1"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_registro_1" />
+
+    <fragment
+        android:id="@+id/nav_register_3"
+        android:name="com.blm.qiubopay.modules.home.Fragment_browser"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_registro_3" />
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.blm.qiubopay.modules.home.Fragment_notification"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_notification" />
+
+</navigation>

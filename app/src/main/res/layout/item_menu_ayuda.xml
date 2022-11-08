@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_ayuda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorBimboGrayLight">
+
+    <TextView
+        android:id="@+id/btn_guide"
+        style="@style/Signika_Semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="Manual"
+        android:layout_weight="1"
+        android:textColor="@color/colorBimboGrayDark"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/btn_faq"
+        style="@style/Signika_Semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:text="FAQ"
+        android:layout_weight="1"
+        android:textColor="@color/colorBimboGrayDark"
+        android:textSize="@dimen/_20sdp" />
+
+    <TextView
+        android:visibility="gone"
+        style="@style/Signika_Semibold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp"
+        android:text="Chat"
+        android:layout_weight="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_20sdp" />
+
+</LinearLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_blue_fincomun"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/check"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:tint="@color/FC_blue_4" />
+        <TextView
+            style="@style/FC_Regular"
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Operación exitosa"
+            android:textColor="@color/FC_black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            style="@style/FC_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/FC_txt_success_credit_request"
+            android:textColor="@color/FC_grey_1"
+            android:textSize="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:layout_marginHorizontal="@dimen/_5sdp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="@string/FC_txt_credit_success_1"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="@string/FC_txt_credit_success_2"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="@string/FC_txt_credit_success_3"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="top"/>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="@string/FC_txt_credit_success_4"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/text_description"
+            style="@style/FC_Medium"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Folio de solicitud: 123456789"
+            android:textColor="@color/FC_blue_4"
+            android:textSize="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_5sdp">
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_steps"
+                    android:layout_centerInParent="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/check_24_px"
+                    app:tint="@color/FC_white"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@color/FC_blue_4"/>
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/circle_steps_line_blue"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@color/FC_blue_4"/>
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/circle_steps_line_blue"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_centerInParent="true"/>
+            <View
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:background="@color/FC_blue_4"/>
+            <View
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/circle_steps_line_blue"
+                android:layout_centerInParent="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                style="@style/FC_Medium"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Solicitud"
+                android:textColor="@color/FC_blue_4"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <TextView
+                style="@style/FC_Regular"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Autorización\ntransferencia"
+                android:textColor="@color/FC_blue_4"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <TextView
+                style="@style/FC_Regular"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Confirmación"
+                android:textColor="@color/FC_blue_4"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <TextView
+                style="@style/FC_Regular"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Entrega"
+                android:textColor="@color/FC_blue_4"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="ACEPTAR"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            style="@style/FC_Regular"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Si tienes alguna duda o deseas obtener más información comunicate al teléfono 55 5200 1610 con la opción #9"
+            android:textColor="@color/FC_grey_1"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

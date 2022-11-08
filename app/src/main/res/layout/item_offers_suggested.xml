@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_numero_oferta"
+            style="@style/Signika_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:padding="0dp"
+            android:text="Oferta sugerida 1"
+            android:textColor="@color/colorBimboBlueDark"
+            android:textSize="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto de crédito"
+                android:textStyle="bold"
+                android:gravity="left|center_vertical"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/colorBimboBlueDark"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/edit_monto_credito"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/background_edit_increment"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorBimboBlueLight"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuota"
+                android:textStyle="bold"
+                android:gravity="left|center_vertical"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/colorBimboBlueDark"
+                android:textSize="@dimen/_12sdp"/>
+
+            <EditText
+                android:id="@+id/edit_cuota_credito"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/background_edit_increment"
+                android:paddingLeft="@dimen/_10sdp"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorBimboBlueLight"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pagos"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp"/>
+
+                <EditText
+                    android:id="@+id/edit_pagos_credito"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/background_edit_increment"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorBimboBlueLight"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Frecuencia"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp"/>
+
+                <EditText
+                    android:id="@+id/edit_frecuencia_credito"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/background_edit_increment"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/colorBimboBlueLight"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:paddingBottom="@dimen/_30sdp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_choose_offer"
+            style="@style/Graphik_Medium"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_selector_green"
+            android:text="Elegir Oferta"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

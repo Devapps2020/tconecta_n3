@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="¡Proceso exitoso!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            style="@style/Graphik_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="En un período no mayor a 48 horas hábiles recibirás vía correo electrónico tu orden de pago para retirar tu dinero en ventanilla de BBVA, y la siguiente información:"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1) Confirmación de Desembolso de tu Crédito\n2) Monto Desembolsado\n3) Número de Cliente\n4) Número de Crédito"
+            android:textColor="@color/colorBimboWithe"
+            android:gravity="left"
+            android:textSize="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            style="@style/Graphik_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Recuerda que en cualquier momento podrás ponerte en contacto con nosotros a través de nuestros canales de comunicación."
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Aceptar"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

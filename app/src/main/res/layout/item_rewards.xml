@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:background="@drawable/background_gradient_gray"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_rewards_1"
+            android:textColor="@color/colorGrayBlack"
+            android:textSize="@dimen/_20sdp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorGray"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comenzar a facturar"
+            android:textColor="@color/colorGrayBlack"
+            android:textSize="@dimen/_16sdp"
+            android:padding="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

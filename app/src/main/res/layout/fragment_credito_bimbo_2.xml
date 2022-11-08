@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_1"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_credtio_2"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_20sdp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/comprar_2"
+                    android:paddingLeft="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+
+                    <TextView
+                        android:id="@+id/text_nombre"
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Juan López"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/text_visita"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Visita: Lunes, Martes y Jueves"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="Pesito disponible: "
+                            android:textColor="@color/colorBimboGrayDark"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/text_saldo"
+                            style="@style/Graphik_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="$0.00"
+                            android:textColor="@color/colorBimboGrayDark"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorBimboBlueDark"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                style="@style/Graphik_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Pesito pendiente: "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_16sdp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/text_pesito_pendiente"
+                                style="@style/Graphik_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="$0.00"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_14sdp"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorBimboBlueDark"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                style="@style/Graphik_Regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Cuotas pendientes: "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/text_cuota_pendiente"
+                                style="@style/Graphik_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <View
+                            android:visibility="gone"
+                            android:layout_width="@dimen/_1sdp"
+                            android:layout_height="match_parent"
+                            android:background="@color/white" />
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/colorBimboBlueDark"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                style="@style/Graphik_Regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Comisión vencida:"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/text_comision_vencida"
+                                style="@style/Graphik_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_weight="1"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/colorBimboBlueDisable1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingLeft="@dimen/_15sdp">
+
+
+                                <TextView
+                                    style="@style/Graphik_Regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="Número de factura"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/text_no_factura"
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="16909302019174241"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/colorBimboBlueDisable1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingLeft="@dimen/_15sdp">
+
+
+                                <TextView
+                                    style="@style/Graphik_Regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="Fecha de factura"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/text_fecha_factura"
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="2019-09-30"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/colorBimboBlueDisable1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingLeft="@dimen/_15sdp">
+
+
+                                <TextView
+                                    style="@style/Graphik_Regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="Monto original de la factura"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/text_saldo_total"
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="$0.00"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/colorBimboBlueDisable1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingLeft="@dimen/_15sdp">
+
+
+                                <TextView
+                                    style="@style/Graphik_Regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="Número de validaciones"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/text_monto"
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="$0.00"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/colorBimboBlueDisable1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_40sdp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingRight="@dimen/_15sdp"
+                                android:paddingLeft="@dimen/_15sdp">
+
+
+                                <TextView
+                                    style="@style/Graphik_Regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="Total de abonos recibidos"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/text_comision"
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:padding="0dp"
+                                    android:text="$0.00"
+                                    android:textColor="@color/colorBimboBlueDark"
+                                    android:textSize="@dimen/_12sdp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_1sdp"
+                                android:background="@color/colorBimboBlueDisable1" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center|bottom"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_rquest_credit"
+                        style="@style/Button.Primary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Solicitar crédito Pesito"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

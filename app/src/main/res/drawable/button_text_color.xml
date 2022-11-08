@@ -1,0 +1,10 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Focused and not pressed -->
+    <item android:state_enabled="true"
+        android:color="@color/colorBimboWithe" />
+
+    <item android:state_enabled="false"
+        android:color="@color/colorBimboGrayLight1" />
+
+</selector>

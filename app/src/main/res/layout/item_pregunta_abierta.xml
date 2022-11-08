@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_two"
+    android:textAlignment="viewEnd">
+
+
+    <LinearLayout
+        android:id="@+id/ll_preguntas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pregunta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_respuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:errorEnabled="true"
+            app:errorTextColor="@color/scarlet"
+            app:boxBackgroundColor="@color/white_three">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dusky_blue"
+                android:textColorHint="@color/bluey_grey"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz0123456789 "
+                android:hint="@string/text_chambitas_21"
+                android:imeOptions="actionDone"
+                android:maxLength="255"
+                android:maxLines="1"
+                android:minLines="1"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/text_input_layout_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_input_required"
+                android:gravity="right"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/scarlet"
+                android:textSize="@dimen/_10sdp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

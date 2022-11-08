@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rl_dot0"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_positive_dot0"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_positive_blue_dot" />
+
+        <ImageView
+            android:id="@+id/iv_negative_dot0"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_negative_dot"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dot1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_positive_dot1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_positive_blue_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_negative_dot1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_negative_dot" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dot2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_positive_dot2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_positive_blue_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_negative_dot2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_negative_dot" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dot3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_positive_dot3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_positive_blue_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_negative_dot3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_negative_dot" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dot4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_positive_dot4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_positive_blue_dot"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_negative_dot4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/ic_negative_dot" />
+
+    </RelativeLayout>
+
+</LinearLayout>

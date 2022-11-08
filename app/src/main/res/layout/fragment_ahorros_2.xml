@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/_20sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_quieres_empezar"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/icons_total_dinero"
+                    android:paddingLeft="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_30sdp"
+                android:layout_margin="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/icons_prestamo_abastecimiento"
+                        android:layout_gravity="top"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="left"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:text="@string/text_8"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:id="@+id/img_delete"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:src="@drawable/ic_delete" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:visibility="invisible"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/icons_prestamo_abastecimiento"
+                            android:layout_gravity="top"/>
+
+                          <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="left"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="@string/text_9"
+                            android:textColor="@color/dusk_blue"
+                            android:textSize="@dimen/_12sdp" />
+
+                              <TextView
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:fontFamily="@font/roboto_medium"
+                                  android:gravity="left"
+                                  android:layout_marginLeft="@dimen/_5sdp"
+                                  android:text="@string/text_10"
+                                  android:textColor="@color/brownish_grey"
+                                  android:textSize="@dimen/_12sdp" />
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="horizontal">
+
+                              <TextView
+                                  android:id="@+id/text_no_cuenta"
+                                  android:layout_marginTop="@dimen/_5sdp"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:layout_weight="1"
+                                  android:fontFamily="@font/roboto_medium"
+                                  android:gravity="left"
+                                  android:layout_marginLeft="@dimen/_5sdp"
+                                  android:text="0000000000000"
+                                  android:textColor="@color/brownish_grey"
+                                  android:textSize="@dimen/_10sdp" />
+
+                                  <TextView
+                                      android:id="@+id/text_edit"
+                                      android:layout_marginTop="@dimen/_5sdp"
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="match_parent"
+                                      android:layout_weight="1"
+                                      android:fontFamily="@font/roboto_medium"
+                                      android:gravity="right"
+                                      android:layout_marginRight="@dimen/_10sdp"
+                                      android:layout_marginLeft="@dimen/_5sdp"
+                                      android:text="EDITAR"
+                                      android:textColor="@color/clear_blue"
+                                      android:textSize="@dimen/_14sdp" />
+
+                              </LinearLayout>
+
+                          </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

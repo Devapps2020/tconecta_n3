@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurante_1"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+            <!--
+            <TextView
+                android:id="@+id/commensal_name"
+                android:text="Persona 1"
+                style="@style/TitleTextPaymentStyle" />
+            -->
+            <TextView
+                android:id="@+id/commensal_name"
+                android:text="Persona 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+            <!-- PERSONAS A CUBRIR -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/layout_nombre"
+                        android:layout_width="@dimen/element_width"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/background_round_withe"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            style="@style/Graphik_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:text="Nombre"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/edit_inombre_cliente"
+                                style="@style/Graphik_Medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="1"
+                                android:background="@color/colorWithe"
+                                android:gravity="left|center_vertical"
+                                android:inputType="textEmailSubject"
+                                android:padding="0dp"
+                                android:hint="Nombre"
+                                android:singleLine="true"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textCursorDrawable="@drawable/cursor_gray"
+                                android:textSize="@dimen/_18sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                        <!-- COMBO COMMENSALS -->
+                        <LinearLayout
+                            android:id="@+id/layout_commensals"
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_round_withe"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/restaurante_5"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:id="@+id/txt_commensal"
+                                    style="@style/Graphik_Regular"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:textSize="@dimen/_16sdp"
+                                    android:textColor="@color/colorGray"
+                                    android:text="1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_1sdp"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorGray" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="@dimen/_10sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_12sdp"
+                                    android:layout_height="@dimen/_12sdp"
+                                    android:src="@drawable/ic_down"
+                                    android:tint="@color/colorGrayBlack"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- SEPARADOR -->
+                        <View
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/colorWithe"
+                            android:layout_marginTop="@dimen/_15sdp"/>
+
+                        <!-- EDIT TEXT TIP PERCENT -->
+                        <LinearLayout
+                            android:id="@+id/layout_monto"
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_round_withe"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/restaurante_9"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/_5sdp">
+
+                                    <EditText
+                                        android:id="@+id/edit_tip_percent"
+                                        android:enabled="false"
+                                        style="@style/Graphik_Regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorWithe"
+                                        android:gravity="left|center_vertical"
+                                        android:inputType="textEmailSubject"
+                                        android:padding="0dp"
+                                        android:hint="0"
+                                        android:singleLine="true"
+                                        android:textCursorDrawable="@drawable/cursor_gray"
+                                        android:textSize="@dimen/_18sdp" />
+
+                                    <TextView
+                                        style="@style/Graphik_Medium"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="%"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textColor="@color/colorGrayBlack"
+                                        android:padding="0dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- TIP PERCENT -->
+                        <LinearLayout
+                            android:id="@+id/layout_radio_buttons"
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <!-- PERCENT 10% -->
+                            <LinearLayout
+                                android:id="@+id/layout_cash_collect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rad_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:text=""
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:theme="@style/RadioButton" />
+
+                                <TextView
+                                    style="@style/Signika_Semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/restaurante_percent_10"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/dusky_blue"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <!-- PERCENT 13% -->
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:id="@+id/layout_cash_collect2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rad_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:theme="@style/RadioButton" />
+
+                                <TextView
+                                    style="@style/Signika_Semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/restaurante_percent_13"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/dusky_blue"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <!-- PERCENT 18% -->
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:id="@+id/layout_cash_collect3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rad_15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:theme="@style/RadioButton" />
+
+                                <TextView
+                                    style="@style/Signika_Semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/restaurante_percent_15"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/dusky_blue"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <!-- PERCENT OTHER -->
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:id="@+id/layout_cash_collect4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rad_other"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/_3sdp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textStyle="bold"
+                                    android:theme="@style/RadioButton" />
+
+                                <TextView
+                                    style="@style/Signika_Semibold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="@string/restaurante_percent_other"
+                                    android:textSize="@dimen/_12sdp"
+                                    android:textColor="@color/dusky_blue"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!-- EDIT TEXT TOTAL -->
+                        <LinearLayout
+                            android:id="@+id/layout_total"
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/background_round_withe"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_15sdp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="@dimen/_10sdp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/restaurante_8"
+                                    android:textColor="@color/colorGray"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_marginTop="@dimen/_5sdp">
+
+                                    <EditText
+                                        android:id="@+id/edit_importe"
+                                        android:enabled="false"
+                                        style="@style/Graphik_Regular"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:background="@color/colorWithe"
+                                        android:gravity="left|center_vertical"
+                                        android:inputType="textEmailSubject"
+                                        android:padding="0dp"
+                                        android:hint="$0.00"
+                                        android:singleLine="true"
+                                        android:textCursorDrawable="@drawable/cursor_gray"
+                                        android:textSize="@dimen/_18sdp" />
+
+                                    <TextView
+                                        style="@style/Graphik_Medium"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:text="MXN"
+                                        android:textSize="@dimen/_18sdp"
+                                        android:textColor="@color/colorGrayBlack"
+                                        android:padding="0dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentRight="true">
+
+                        <!-- SELL TYPE CREDIT CARD -->
+                        <LinearLayout
+                            android:id="@+id/layout_pay_with_card"
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_20sdp">
+
+                            <RadioButton
+                                android:id="@+id/rad_credit_card"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:theme="@style/RadioButton"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                style="@style/Signika_Semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/restaurante_6"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/dusky_blue"
+                                android:gravity="left"/>
+
+                        </LinearLayout>
+
+                        <!-- SEPARADOR -->
+                        <View
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/colorBimboBlueLight"
+                            android:layout_marginTop="@dimen/_10sdp"/>
+
+                        <!-- SELL TYPE CASH-->
+                        <LinearLayout
+                            android:id="@+id/layout_pay_with_cash"
+                            android:layout_width="@dimen/element_width"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <RadioButton
+                                android:id="@+id/rad_cash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:theme="@style/RadioButton"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                style="@style/Signika_Semibold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/restaurante_7"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold"
+                                android:textColor="@color/dusky_blue"
+                                android:gravity="left"/>
+
+                        </LinearLayout>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_continuar"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button_37"
+                android:gravity="center"
+                android:enabled="false"
+                android:textSize="@dimen/_10sdp" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancelar"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurante_btn_2"
+                android:gravity="center"
+                android:enabled="true"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

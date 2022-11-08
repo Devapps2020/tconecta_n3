@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_user"
+                android:tint="@color/colorAccent"
+                android:layout_margin="@dimen/_10sdp"/>
+
+            <TextView
+                style="@style/Graphik_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CoDi"
+                android:textColor="@color/colorBimboGrayDark"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_fincomun"
+                android:layout_margin="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se generó tu\n código QR con éxito"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_26sdp"
+            android:padding="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top|center">
+
+                    <LinearLayout
+                        android:id="@+id/layout_shared"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/image_qr_codi"
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="@dimen/_250sdp"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@color/colorWithe"
+                            android:src="@drawable/img_qr"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top|center">
+
+                    <Button
+                        android:id="@+id/btn_shared"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/background_selector_green"
+                        android:text="Compartir"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/button_text_color"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

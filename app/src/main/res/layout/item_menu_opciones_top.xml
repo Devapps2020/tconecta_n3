@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_opciones_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorRed">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/logo_7"
+            android:tint="@color/colorWithe" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:id="@+id/layout_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_home"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_home_option"
+            android:tint="@color/colorWithe" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:visibility="gone"
+        android:id="@+id/layout_saldo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_money"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_money_option"
+            android:tint="@color/colorWithe"
+            android:alpha="0.6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:id="@+id/layout_notificaciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/numero_notification"
+                android:visibility="invisible"
+                style="@style/Graphik_Medium"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/circle_gray_notification"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="12"
+                android:textColor="@color/colorBimboWithe"
+                android:textSize="@dimen/_6sdp"
+                android:elevation="@dimen/_10sdp"/>
+
+            <ImageView
+                android:id="@+id/img_notification"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_notification_option"
+                android:tint="@color/colorWithe"
+                android:alpha="0.6"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:id="@+id/layout_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_perfil"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:src="@drawable/ic_user_photo_option"
+            android:tint="@color/colorWithe"
+            android:alpha="0.6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saldo"
+            android:padding="0dp"
+            android:textColor="@color/colorWithe"
+            android:textSize="@dimen/_10sdp"/>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:padding="0dp"
+            android:id="@+id/text_saldo"
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textColor="@color/colorWithe"
+            android:textSize="@dimen/_11sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

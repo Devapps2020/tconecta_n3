@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorAccent"
+            android:layout_margin="@dimen/_10sdp"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fincomún"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/img_fincomun"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_fincomun"
+            android:layout_margin="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_oferta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:background="@color/colorBimboBlueDark">
+
+                    <TextView
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="0dp"
+                        android:text="Te aprobamos"
+                        android:textColor="@color/colorWithe"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <TextView
+                        android:id="@+id/monto_autorizado"
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:text="$5,000.00"
+                        android:textColor="@color/colorWithe"
+                        android:textSize="@dimen/_24sdp" />
+
+                    <TextView
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="en efectivo ahora\nsin ninguna comisión."
+                        android:textColor="@color/colorWithe"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_tipo_pago"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="16 pagos Quincenal de $1,200.00"
+                        android:textColor="@color/colorWithe"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/btn_codi"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:text="Operaciones con QR"
+                        android:textAllCaps="false"
+                        android:background="@drawable/background_selector_green"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@drawable/button_text_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <Button
+                        android:id="@+id/btn_me_interesa"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:text="¡Me interesa!"
+                        android:textAllCaps="false"
+                        android:background="@drawable/background_selector_blue_dark"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@drawable/button_text_color"
+                        android:layout_marginBottom="@dimen/_20sdp"/>
+
+                    <Button
+                        android:id="@+id/btn_apply_credit_fc"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:text="Otro monto"
+                        android:textAllCaps="false"
+                        android:background="@drawable/background_selector_green"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@drawable/button_text_color" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_title_prestamos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:padding="0dp"
+                        android:text="Mis Préstamos"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_22sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_lista"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorBimboBlueDisable1" />
+
+                    <ListView
+                        android:id="@+id/list_prestamos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:background="@drawable/background_button_tabs">
+
+                    <TextView
+                        style="@style/Graphik_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Ver mis solicitudes y recompras"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_15sdp"/>
+
+                    <Button
+                        android:id="@+id/btn_view_more"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:text="Ver más"
+                        android:textAllCaps="false"
+                        android:background="@drawable/background_button_round_white"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:textColor="@color/colorBimboBlueDark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

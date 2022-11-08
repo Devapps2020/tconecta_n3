@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_opciones_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorBimboGrayLight2"
+    android:paddingBottom="@dimen/_5sdp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/layout_depositar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_pig"
+            android:tint="@color/colorBimboGrayDark"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Depositar"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_transacciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:padding="@dimen/_5sdp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:src="@drawable/ic_load_money"
+            android:tint="@color/colorBimboGrayDark"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Transacciones"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_reportes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_grafica"
+            android:tint="@color/colorBimboGrayDark"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Reportes"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_soporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_audifonos"
+            android:tint="@color/colorBimboGrayDark"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Soporte"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

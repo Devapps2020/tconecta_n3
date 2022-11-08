@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_1"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:layout_weight="1">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_user"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        app:tint="@color/dusk_blue"/>
+
+                    <TextView
+                        android:id="@+id/nombre_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="left|center_vertical"
+                        android:text="Pedro Páramo"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_16sdp"
+                        app:autoSizeMaxTextSize="@dimen/_16sdp"
+                        app:autoSizeMinTextSize="@dimen/_10sdp"
+                        app:autoSizeStepGranularity="2sp"
+                        app:autoSizeTextType="uniform" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/btn_notificaciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="right"
+                        android:text="NOTIFICACIONES"
+                        android:textColor="@color/clear_blue"
+                        android:paddingTop="5sp"
+                        app:autoSizeStepGranularity="2sp"
+                        app:autoSizeTextType="uniform"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <!--ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_notification"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        app:tint="@color/dusk_blue"/-->
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center">
+
+                        <LinearLayout
+                            android:id="@+id/layout_notificaciones"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center|right"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/notification"
+                                    android:layout_width="@dimen/_22sdp"
+                                    android:layout_height="@dimen/_22sdp"
+                                    android:layout_centerInParent="true"
+                                    android:background="@android:color/transparent"
+                                    android:src="@drawable/ic_notification"/>
+
+                                <TextView
+                                    android:id="@+id/no_notificaciones"
+                                    android:visibility="invisible"
+                                    style="@style/Graphik_Medium"
+                                    android:layout_width="@dimen/_10sdp"
+                                    android:layout_height="@dimen/_10sdp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:background="@drawable/circle_gray_notification"
+                                    android:gravity="center"
+                                    android:padding="0dp"
+                                    android:text="12"
+                                    android:textColor="@color/colorBimboWithe"
+                                    android:textSize="@dimen/_6sdp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/text_multi_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pago_servicios_3"
+                android:gravity="left"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_14sdp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/_25sdp"
+                android:paddingLeft="@dimen/_25sdp">
+
+                <!-- Personal -->
+
+                <!-- Negocio -->
+                <include
+                    android:id="@+id/layout_personal"
+                    layout="@layout/item_option" />
+
+                <include
+                    android:id="@+id/layout_negocio"
+                    layout="@layout/item_option"/>
+
+                <!-- Desvincular Dongle -->
+                <include
+                    android:id="@+id/layout_desvincular_dongle"
+                    layout="@layout/item_option"
+                    android:visibility="gone" />
+
+                <!-- Cambiar PIN -->
+
+                <include
+                    android:id="@+id/layout_restaurar_pin"
+                    layout="@layout/item_option"/>
+
+                <!-- Compra de dongle -->
+                <include
+                    android:id="@+id/layout_compra_dongle"
+                    layout="@layout/item_option"/>
+
+                <!-- Compra de material -->
+                <include
+                    android:id="@+id/layout_compra_material"
+                    layout="@layout/item_option"/>
+
+                <!-- Cajero / Patrón -->
+                <include
+                    android:id="@+id/layout_multi"
+                    layout="@layout/item_option"/>
+
+
+                <!-- Acerca de -->
+                <include
+                    android:id="@+id/layout_acerca"
+                    layout="@layout/item_option"/>
+
+                <!-- Preguntas Frecuentes -->
+                <include
+                    android:id="@+id/layout_faq"
+                    layout="@layout/item_option"/>
+
+                <include
+                    android:id="@+id/layout_encuentas"
+                    layout="@layout/item_option"/>
+
+                <!-- Cerrar sesion -->
+                <include
+                    android:id="@+id/layout_cerrar_session"
+                    layout="@layout/item_option"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

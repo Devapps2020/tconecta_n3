@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:padding="0dp"
+            android:text="Nombre del crédito"
+            android:textColor="@color/colorBimboBlueDark"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="0dp"
+            android:text="16909302019174241"
+            android:textColor="@color/colorBimboBlueDark"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:src="@drawable/ic_chevron_right"
+            android:tint="@color/colorBimboBlueDark" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorBimboBlueDisable1" />
+
+</LinearLayout>

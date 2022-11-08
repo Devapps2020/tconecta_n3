@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores Principales -->
+
+    <color name="colorBimboRedBimbo">#EB0028</color>
+    <color name="colorBimboBlueDark">@color/clear_blue</color>
+    <color name="colorBimboBlueLight">@color/azure</color>
+    <color name="colorBimboBlueDisable">#386fb7</color>
+    <color name="colorBimboBlueDisable1">#5c71a1</color>
+    <color name="colorBimboAlert">#EF6461</color>
+    <color name="colorBimboStar">#F5CB5C</color>
+
+
+    <!-- Colores Principales -->
+
+    <color name="colorBimboGrayBimbo">#999999</color>
+    <color name="colorBimboGrayLight1">#C2C2C2</color>
+    <color name="colorBimboGrayLight2">#DDDDDD</color>
+    <color name="colorBimboWithe">#FFFFFF</color>
+    <color name="colorBimboGrayDark">#595959</color>
+    <color name="colorBimboGrayLight">#F2F2F2</color>
+
+    <color name="colorTransparency">#aa5c71a4</color>
+
+    <!-- Colores Otros -->
+
+    <color name="colorPrimary">#6F97BC</color>
+    <color name="colorPrimaryDark">@color/colorBimboBlueLight</color>
+    <color name="colorAccent">@color/colorBimboWithe</color>
+    <color name="colorWithe">#FFFFFF</color>
+    <color name="background">@color/colorWithe</color>
+    <color name="colorWitheLight">#CEDAF5</color>
+
+    <color name="colorGray">#B2B2B2</color>
+    <color name="colorGrayDark">#858484</color>
+    <color name="colorGrayLight">#E7EBF4</color>
+    <color name="colorGrayLight1">#EBEBEB</color>
+    <color name="colorGrayBlack">@color/colorBimboGrayDark</color>
+    <color name="colorGrayBlack1">@color/colorBimboWithe</color>
+    <color name="colorGrayLight2">#C8D0DD</color>
+
+
+
+    <color name="colorGreen">@color/colorBimboBlueLight</color>
+    <color name="colorGreenDark">#95AC62</color>
+    <color name="colorGreenLight">@color/colorBimboBlueLight</color>
+    <color name="colorDryGreen">@color/colorBimboWithe</color>
+
+    <color name="default_indicator_on">#FFFFFF</color>
+    <color name="default_indicator_off">#333333</color>
+    <color name="default_indicator_light_on">#111111</color>
+    <color name="default_indicator_light_off">#777777</color>
+
+    <color name="colorRed">@color/colorBimboRedBimbo</color>
+
+    <color name="colorPidelo">#7101C6</color>
+    <color name="colorPedidos">#E7EBF4</color>
+    <color name="coloTextPidelo">#344551</color>
+    <color name="colorRouteStatus">#E3870A</color>
+    <color name="colorGreenPidelo">#02B54F</color>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+    <color name="white_white">#FFFFFF</color>
+    <color name="bright_light_blue">#25d9f3</color>
+    <color name="azure">#2196f3</color>
+    <color name="twilight_blue">#2962ff</color>
+    <color name="navy">#002941</color>
+    <color name="warm_grey">#979797</color>
+    <color name="orange_red">#ff2727</color>
+    <color name="lipstick">#d82835</color>
+    <color name="dusk_blue">#253979</color>
+    <color name="carolina_blue">#82b1ff</color>
+    <color name="bluey_grey">#a8b0c8</color>
+    <color name="white">#fafafa</color>
+    <color name="white_two">#FFFFFF</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_12">#1e000000</color>
+    <color name="black_14">#23000000</color>
+    <color name="white_three">#eeeeee</color>
+    <color name="coral">#f95757</color>
+    <color name="dusky_blue">#405289</color>
+    <color name="clear_blue">#2979ff</color>
+    <color name="pale_blue">#e2f2fd</color>
+    <color name="white_four">#e0e0e0</color>
+    <color name="mango">#f9a825</color>
+    <color name="brownish_grey">#646464</color>
+    <color name="dodger_blue">#42a5f5</color>
+    <color name="midnight">#03131c</color>
+    <color name="black">#030303</color>
+    <color name="powder_blue">#bbdefb</color>
+    <color name="dark_sky_blue_30">#4b3894f0</color>
+    <color name="grapefruit">#fb5959</color>
+    <color name="off_white">#fffde7</color>
+    <color name="dark_cream">#fff59d</color>
+    <color name="lightblue">#64b5f6</color>
+    <color name="scarlet">#b00020</color>
+    <color name="white_five">#f9f9f9</color>
+    <color name="warm_grey_two">#757575</color>
+    <color name="dodger_blue_two">#448aff</color>
+    <color name="clear_blue_two">#4188ff</color>
+    <color name="water_blue_20">#341976d2</color>
+
+    <color name="opacity_bf">#BF000000</color>
+    <color name="opacity_80">#80000000</color>
+    <color name="opacity_40">#40000000</color>
+    <color name="opacity_1a">#1A000000</color>
+    <color name="opacity_0d">#0D000000</color>
+    <color name="opacity_de">#de000000</color>
+
+    <color name="fill">#2196F3</color>
+    <color name="fill2">#4088FF</color>
+    <color name="border">#4088FF</color>
+    <color name="star">#fbc02d</color>
+
+    <color name="light_grayish_blue">#e2f2fd</color>
+
+    <!--RECURSOS VISTAS FINCOMUN -->
+    <color name="FC_bone">#FFFDE7</color>
+    <color name="FC_bone_2">#fefaf7</color>
+    <color name="FC_orange">#f9a825</color>
+
+
+    <color name="FC_white">#FFFFFF</color>
+    <color name="FC_bone_3">#fafafa</color>
+    <color name="FC_black">#000000</color>
+    <color name="FC_blue_1">#C3E2FB</color>
+    <color name="FC_blue_2">#82B1FF</color>
+    <color name="FC_blue_3">#85C4F7</color>
+    <color name="FC_blue_4">#2979FF</color>
+    <color name="FC_blue_5">#405289</color>
+    <color name="FC_blue_6">#253979</color>
+    <color name="FC_grey_1">#646464</color>
+    <color name="FC_grey_2">#A8B0C0</color>
+    <color name="FC_grey_3">#EEEEEE</color>
+
+    <color name="my_orders_black">#202020</color>
+    <color name="my_transparent">#00202020</color>
+
+</resources>

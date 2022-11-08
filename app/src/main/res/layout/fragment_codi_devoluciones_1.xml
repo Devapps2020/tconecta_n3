@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:visibility="invisible"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_user"
+                android:tint="@color/colorAccent"
+                android:layout_margin="@dimen/_10sdp"/>
+
+            <TextView
+                style="@style/Graphik_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CoDi"
+                android:textColor="@color/colorBimboGrayDark"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_fincomun"
+                android:layout_margin="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Devoluciones"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_26sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:id="@+id/tab_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/_5sdp">
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de inicio"
+                        android:gravity="left"
+                        android:textColor="@color/colorBimboGrayLight1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_down"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:tint="@color/colorPrimaryDark"/>
+
+                        <com.reginald.editspinner.EditSpinner
+                            android:id="@+id/edit_fecha_inico"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_edittext_green"
+                            android:digits="0123456789"
+                            android:gravity="right|center_vertical"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:paddingRight="@dimen/_25sdp"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@drawable/cursor_green"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/text_fecha_inico_error"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/colorRed"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_fecha_inico"
+                            android:clickable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp">
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de fin"
+                        android:gravity="left"
+                        android:textColor="@color/colorBimboGrayLight1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_20sdp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/ic_down"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:tint="@color/colorPrimaryDark"/>
+
+                        <com.reginald.editspinner.EditSpinner
+                            android:id="@+id/edit_fecha_fin"
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/background_edittext_green"
+                            android:digits="0123456789"
+                            android:gravity="right|center_vertical"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:paddingRight="@dimen/_25sdp"
+                            android:singleLine="false"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@drawable/cursor_green"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/text_fecha_fin_error"
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/colorRed"/>
+
+                        <LinearLayout
+                            android:id="@+id/layout_fecha_fin"
+                            android:clickable="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.baoyz.swipemenulistview.SwipeMenuListView
+                android:id="@+id/list_notifications"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

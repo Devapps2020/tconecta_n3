@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="element_width">@dimen/_250sdp</dimen>
+    <dimen name="element_width_200">@dimen/_200sdp</dimen>
+    <dimen name="element_width_195">@dimen/_195sdp</dimen>
+    <dimen name="element_width_50">50.00dp</dimen>
+
+    <dimen name="header_top">@dimen/_5sdp</dimen>
+    <dimen name="header_height">@dimen/_35sdp</dimen>
+    <dimen name="card_corners">@dimen/_5sdp</dimen>
+
+    <dimen name="edit_height">@dimen/_55sdp</dimen>
+
+    <dimen name="button_width">@dimen/_220sdp</dimen>
+    <dimen name="button_height">@dimen/_40sdp</dimen>
+
+    <dimen name="button_alert_width">@dimen/_200sdp</dimen>
+    <dimen name="button_alert_height">@dimen/_35sdp</dimen>
+
+    <dimen name="default_item_divider_width">5dp</dimen>
+    <dimen name="default_item_radius">5dp</dimen>
+
+    <dimen name="otp_view_item_size">48dp</dimen>
+    <dimen name="otp_view_item_radius">5dp</dimen>
+    <dimen name="otp_view_item_spacing">5dp</dimen>
+    <dimen name="otp_view_item_line_width">2dp</dimen>
+    <dimen name="otp_view_cursor_width">2dp</dimen>
+
+    <dimen name="text_area_height">@dimen/_100sdp</dimen>
+    <dimen name="text_spinner_height">@dimen/_65sdp</dimen>
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_two"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@color/color_gray"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/white_two"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_compania"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tae_telcel" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="@string/text_recarga_confirma_1"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_14sdp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tipo_pago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/text_recarga_confirma_2"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_tipo_pago"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/text_recarga_confirma_2_1"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_compania"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/text_recarga_confirma_3"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_compania"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Dummy data"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/text_recarga_confirma_4"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_celular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Dummy data"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_monto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:text="@string/text_recarga_confirma_5"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/brownish_grey"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/layout_tv_monto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Dummy data"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_14sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_continuar"
+                style="@style/Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/text_button_23"
+                android:gravity="center"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

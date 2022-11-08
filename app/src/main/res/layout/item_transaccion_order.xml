@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_more"
+            android:tint="@color/colorGray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/text_titulo"
+                style="@style/Graphik_Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="0dp"
+                android:layout_weight="1"
+                android:text="ALO $50.00"
+                android:textColor="@color/colorGrayBlack"
+                android:textSize="@dimen/_16sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/text_status"
+                    style="@style/Graphik_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:padding="0dp"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:text="ALO $50.00"
+                    android:textColor="@color/colorGrayBlack"
+                    android:textSize="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/text_fecha"
+                    style="@style/Graphik_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:padding="@dimen/_2sdp"
+                    android:text="Fecha: 01/01/2017"
+                    android:textColor="@color/colorGrayBlack"
+                    android:textSize="@dimen/_9sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ic_indicador"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:src="@drawable/ic_chevron_right"
+            android:tint="@color/colorGrayBlack"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorGray" />
+
+</LinearLayout>

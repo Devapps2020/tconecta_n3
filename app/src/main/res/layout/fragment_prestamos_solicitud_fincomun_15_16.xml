@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorAccent"
+            android:layout_margin="@dimen/_10sdp"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fincomún"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_fincomun"
+            android:layout_margin="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <TextView
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:padding="0dp"
+                        android:text="¡Felicidades!"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_22sdp" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_20sdp"
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:padding="0dp"
+                        android:text="Tu crédito es por:"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@drawable/background_button_tabs">
+
+                        <TextView
+                            android:id="@+id/text_monto"
+                            style="@style/Signika_Semibold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="$5,000.00"
+                            android:textColor="@color/colorWithe"
+                            android:textSize="@dimen/_24sdp"
+                            android:layout_marginRight="@dimen/_25sdp"
+                            android:layout_marginLeft="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/colorBimboBlueDisable1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/_15sdp"
+                            android:paddingLeft="@dimen/_15sdp">
+
+
+                            <TextView
+                                style="@style/Graphik_Regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:padding="0dp"
+                                android:text="Cada"
+                                android:textColor="@color/colorBimboBlueDark"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:id="@+id/text_cada"
+                                style="@style/Graphik_Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left"
+                                android:padding="0dp"
+                                android:text="7"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBimboBlueDark"
+                                android:textSize="@dimen/_13sdp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/colorBimboBlueDisable1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/_15sdp">
+
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:padding="0dp"
+                            android:text="A un plazo de"
+                            android:textColor="@color/colorBimboBlueDark"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:id="@+id/text_plazo"
+                            style="@style/Graphik_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="0dp"
+                            android:textStyle="bold"
+                            android:text="15 XXX"
+                            android:textColor="@color/colorBimboBlueDark"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorBimboBlueDisable1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/_15sdp"
+                        android:paddingLeft="@dimen/_15sdp">
+
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:padding="0dp"
+                            android:text="Pagos de"
+                            android:textColor="@color/colorBimboBlueDark"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <TextView
+                            android:id="@+id/text_pagos_de"
+                            style="@style/Graphik_Medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:padding="0dp"
+                            android:textStyle="bold"
+                            android:text="$387"
+                            android:textColor="@color/colorBimboBlueDark"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:background="@color/colorBimboBlueDisable1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_30sdp"
+                    android:paddingLeft="@dimen/_30sdp">
+
+                    <TextView
+                        android:id="@+id/text_cat"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="- CAT 64.5% sin IVA informativo."
+                        android:textColor="@color/colorBimboBlueLight"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/text_fecha"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="- Fecha de cálculo: Abril 2021"
+                        android:textColor="@color/colorBimboBlueLight"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/text_tasa"
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="- Tasa de interés fija anual: 50% sin IVA"
+                        android:textColor="@color/colorBimboBlueLight"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Tu solicitud de crédito ha sido aprobada, es necesario que se firmen los siguientes documentos. Selecciónalos y coloca tu firma en el recuadro correspondiente:"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp">
+
+                        <CheckBox
+                            android:id="@+id/check_documentos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorBimboBlueLight"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Lee y acepta los siguientes documentos"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_20sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Contrato de cuenta de Depósito y Crédito"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Carátula del producto de Depósito y Crédito"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Tabla de amortización del Crédito"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Pagaré del Crédito"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Contrato de servicios electrónicos de cuenta de Depósito y Crédito"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/title_check_17"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Póliza de Seguro de Vida"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/check_auth"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="@string/authorize_fincomun"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_mi_medico"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <CheckBox
+                            android:id="@+id/checkBox8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Contratación de Asistencia Medica"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_20sdp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="¿Los recursos de la cuenta serán utilizados?"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <RadioButton
+                            android:id="@+id/rad_si_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Por usted"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textColor="@color/colorBimboGrayBimbo"/>
+
+                        <RadioButton
+                            android:id="@+id/rad_no_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Por alguien mas"
+                            android:textColor="@color/colorBimboGrayBimbo"/>
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="¿Cuál será el destino del crédito?"
+                        android:textColor="@color/colorBimboGrayDark"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <RadioButton
+                            android:id="@+id/rad_bienes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bienes personales"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_12sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:textColor="@color/colorBimboGrayBimbo"/>
+
+                        <RadioButton
+                            android:id="@+id/rad_emergencia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Emergencia personal"
+                            android:textColor="@color/colorBimboGrayBimbo"/>
+
+                        <RadioButton
+                            android:id="@+id/rad_gastos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Gastos de tu negocio"
+                            android:textColor="@color/colorBimboGrayBimbo"/>
+
+                        <RadioButton
+                            android:id="@+id/rad_inversion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/RadioButton"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Inversión negocio"
+                            android:textColor="@color/colorBimboGrayBimbo"/>
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        style="@style/Graphik_Medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:text="Firmar de forma digital:"
+                        android:textColor="@color/colorBimboBlueDark"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
+                        android:elevation="@dimen/_5sdp"
+                        card_view:cardUseCompatPadding="true"
+                        card_view:cardElevation="@dimen/_4sdp"
+                        card_view:cardCornerRadius="@dimen/_4sdp">
+
+                        <ImageView
+                            android:id="@+id/img_firm"
+                            android:scaleType="centerCrop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/img_contrato"
+                            android:layout_margin="@dimen/_5sdp"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp">
+
+                    <Button
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:id="@+id/btn_accept_offer"
+                        style="@style/Graphik_Medium"
+                        android:layout_width="@dimen/button_width"
+                        android:layout_height="@dimen/button_height"
+                        android:background="@drawable/background_selector_green"
+                        android:text="¡Acepto oferta!"
+                        android:textAllCaps="false"
+                        android:textColor="@drawable/button_text_color"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

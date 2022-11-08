@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <io.alterac.blurkit.BlurLayout
+        android:id="@+id/blurry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/container_alert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_gradient_green"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/Signika_Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="¿Recibes o haces"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_32sdp" />
+
+                <TextView
+                    style="@style/Signika_Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Pago"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_50sdp"
+                    android:paddingTop="@dimen/_30sdp"/>
+
+            </RelativeLayout>
+
+            <Button
+                style="@style/Graphik_Medium"
+                android:layout_width="@dimen/button_alert_width"
+                android:layout_height="@dimen/button_alert_height"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/background_button_round_white"
+                android:text="Recibo pago"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWithe"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                style="@style/Graphik_Medium"
+                android:layout_width="@dimen/button_alert_width"
+                android:layout_height="@dimen/button_alert_height"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/background_button_round_white"
+                android:text="Hago pago"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWithe"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

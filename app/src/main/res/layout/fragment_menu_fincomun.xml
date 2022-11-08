@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_splash_header_3">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text= "@string/text_bienvenido_a_dinero_ya"
+                    android:layout_gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_20sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:gravity="top"
+                    android:src="@drawable/ic_fincomun" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_adelanto_venta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white_two">
+
+                    <ImageView
+                        android:id="@+id/img_item_adelanto"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_cr_dito_personal_56_x_56"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_fincomun_adelanto"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_fincomun"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/img_item_adelanto"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_title_adelanto"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="left|start"
+                        android:text="Adelanto de venta"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/img_item_adelanto"
+                        android:layout_below="@id/iv_fincomun_adelanto"
+                        android:layout_marginLeft="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description_adelanto"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Te adelantamos hasta 3 meses de tus cobros"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_toRightOf="@id/img_item_adelanto"
+                        android:layout_below="@+id/txt_title_adelanto"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_info_adelanto"
+                        style="@style/FC_Medium"
+                        android:background="@drawable/background_button_fc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Más información"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_below="@id/text_description_adelanto"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_oferta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white_two">
+
+                    <ImageView
+                        android:id="@+id/img_item_oferta"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_cr_dito_personal_56_x_56"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_fincomun_oferta"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_fincomun"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/img_item_oferta"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_title_oferta"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="left|start"
+                        android:text="Préstamo personal"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/img_item_oferta"
+                        android:layout_below="@id/iv_fincomun_oferta"
+                        android:layout_marginLeft="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description_oferta"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Hasta $16,000 en efectivo"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_toRightOf="@id/img_item_oferta"
+                        android:layout_below="@+id/txt_title_oferta"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_info_oferta"
+                        style="@style/FC_Medium"
+                        android:background="@drawable/background_button_fc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Más información"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_below="@id/text_description_oferta"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_recompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white_two">
+
+                    <ImageView
+                        android:id="@+id/img_item_recompra"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_cr_dito_personal_56_x_56"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_fincomun_recompra"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_fincomun"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/img_item_recompra"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_title_recompra"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="left|start"
+                        android:text="Recompra disponible"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/img_item_recompra"
+                        android:layout_below="@id/iv_fincomun_recompra"
+                        android:layout_marginLeft="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description_recompra"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Renueva tu préstamo y liquida el anterior"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_toRightOf="@id/img_item_recompra"
+                        android:layout_below="@+id/txt_title_recompra"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_info_recompra"
+                        style="@style/FC_Medium"
+                        android:background="@drawable/background_button_fc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Más información"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_below="@id/text_description_recompra"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white_two">
+
+                    <ImageView
+                        android:id="@+id/img_item_credit"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_cr_dito_personal_56_x_56"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_fincomun"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_fincomun"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/img_item_credit"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_title_credit"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="left|start"
+                        android:text="Mi Préstamo"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/img_item_credit"
+                        android:layout_below="@id/iv_fincomun"
+                        android:layout_marginLeft="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description_credit"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Desembolsado"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_toRightOf="@id/img_item_credit"
+                        android:layout_below="@+id/txt_title_credit"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_info_credit"
+                        style="@style/FC_Medium"
+                        android:background="@drawable/background_button_fc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Ver detalles"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_below="@id/text_description_credit"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white_two">
+
+                    <ImageView
+                        android:id="@+id/img_item_offer"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:src="@drawable/illustrations_cr_dito_personal_56_x_56"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Mi Préstamo"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/img_item_offer"
+                        android:layout_alignTop="@+id/img_item_offer"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_title_offer"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:text="$300,000"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/txt_name"
+                        android:layout_alignTop="@+id/img_item_offer"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginHorizontal="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_folio"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Folio: "
+                        android:textColor="@color/FC_blue_4"
+                        android:gravity="left|center"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/img_item_offer"
+                        android:layout_below="@+id/txt_title_offer"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description_offer"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Solicitado dd/mm/aaaa"
+                        android:textColor="@color/FC_blue_4"
+                        android:gravity="left|center"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/img_item_offer"
+                        android:layout_below="@+id/tv_folio"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description2_offer"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pendiente"
+                        android:gravity="right|center"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_toRightOf="@id/text_description_offer"
+                        android:layout_below="@+id/txt_title_offer"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pending"
+                        style="@style/FC_Medium"
+                        android:background="@drawable/background_button_fc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Completa aquí tu información"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_below="@id/text_description_offer"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/codi_pago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/qr_demo"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_pago_1"
+                            android:gravity="left"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/dusk_blue"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_pago_2"
+                            android:gravity="left"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:paddingTop="@dimen/_2sdp"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/expand_less_24_px"
+                        android:rotation="90"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_30sdp"
+                android:layout_margin="@dimen/_1sdp"
+                android:background="@drawable/background_gradient_blue">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/icons_total_dinero" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_8sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:lineHeight="@dimen/_22sdp"
+                                android:text="@string/text_quieres_empezar_a_ahorrar"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/dusky_blue"
+                                android:textSize="@dimen/_14sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="@string/text_s_cale_partido_a_tus_operaciones_y_comienza_a_lograr_tus_sue_os"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/brownish_grey"
+                                android:textSize="@dimen/_12sdp"
+                                android:layout_marginTop="@dimen/_5sdp"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_empezar"
+                            style="@style/Button.Secondary"
+                            android:layout_width="@dimen/_174sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:enabled="true"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center|right"
+                            android:text="@string/text_empezar_a_ahorrar"
+                            android:textAlignment="center"
+                            android:textColor="@color/dusky_blue"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_margin="@dimen/_10sdp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/card_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_1sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_producto_destacado_7">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_cr_dito_personal_56_x_56" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:lineHeight="@dimen/_22sdp"
+                        android:text="@string/text_realiza_3"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_contratar_credito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_1sdp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_producto_destacado_7">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/financiacion" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:lineHeight="@dimen/_22sdp"
+                        android:text="@string/text_realiza_2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_contratar_cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_1sdp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/card_producto_destacado_3">
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_contratacion_credito_personal_115_x_95" />
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:lineHeight="@dimen/_22sdp"
+                        android:text="@string/text_realiza_12"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_codi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/white_two">
+
+                    <ImageView
+                        android:id="@+id/img_item"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:src="@drawable/illustrations_cobro_qr"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_fincomun_codi"
+                        android:layout_weight="1"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_fincomun"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/img_item"
+                        android:layout_marginLeft="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="left|start"
+                        android:text="Mi cuenta con CoDi"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_toRightOf="@id/img_item"
+                        android:layout_below="@id/iv_fincomun_codi"
+                        android:layout_marginLeft="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Cobra y paga con QR"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_toRightOf="@id/img_item"
+                        android:layout_below="@+id/txt_title"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_info"
+                        style="@style/FC_Medium"
+                        android:background="@drawable/background_button_fc_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Ver mi cuenta"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_below="@id/text_description"
+                        android:paddingHorizontal="@dimen/_20sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"/>
+
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/codi_cobro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:padding="@dimen/_15sdp"
+                android:layout_margin="@dimen/_1sdp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/illustrations_codi_100_x_100"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_pago_3"
+                            android:gravity="left"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/dusk_blue"
+                            android:textSize="@dimen/_12sdp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_pago_4"
+                            android:gravity="left"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_12sdp"
+                            android:paddingTop="@dimen/_2sdp"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/expand_less_24_px"
+                        android:rotation="90"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

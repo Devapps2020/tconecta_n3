@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_image_green"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:src="@drawable/ic_back"
+                android:tint="@color/colorAccent"
+                android:visibility="invisible"/>
+
+            <TextView
+                style="@style/Graphik_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pagos Regionales"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_16sdp" />
+
+            <ImageView
+                android:id="@+id/img_help"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_15sdp"
+                android:src="@drawable/ic_help"
+                android:tint="@color/colorAccent"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/image_pago"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/aguakan"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/nombre_pago"
+                    style="@style/Signika_Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre servicio"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/layout_content_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/item_layout_screen_t"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/btn_continuar"
+                    style="@style/Signika_Semibold"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/background_selector_blue"
+                    android:text="Enviar"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_30sdp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

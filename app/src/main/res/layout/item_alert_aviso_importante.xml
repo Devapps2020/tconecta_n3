@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="¿Necesitas ayuda?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            style="@style/Graphik_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Conforme al artículo 28 de\nla Ley para Regular las Sociedades de Información Crediticia, en forma expresa autorizo a Fincomún Servicios Financieros Comunitarios, S.A. de C.V., S.F.P., para que por conducto de sus funcionarios facultados, lleve a cabo investigaciones sobre mi comportamiento crediticio en las Sociedades de Información Crediticiaqueestime convenientes. "
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_15sdp"/>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Aceptar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

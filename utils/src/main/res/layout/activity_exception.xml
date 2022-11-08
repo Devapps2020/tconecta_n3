@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".components.HThrowException"
+    tools:ignore="MissingDefaultResource">
+
+    <WebView
+        android:id="@+id/web_support"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom">
+
+        <mx.devapps.utils.components.HCircleButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/ic_close"
+            app:cb_color="@color/color_error"
+            app:cb_pressedRingWidth="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_40sdp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

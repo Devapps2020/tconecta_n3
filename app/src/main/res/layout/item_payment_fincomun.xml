@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_5sdp"
+    card_view:cardCornerRadius="@dimen/_4sdp"
+    card_view:cardElevation="@dimen/_4sdp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_icon_payment"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/illustrations_mi_tienda_100_x_100" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_icon_payment"
+            android:layout_toRightOf="@+id/iv_icon_payment"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="OXXO"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <ImageView
+            android:id="@+id/iv_icon_down"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:src="@drawable/ic_keyboard_arrow_down_24dp"
+            app:tint="@color/FC_blue_4"
+            android:visibility="invisible"/>
+
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

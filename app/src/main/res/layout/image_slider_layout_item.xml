@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:background="@drawable/tarjetas"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_description"
+        style="@style/Signika_Semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:padding="0dp"
+        android:text="Ingresa tus datos de contacto"
+        android:textColor="@color/colorGrayBlack"
+        android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_terminos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <CheckBox
+            android:id="@+id/check_acept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:buttonTint="@color/colorBimboBlueDark"/>
+
+        <TextView
+            style="@style/Signika_Semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="He leído y estoy de acuerdo con el aviso de privacidad"
+            android:textColor="@color/colorGrayBlack"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

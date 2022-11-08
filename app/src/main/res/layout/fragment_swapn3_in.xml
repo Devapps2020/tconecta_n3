@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_2"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="@string/text_swapn3_out_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_20sdp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:text="@string/text_swapn3_in_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="left"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/brownish_grey"
+            android:textSize="@dimen/_12sdp"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="8sp" />
+
+        <TextView
+            android:text="@string/text_swapt1000_login_datos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="left"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/dusk_blue"
+            android:textSize="@dimen/_12sdp" />
+
+        <include
+            android:id="@+id/edit_colaborador"
+            layout="@layout/view_edit_text_sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="right" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_continuar"
+            android:text="@string/text_continue"
+            style="@style/Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:enabled="false"
+            android:gravity="center"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/btn_cancelar"
+            android:text="CANCELAR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/clear_blue"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

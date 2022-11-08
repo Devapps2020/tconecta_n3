@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Ingresa la cantidad de promociones  Ingresa la cantidad de promociones "/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_mensaje"
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_document"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_15sdp"/>
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <EditText
+                android:id="@+id/edt_cantidad"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_error_cantidad"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorRed"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Aceptar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:background="@drawable/background_button_transparent"
+            android:textColor="@color/colorBimboBlueLight"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

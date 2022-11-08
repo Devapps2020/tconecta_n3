@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background_splash_header_1"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardBackgroundColor="@color/white_two"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:weightSum="5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Saldo de mi cuenta"
+                    android:gravity="start"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_detalle_cuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FC_txt_ver_detalle"
+                    android:gravity="start"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/saldo_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="start|center"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/saldo"/>
+
+                <TextView
+                    android:id="@+id/saldo_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_pago_servicios_56"
+                    android:gravity="right"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_12sdp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="@string/FC_txt_operacion_qr"
+                android:gravity="left"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_20sdp"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:src="@drawable/illustrations_codi_100_x_100"
+                android:layout_gravity="center|right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tab_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FC_txt_qr_servicios_codi"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_10sdp"/>
+
+                <View
+                    android:id="@+id/line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/clear_blue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/white_two">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/FC_txt_qr_movimientos"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_10sdp"/>
+
+                <View
+                    android:id="@+id/line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/powder_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/_20sdp">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background_splash_header_3"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/il_1"
+        layout="@layout/view_menu_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <ScrollView
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintTop_toBottomOf="@id/il_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/FC_txt_qr_solicitud_cobro"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/illustrations_cobro_qr"
+                    android:layout_gravity="center|right" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/FC_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|start"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/text_indica_monto_a_cobrar"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:switchPadding="@dimen/_5sdp"
+                android:gravity="left"
+                android:text="@string/FC_txt_qr_sel_cantidad"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp" />
+
+            <include
+                android:id="@+id/et_monto"
+                layout="@layout/fc_edit_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:switchPadding="@dimen/_5sdp"
+                android:gravity="end"
+                android:text="Monto máximo de $8,000"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <TextView
+                style="@style/FC_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|start"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:visibility="gone"
+                android:text="@string/text_selecciona_frecuencia_y_plazo_de_devolucion"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:switchPadding="@dimen/_5sdp"
+                android:gravity="start"
+                android:text="@string/FC_txt_qr_sel_pago"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"
+                />
+
+            <include
+                android:id="@+id/et_referencia"
+                layout="@layout/fc_edit_text"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"/>
+            <include
+                android:id="@+id/et_concepto"
+                layout="@layout/fc_edit_text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:switchPadding="@dimen/_5sdp"
+                android:gravity="end"
+                android:text="@string/FC_txt_qr_max_car"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btn_generar"
+        style="@style/FC_Medium"
+        app:layout_constraintTop_toBottomOf="@+id/ll_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:background="@drawable/background_selector_green"
+        android:text="@string/FC_btn_qr_gen_cod"
+        android:textAllCaps="true"
+        android:textColor="@drawable/button_text_color"
+        android:textSize="@dimen/_14sdp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_3"
+    android:clickable="true"
+    android:paddingTop="15dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_menu_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="17dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ivPrize"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/illustrations_chambita_248_x_200" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvPrintCouponTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/coupons_congratulations_tag"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dusk_blue"/>
+
+                        <TextView
+                            android:id="@+id/tvChambitaName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/dusk_blue"/>
+
+                        <TextView
+                            android:id="@+id/tvDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="18dp"
+                            android:text="@string/coupons_change_coupon"
+                            android:textSize="16dp"
+                            android:textColor="@color/dusk_blue"/>
+
+                        <TextView
+                            android:id="@+id/tvPrintOnce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="18dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/dusk_blue"/>
+
+                        <TextView
+                            android:id="@+id/tvValidity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/dusk_blue"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"/>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPrint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="14dp"
+                android:background="@drawable/order_button_shape"
+                android:text="@string/coupons_print"
+                android:textColor="@color/white_two" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

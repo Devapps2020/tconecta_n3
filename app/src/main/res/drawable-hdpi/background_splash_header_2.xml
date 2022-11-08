@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:gravity="top"
+        android:drawable="@drawable/img_header_2"/>
+
+    <item android:drawable="@color/white_two" />
+
+    <item
+        android:gravity="top"
+        android:drawable="@drawable/img_header_2"
+        android:tint="@color/white"
+        android:bottom="500dp"/>
+
+</layer-list>

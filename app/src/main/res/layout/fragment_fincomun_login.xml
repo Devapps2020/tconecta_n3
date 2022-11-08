@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_style_top_circle"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/FC_white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_pin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|top"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/FC_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Introduce tu contraseña para visualizar tu información"
+                    android:textColor="@color/FC_white"
+                    android:textSize="@dimen/_17sdp"
+                    android:paddingHorizontal="@dimen/_20sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="@dimen/_15sdp">
+                    <LinearLayout
+                        android:id="@+id/ll_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_user"
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Usuario: 123456f"
+                            android:textColor="@color/FC_white"
+                            android:textSize="@dimen/_14sdp"
+                            android:layout_marginTop="@dimen/_10sdp"/>
+
+                        <TextView
+                            style="@style/FC_Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Tu contraseña debe contener mínimo 8 dígitos, una mayúscula y un número"
+                            android:textColor="@color/FC_white"
+                            android:textSize="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"/>
+                    </LinearLayout>
+                    <include
+                        android:id="@+id/et_password"
+                        layout="@layout/fc_edit_text"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_forgot_password"
+                        style="@style/FC_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:gravity="center"
+                        android:text="@string/txt_forgot_password"
+                        android:textColor="@color/FC_white"
+                        android:textSize="@dimen/_16sdp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/text_error_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="end|center"
+                    android:text="@string/text_access_5"
+                    android:textColor="@color/FC_white"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_margin="@dimen/_5sdp"/>
+
+                <!-- TODO Borrar textview al completar la migración -->
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/layout_biometric"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:gravity="center|top"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@string/text_biometric_message"
+                    android:textColor="@color/FC_white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_biometric"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/fingerprint_24_px"
+                    android:tint="@color/FC_white"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_2sdp"
+                    android:background="@color/FC_white"
+                    android:layout_marginTop="@dimen/_20sdp"/>
+
+                <!-- TODO Borrar textview al completar la migración -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="Para seguir recibiendo tus pagos, por favor ingresa el pin con el cual ingresabas en Qiubo Plus"
+                    android:textColor="@color/FC_white"
+                    android:textSize="@dimen/_16sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|bottom"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/FC_Medium"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/background_selector_green"
+                    android:text="CONFIRMAR"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/_14sdp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:visibility="gone"
+                    android:id="@+id/btn_pin"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="@string/text_button_43"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+
+                <!--androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_close"
+                    style="@style/Button.Secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:text="@string/text_option_9"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

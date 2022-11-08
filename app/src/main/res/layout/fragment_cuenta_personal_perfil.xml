@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="@dimen/_30sdp"
+        android:paddingBottom="@dimen/_30sdp">
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Nombre"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edit_nombre"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Apellido"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/edit_apellido"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Nacimiento"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_nacimiento"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_42sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Género"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true">
+
+                <RadioButton
+                    android:id="@+id/rad_genero_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hombre"
+                    android:theme="@style/RadioButton"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/colorGray"/>
+
+                <RadioButton
+                    android:id="@+id/rad_genero_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButton"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Mujer"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGray"/>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@drawable/background_edittext_green"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Email"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/element_width"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                style="@style/Graphik_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Elige una foto de perfil"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"/>
+
+            <EditText
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_edittext_green"
+                android:textCursorDrawable="@drawable/cursor_green"
+                android:gravity="right"
+                android:padding="0dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_confirmar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="Guardar cambios"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/background_button_round_green"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_acceder"
+                style="@style/Graphik_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/_12sdp"
+                android:paddingLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

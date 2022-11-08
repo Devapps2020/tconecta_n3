@@ -1,0 +1,204 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/background_splash</item>
+
+    </style>
+
+    <style name="PideloTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPidelo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/graphik_medium</item>
+
+    </style>
+
+    <style name="AlertPidelo" >
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPidelo</item>
+    </style>
+
+    <style name="CheckOutTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPidelo</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:fontFamily">@font/graphik_medium</item>
+
+    </style>
+
+    <style name="Graphik_Regular">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+    <style name="codigo_barras">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/barras</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+    <style name="Graphik_Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="Signika_Semibold">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/roboto_bold</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+    </style>
+
+    <style name="RadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBimboBlueLight</item>
+        <item name="colorControlActivated">@color/colorBimboBlueLight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/graphik_medium</item>
+    </style>
+
+    <style name="RadioButtonGray" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBimboBlueLight</item>
+        <item name="colorControlActivated">@color/colorBimboBlueLight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/graphik_regular</item>
+    </style>
+
+    <style name="RadioButtonGreen" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBimboBlueLight</item>
+        <item name="colorControlActivated">@color/colorBimboBlueLight</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/signika_semibold</item>
+    </style>
+
+    <style name="AppTheme_camera" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/background_splash_camera</item>
+
+    </style>
+
+    <style name="tab_text" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/graphik_medium</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorWithe</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+    </style>
+
+    <style name="prefix" >
+        <item name="android:textSize">17sp</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+
+    </style>
+    <!-- for text -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/graphik_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="WideDialog" parent="Base.Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">20%</item>
+        <item name="android:windowMinWidthMinor">20%</item>
+    </style>
+
+
+    <style name="HeaderLeftImageStyle1">
+        <item name="android:src">@drawable/ic_user</item>
+        <item name="android:layout_width">@dimen/_25sdp</item>
+        <item name="android:layout_height">@dimen/_25sdp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">@dimen/_20sdp</item>
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="HeaderTextStyle1">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/graphik_medium</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="HeaderRightImageStyle1">
+        <item name="android:src">@drawable/ic_help</item>
+        <item name="android:layout_width">46dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/_20sdp</item>
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="InputError" parent="TextAppearance.Design.Error"/>
+    <style name="InputError.Scarlet">
+        <item name="android:textColor">@color/scarlet</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="ThemeOverlay.TextInputLayout.TextView" parent="">
+        <item name="android:textViewStyle">@style/Widget.TextView.SingleLineEllipsized</item>
+    </style>
+
+    <style name="Widget.TextView.SingleLineEllipsized" parent="">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        i
+    </style>
+
+    <!-- FINCOMUN-->
+    <style name="TextLabelNoEdit" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorBimboBlueDark</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorBimboBlueDark</item>
+        <item name="colorControlNormal">@color/colorBimboBlueDark</item>
+        <item name="colorControlActivated">@color/colorBimboBlueDark</item>
+        <item name="boxBackgroundColor">#f0f5f6</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Add attributes here -->
+        <item name="colorPrimary">@color/colorBimboBlueDark</item>
+    </style>
+
+
+    <style name="FC_Regular">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/roboto_regular</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/FC_blue_6</item>
+    </style>
+    <style name="FC_Medium">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/FC_blue_6</item>
+    </style>
+
+</resources>

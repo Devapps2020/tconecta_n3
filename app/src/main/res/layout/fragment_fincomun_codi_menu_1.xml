@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:weightSum="20"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white_two"
+    android:clickable="true">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_cobro_qr"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_160sdp"
+                card_view:layout_constraintWidth_percent="0.475"
+                android:orientation="vertical"
+                android:elevation="@dimen/_5sdp"
+                card_view:cardCornerRadius="@dimen/_4sdp"
+                card_view:cardElevation="@dimen/_4sdp"
+                card_view:cardUseCompatPadding="true"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_cobro_qr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    >
+                    <ImageView
+                        android:id="@+id/imv_cobro_qr"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/illustrations_cobro_qr"/>
+
+                    <TextView
+                        android:id="@+id/tv_cobro_qr"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/text_cobro_con_qr"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:textAlignment="gravity"
+                        android:paddingVertical="@dimen/_10sdp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="@string/FC_txt_qr_seleccionar_cobro"
+                        android:gravity="center_horizontal|left"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_10sdp"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="left"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                card_view:layout_constraintWidth_percent="0.05"
+                card_view:layout_constraintLeft_toRightOf="@id/cv_cobro_qr"
+                card_view:layout_constraintRight_toLeftOf="@id/cv_pago_qr"
+                card_view:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_pago_qr"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_160sdp"
+                card_view:layout_constraintWidth_percent="0.475"
+                android:orientation="vertical"
+                android:elevation="@dimen/_5sdp"
+                card_view:cardCornerRadius="@dimen/_4sdp"
+                card_view:cardElevation="@dimen/_4sdp"
+                card_view:cardUseCompatPadding="true"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_pago_qr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/imv_pago_qr"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/illustrations_pago_qr"/>
+
+                    <TextView
+                        android:id="@+id/tv_pago_qr"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/text_pago_con_qr"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:textAlignment="gravity"
+                        android:paddingVertical="@dimen/_10sdp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="@string/FC_txt_qr_seleccionar_pago"
+                        android:gravity="center_horizontal|left"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_10sdp"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="left"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_notificaciones"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_160sdp"
+                card_view:layout_constraintWidth_percent="0.475"
+                android:orientation="vertical"
+                android:elevation="@dimen/_5sdp"
+                card_view:cardCornerRadius="@dimen/_4sdp"
+                card_view:cardElevation="@dimen/_4sdp"
+                card_view:cardUseCompatPadding="true"
+                card_view:layout_constraintTop_toBottomOf="@+id/cv_cobro_qr"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_notificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    >
+                    <ImageView
+                        android:id="@+id/imv_notificacion"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/icono_notificaciones"
+                        android:adjustViewBounds="true"
+                        android:scaleType="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_notificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/FC_txt_notificaciones_cobro"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:textAlignment="gravity"
+                        android:paddingVertical="@dimen/_10sdp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_buzon"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_160sdp"
+                card_view:layout_constraintWidth_percent="0.475"
+                android:orientation="vertical"
+                android:elevation="@dimen/_5sdp"
+                card_view:cardCornerRadius="@dimen/_4sdp"
+                card_view:cardElevation="@dimen/_4sdp"
+                card_view:cardUseCompatPadding="true"
+                card_view:layout_constraintRight_toRightOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/cv_pago_qr"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_buzon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/imv_buzon"
+                        android:layout_width="@dimen/_75sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/icono_menu_buzon"/>
+
+                    <TextView
+                        android:id="@+id/tv_buzon"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Buzón"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:textAlignment="gravity"
+                        android:layout_gravity="center"
+                        android:paddingVertical="@dimen/_10sdp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_registra_cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:layout_constraintTop_toBottomOf="@id/cv_buzon"
+                card_view:layout_constraintLeft_toLeftOf="parent"
+                card_view:layout_constraintRight_toRightOf="parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="@string/FC_txt_registra_cuenta"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_12sdp"
+                android:textAlignment="center"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

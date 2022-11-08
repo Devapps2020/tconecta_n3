@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded_blue_fincomun"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/illustrations_camera"
+            android:layout_marginTop="@dimen/_25sdp" />
+        <TextView
+            style="@style/FC_Regular"
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="¡Empecemos!"
+            android:textColor="@color/FC_black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            style="@style/FC_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/FC_txt_requeriments_personal_data"
+            android:textColor="@color/FC_grey_1"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="INE vigente"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="Tomar una fotografía de tu negocio abierto"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="Si tu dirección no aparece en tu identificación podrás utilizar un comprobante"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="@dimen/_15sdp"
+                    android:src="@drawable/check_24_px"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    style="@style/Graphik_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="left"
+                    android:text="Estado de cuenta dónde depositaremos tu dinero"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp" />
+            </TableRow>
+        </TableLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="ACEPTAR"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

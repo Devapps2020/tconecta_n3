@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.blm.qiubopay.modules.home.Fragment_menu_inicio"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu_inicio" />
+
+    <fragment
+        android:id="@+id/nav_pedidos"
+        android:name="com.blm.qiubopay.modules.tienda.Fragment_menu_tienda"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu_tienda" />
+
+    <fragment
+        android:id="@+id/nav_pagos"
+        android:name="com.blm.qiubopay.modules.home.Fragment_menu_operativas"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu_operativas" />
+
+    <fragment
+        android:id="@+id/nav_credito"
+        android:name="com.blm.qiubopay.modules.home.Fragment_menu_depositos"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu_depositos" />
+
+</navigation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_card_blue_ligth"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="CoDi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_mensaje"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_400sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Ahora podrás realizar retiros sin\ntarjeta de tus cuentas Fincomún Ahora podrás realizar retiros sin\ntarjeta de tus cuentas Fincomún"
+                android:textColor="@color/colorBimboWithe"
+                android:textSize="@dimen/_16sdp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_cerrar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/background_button_round_white"
+            android:text="Cerrar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBimboBlueLight"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

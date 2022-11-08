@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <requestFocus />
+    <include layout="@layout/view_menu_top"/>
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:gravity="left|start"
+                        android:text="Actualiza y confirma tus datos"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_step"
+                        style="@style/FC_Regular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.3"
+                        android:text="@string/FC_step_2"
+                        android:textColor="@color/colorBimboBlueDark"
+                        android:textSize="@dimen/_13sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:weightSum="1">
+
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.6"
+                        android:gravity="left|start"
+                        android:text="Datos Personales"
+                        android:textColor="@color/FC_black"
+                        android:textSize="@dimen/_13sdp" />
+
+                    <TextView
+                        android:id="@+id/tv_edit"
+                        style="@style/FC_Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.4"
+                        android:text="EDITAR FOTOS"
+                        android:textColor="@color/FC_blue_4"
+                        android:textSize="@dimen/_13sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:elevation="@dimen/_5sdp"
+                        card_view:cardCornerRadius="@dimen/_4sdp"
+                        card_view:cardElevation="@dimen/_4sdp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_front"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ine_2" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:elevation="@dimen/_5sdp"
+                        card_view:cardCornerRadius="@dimen/_4sdp"
+                        card_view:cardElevation="@dimen/_4sdp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_back"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_80sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ine_1" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Es muy importante que valides tus números y correo ya que te contactaremos para poder liberar el préstamo"
+                    android:textSize="@dimen/_12sdp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <include
+                        android:id="@+id/et_cellphone"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_localphone"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_email"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_name"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_last_name"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_last_name_2"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_gender"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_birthplace"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_birthday"
+                        layout="@layout/fc_edit_text"/>
+
+                    <include
+                        android:id="@+id/et_curp"
+                        layout="@layout/fc_edit_text"/>
+
+                    <include
+                        android:id="@+id/et_rfc"
+                        layout="@layout/fc_edit_text"/>
+                    <TextView
+                        style="@style/FC_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|start"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="En caso de no contar con tu homoclave coloca 333 al final"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|start"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Domicilio de la identificación"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <include
+                        android:id="@+id/et_street"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_interior_num"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_outdoor_num"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_state"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_municipality"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_population"
+                        layout="@layout/fc_edit_text"
+                        android:visibility="gone"/>
+                    <include
+                        android:id="@+id/et_postal_code"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_suburb"
+                        layout="@layout/fc_edit_text"/>
+                    <include
+                        android:id="@+id/et_country"
+                        layout="@layout/fc_edit_text"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="N° de celular"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_cellphone"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="55 1122 3344"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Teléfono fijo"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_localphone"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="55 1122 3344"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Dirección de correo electrónico"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="mail@mail.com"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Nombre y apellidos"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_fullname"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Manuel López López"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Género"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_gender"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Masculino"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Entidad de nacimiento"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_birthplace"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="CDMX"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Fecha de nacimiento"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="01/01/1980"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Domicilio de la identificación"
+                    android:textColor="@color/colorBimboBlueDark"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/tv_street"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Calle"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_avenue"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Avenida"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_interior_num"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Número interior"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_outdoor_num"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Número exterior"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_municipality"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Alcaldía/Municipio"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_population"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Ciudad/Población"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_state"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Entidad federativa/Estado"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_postal_code"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Código Postal"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_suburb"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="Colonia"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+                <TextView
+                    android:id="@+id/tv_country"
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:text="País"
+                    android:textColor="@color/FC_black"
+                    android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|start"
+                        android:text="Foto del comprobante"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_marginTop="@dimen/_15sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.5"
+                            android:elevation="@dimen/_5sdp"
+                            card_view:cardCornerRadius="@dimen/_4sdp"
+                            card_view:cardElevation="@dimen/_4sdp"
+                            card_view:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/iv_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:padding="@dimen/_10sdp"
+                                    android:src="@drawable/ine_2" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    style="@style/FC_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left|start"
+                    android:text="Foto del Negocio"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginTop="@dimen/_15sdp"/>
+
+                <LinearLayout
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:elevation="@dimen/_5sdp"
+                        card_view:cardCornerRadius="@dimen/_4sdp"
+                        card_view:cardElevation="@dimen/_4sdp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/iv_business"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_80sdp"
+                                android:padding="@dimen/_10sdp"
+                                android:src="@drawable/ine_2" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Nombre del negocio"
+                    android:textSize="@dimen/_12sdp" />
+
+                <include
+                    android:id="@+id/et_name_business"
+                    layout="@layout/fc_edit_text"/>
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/FC_Medium"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/background_selector_green"
+                    android:text="CONTINUAR"
+                    android:textAllCaps="false"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Si tienes alguna duda o deseas obtener más información comunicate al teléfono 55 5200 1610 con la opción #9"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('nexgo-smartpos-sdk-v2.2.1_20190527_match_206.aar'))

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background_splash_header_2"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="left"
+                android:text="@string/FC_txt_qr_confirmar_pago_header"
+                android:textColor="@color/dusk_blue"
+                android:textSize="@dimen/_20sdp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:src="@drawable/illustrations_pago_qr"
+                android:layout_gravity="center|right" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/FC_txt_qr_resumen_pago"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/FC_txt_qr_confirmacion"
+            android:textColor="@color/FC_grey_1"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginVertical="@dimen/_5sdp"/>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:weightSum="20">
+
+
+
+            <LinearLayout
+                android:id="@id/ll_sinmonto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+
+                <include
+                    android:id="@+id/et_monto"
+                    layout="@layout/fc_edit_text"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:switchPadding="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:text="Monto máximo de $8,000"
+                    android:textColor="@color/FC_grey_1"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_75sdp"
+                android:background="@drawable/background_rounded_yellow_fincomun"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@+id/ll_sinmonto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tv_des_monto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.50"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:text="@string/text_monto_a_pagar"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/_10sdp"/>
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/tv_monto"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintWidth_percent="0.50"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toRightOf="@id/tv_des_monto"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:gravity="start"
+                            android:textColor="@color/FC_blue_6"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="$200.00"
+                            android:visibility="visible"
+                            />
+
+                    <TextView
+                        android:id="@+id/tv_des_referencia"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.50"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_des_monto"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:text="@string/text_referencia"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_referencia"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.50"
+                        app:layout_constraintTop_toBottomOf="@id/tv_monto"
+                        app:layout_constraintLeft_toRightOf="@id/tv_des_referencia"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:text="12345678"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/FC_blue_6"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="start"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_des_concepto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.50"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_des_referencia"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:text="@string/text_concepto"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textColor="@color/FC_grey_1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_concepto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.50"
+                        app:layout_constraintTop_toBottomOf="@id/tv_referencia"
+                        app:layout_constraintLeft_toRightOf="@id/tv_des_concepto"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:text="Test"
+                        android:textColor="@color/FC_blue_6"
+                        android:textSize="@dimen/_12sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:gravity="start" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/rl_detalle"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <Button
+                    android:id="@+id/btn_rechazar"
+                    style="@style/FC_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/background_button_blue_enabled"
+                    android:text="Rechazar pago"
+                    android:textAllCaps="true"
+                    android:textColor="@color/FC_blue_4"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_10sdp"/>
+                <Button
+                    android:id="@+id/btn_confirmar"
+                    style="@style/FC_Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:background="@drawable/background_selector_green"
+                    android:text="Confirmar pago"
+                    android:textAllCaps="true"
+                    android:textColor="@drawable/button_text_color"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

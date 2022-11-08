@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_splash_header_2"
+    android:clickable="true">
+
+
+    <include layout="@layout/view_menu_top"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="left"
+            android:text="@string/FC_txt_detalle_movimiento_header"
+            android:textColor="@color/dusk_blue"
+            android:textSize="@dimen/_20sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_info"
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/text_indica_monto_a_cobrar"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/txt_header" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_qr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/background_splash_header_3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_info">
+
+            <LinearLayout
+                android:id="@+id/cl_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_gradient_fc_blue"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/imv_qr"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/icons_c_digo_qr"
+                    android:scaleType="fitCenter"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_detalle_tipo_operacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="Movimiento CODI / QR"
+                        android:textColor="@color/FC_blue_6"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_15sdp" />
+
+                    <TextView
+                        android:id="@+id/txt_detalle_monto"
+                        style="@style/FC_Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$ 200.00"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/separator_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv_qr" />
+
+        <ImageView
+            android:id="@+id/imv_referencia"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/icon_menu_paper_copy_5_2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_1" />
+
+        <TextView
+            android:id="@+id/txt_info_ref_num"
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="@string/FC_txt_info_referencia"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imv_referencia"
+            app:layout_constraintStart_toEndOf="@+id/imv_referencia"
+            app:layout_constraintTop_toTopOf="@id/imv_referencia" />
+
+        <TextView
+            android:id="@+id/txt_refnumerica"
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="12345678"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="@id/txt_info_ref_num"
+            app:layout_constraintTop_toBottomOf="@id/txt_info_ref_num" />
+
+
+
+
+        <View
+            android:id="@+id/separator_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_refnumerica" />
+
+        <ImageView
+            android:id="@+id/imv_fecha_operacion"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/icons_date_range"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separator_2" />
+
+        <TextView
+            android:id="@+id/txt_info_fecha"
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="@string/FC_txt_info_fecha"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imv_fecha_operacion"
+            app:layout_constraintStart_toEndOf="@+id/imv_fecha_operacion"
+            app:layout_constraintTop_toTopOf="@id/imv_fecha_operacion" />
+
+        <TextView
+            android:id="@+id/txt_fecha_operacion"
+            style="@style/FC_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:text="15/12/2021"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="@id/txt_info_fecha"
+            app:layout_constraintTop_toBottomOf="@id/txt_info_fecha" />
+
+
+
+        <Button
+            android:id="@+id/btn_descargar"
+            style="@style/FC_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/background_selector_green"
+            android:text="@string/FC_btn_desc_recibo_codi"
+            android:textAllCaps="true"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

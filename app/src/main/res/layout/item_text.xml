@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_item_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/text_inicio_5"
+    android:gravity="left"
+    android:fontFamily="@font/roboto_medium"
+    android:textColor="@color/dusk_blue"
+    android:textSize="@dimen/_18sdp"
+    android:layout_margin="@dimen/_10sdp"/>

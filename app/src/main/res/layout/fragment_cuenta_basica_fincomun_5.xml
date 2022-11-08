@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user"
+            android:tint="@color/colorAccent"
+            android:layout_margin="@dimen/_10sdp"/>
+
+        <TextView
+            style="@style/Graphik_Medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Fincomún"
+            android:textColor="@color/colorBimboGrayDark"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="26dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_fincomun" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_15sdp">
+
+                    <TextView
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:padding="0dp"
+                        android:text="¡Falta muy poco para \nterminar con tu registro!"
+                        android:textColor="@color/colorBimboBlueDark"
+                        android:textSize="@dimen/_20sdp" />
+
+                    <TextView
+                        style="@style/Graphik_Regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Contesta las siguientes preguntas"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:textColor="@color/colorGrayBlack"
+                        android:textSize="@dimen/_14sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp">
+
+                        <TextView
+                            style="@style/Graphik_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorBimboBlueLight"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="Pregunta 1">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/img_deploy_1"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/ic_chevron_right"
+                            android:rotation="90"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorBimboBlueLight"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:gravity="left"
+                            android:justificationMode="inter_word"
+                            android:text="¿Usted desempeña o ha desempeñado funciones públicas destacadas en un país extranjero o en territorio nacional considerado entre otros, a los jefes de estado o de gobierno, líderes políticos, funcionarios gubernamentales, judiciales o militares de alta jerarquía, altos ejecutivos de empresas estatales o funcionarios o miembros importantes de partidos politicos"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rad_pregunta_si_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:text="Sí"
+                                android:textColor="@color/colorBimboGrayBimbo"
+                                android:textSize="@dimen/_15sdp"
+                                android:theme="@style/RadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/rad_pregunta_no_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/RadioButton"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="No"
+                                android:textColor="@color/colorBimboGrayBimbo"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp">
+
+                        <TextView
+                            style="@style/Graphik_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorBimboBlueLight"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_14sdp"
+                            android:text="Pregunta 2">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/img_deploy_2"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/ic_chevron_right"
+                            android:rotation="90"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorBimboBlueLight"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            android:gravity="left"
+                            android:justificationMode="inter_word"
+                            android:text="¿Usted desempeña o ha desempeñado funciones públicas destacadas en un país extranjero o en territorio nacional considerado entre otros, a los jefes de estado o de gobierno, líderes políticos, funcionarios gubernamentales, judiciales o militares de alta jerarquía, altos ejecutivos de empresas estatales o funcionarios o miembros importantes de partidos politicos"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rad_pregunta_si_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:text="Sí"
+                                android:textColor="@color/colorBimboGrayBimbo"
+                                android:textSize="@dimen/_15sdp"
+                                android:theme="@style/RadioButton" />
+
+                            <RadioButton
+                                android:id="@+id/rad_pregunta_no_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:theme="@style/RadioButton"
+                                android:textSize="@dimen/_15sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:text="No"
+                                android:textColor="@color/colorBimboGrayBimbo"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp">
+
+                        <CheckBox
+                            android:id="@+id/check_documentos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorBimboBlueLight"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:text="Lee y acepta los siguientes documentos"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/img_deploy_read"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:src="@drawable/ic_chevron_right"
+                            android:rotation="90"
+                            android:layout_gravity="center"
+                            android:tint="@color/colorBimboBlueLight"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_40sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/check_doc_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorBimboBlueDark"
+                        android:text="Solicitud"/>
+
+                    <CheckBox
+                        android:id="@+id/check_doc_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorBimboBlueDark"
+                        android:text="Contrato Depósito"/>
+
+                    <CheckBox
+                        android:id="@+id/check_doc_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorBimboBlueDark"
+                        android:text="Contrato Servicios Electrónicos"/>
+
+                    <CheckBox
+                        android:id="@+id/check_doc_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorBimboBlueDark"
+                        android:text="Carátula"/>
+
+                    <CheckBox
+                        android:id="@+id/check_doc_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorBimboBlueDark"
+                        android:text="Disposiciones Legales"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/check_consentimiento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="Doy mi consentimiento para contratar los\nservicios del contrato con el nùmero de\nRECA 1555-003-032225/01-04570-1019"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:id="@+id/check_autorizo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorBimboBlueDark"/>
+
+                        <TextView
+                            style="@style/Graphik_Regular"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:textColor="@color/colorGrayBlack"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_10sdp"
+                            android:text="Autorizo a fincomùn para que realice consultas\nde mi historial crediticio."/>/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/_20sdp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_20sdp">
+
+                        <TextView
+                            style="@style/Graphik_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="Firmar de forma digital:"
+                            android:textColor="@color/colorBimboBlueDark"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_130sdp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_25sdp"
+                            android:elevation="@dimen/_5sdp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardElevation="@dimen/_4sdp"
+                            card_view:cardCornerRadius="@dimen/_4sdp">
+
+                            <ImageView
+                                android:id="@+id/img_firm"
+                                android:scaleType="centerCrop"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/img_contrato"
+                                android:layout_margin="@dimen/_5sdp"/>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_20sdp">
+
+                        <Button
+                            android:id="@+id/btn_next"
+                            style="@style/Graphik_Medium"
+                            android:layout_width="@dimen/button_width"
+                            android:layout_height="@dimen/button_height"
+                            android:background="@drawable/background_selector_green"
+                            android:text="Siguiente"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textColor="@drawable/button_text_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

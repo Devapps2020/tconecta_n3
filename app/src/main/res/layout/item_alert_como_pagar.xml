@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="¿Cómo pagar?"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_mensaje"
+            style="@style/Graphik_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Puedes realizar tu pago en los siguientes canales: "
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/text_description"
+            style="@style/Graphik_Medium"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="- Referencia OXXO: #1\n- Clabe interbancaria: #2\n- Referencia Chedraui: #3\n- Referencia Telecom: #4\n- Referencia BBVA: #5\n     • Convenio  CIE 0715328"
+            android:textColor="@color/colorBimboWithe"
+            android:gravity="left"
+            android:textSize="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+        <TextView
+            style="@style/codigo_barras"
+            android:id="@+id/text_code_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_30sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            style="@style/Graphik_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="REFERENCIA CHEDRAUI"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_8sdp"/>
+
+        <TextView
+            style="@style/codigo_barras"
+            android:id="@+id/text_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            style="@style/Graphik_Regular"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="REFERENCIA OXXO"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_8sdp"/>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Aceptar"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:background="@drawable/background_selector_green"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

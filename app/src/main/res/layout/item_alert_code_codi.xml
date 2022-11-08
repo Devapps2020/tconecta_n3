@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/verification"/>
+
+        <TextView
+            style="@style/Signika_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Código Banco de México"
+            android:textColor="@color/colorBimboBlueDisable"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/text_sms"
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresa el código que Banco de\nMéxico te envió por SMS a tu celular"
+            android:textColor="@color/colorBimboWithe"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_15sdp"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.chaos.view.PinView
+                android:id="@+id/edit_pin"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/colorBimboBlueLight"
+                android:textSize="@dimen/_18sdp"
+                android:cursorVisible="true"
+                app:itemCount="6"
+                android:gravity="center"
+                app:itemHeight="@dimen/_50sdp"
+                app:itemRadius="1dp"
+                app:cursorColor="@color/colorBimboBlueLight"
+                app:itemSpacing="0dp"
+                app:itemWidth="@dimen/_35sdp"
+                app:lineColor="@color/colorBimboBlueDark"
+                android:background="@color/white"
+                app:viewType="rectangle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+
+            <EditText
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/white"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textColor="@color/colorBimboBlueLight"
+            android:textSize="@dimen/_10sdp"
+            android:paddingTop="@dimen/_15sdp"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_time"
+            style="@style/Graphik_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:05"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+
+        <Button
+            android:id="@+id/btn_aceptar"
+            style="@style/Signika_Semibold"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/background_selector_green"
+            android:text="Validar"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

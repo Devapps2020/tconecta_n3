@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash_header_3"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <include layout="@layout/view_menu_top"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/_20sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_20sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/compra_rolls_title"
+                    android:gravity="left"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_18sdp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/illustrations_tiempo_servicios_100_x_100"
+                    android:paddingLeft="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <!-- COMBO PRODUCTOS -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        android:fontFamily="@font/roboto_regular"
+                        android:id="@+id/layout_forma_pago"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="Productos disponibles"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <com.reginald.editspinner.EditSpinner
+                        android:id="@+id/edit_forma_pago"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Elige un producto de la lista"
+                        android:background="@drawable/background_edittext_green"
+                        android:layout_below="@id/layout_forma_pago"
+                        android:textCursorDrawable="@drawable/cursor_green"
+                        android:gravity="left"
+                        android:textColor="@color/clear_blue"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_10sdp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:src="@drawable/ic_down"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:tint="@color/clear_blue"/>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/text_error_estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/colorRed"/>
+
+                    <LinearLayout
+                        android:paddingTop="@dimen/_30sdp"
+                        android:id="@+id/layout_estado"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Precio del producto"
+                    android:textColor="@color/dusky_blue"
+                    android:textSize="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/precio_lector"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$0.00 MXN"
+                    android:gravity="center"
+                    android:textColor="@color/dusk_blue"
+                    android:textSize="@dimen/_36sdp" />
+
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/oldPrice"
+                        style="@style/Signika_Semibold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$749 MXN"
+                        android:textColor="@color/colorRed"
+                        android:textSize="@dimen/_32sdp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_2sdp"
+                        android:background="@color/colorRed"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/oldPrice"
+                        app:layout_constraintEnd_toEndOf="@id/oldPrice"
+                        app:layout_constraintLeft_toLeftOf="@id/oldPrice"
+                        app:layout_constraintRight_toRightOf="@id/oldPrice"/>
+
+                </LinearLayout>
+
+                <!--TextView
+                    style="@style/Signika_Semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$749 MXN"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/_32sdp" /-->
+
+            <Button
+                android:visibility="invisible"
+                android:enabled="false"
+                style="@style/Signika_Semibold"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/background_selector_green"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center|bottom"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_confirmar"
+                    style="@style/Button.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="Comprar con mi saldo"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

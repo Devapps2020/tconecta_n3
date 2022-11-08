@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_rounded_blue_fincomun"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <requestFocus />
+            <include layout="@layout/view_menu_top"/>
+
+            <ImageView
+                android:id="@+id/imv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_fincomun" />
+            <TextView
+                style="@style/FC_Regular"
+                android:id="@+id/text_title"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Por favor, completa la información a continuación"
+                android:textColor="@color/FC_black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_mensaje"
+                style="@style/FC_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Para revisar tu caso requerimos datos tuyos y de tu negocio"
+                android:textColor="@color/FC_blue_4"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="left"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <TextView
+                style="@style/FC_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tómate una foto estando:"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="left"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_photo_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardUseCompatPadding="true"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_mostrador" />
+
+                        <TextView
+                            android:id="@+id/tv_img_1"
+                            style="@style/FC_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Atrás del\nmostrador"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_photo_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_mercancia" />
+
+                        <TextView
+                            android:id="@+id/tv_img_2"
+                            style="@style/FC_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Con tu\nmercancía"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_photo_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:elevation="@dimen/_5sdp"
+                    card_view:cardCornerRadius="@dimen/_4sdp"
+                    card_view:cardElevation="@dimen/_4sdp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_photo_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_60sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_inventario" />
+
+                        <TextView
+                            android:id="@+id/tv_img_3"
+                            style="@style/FC_Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Con tu\ninventario"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/FC_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre completo del titular:"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="left"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <include
+                android:id="@+id/et_nombre"
+                layout="@layout/fc_edit_text"/>
+
+            <TextView
+                style="@style/FC_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de contacto para validar los datos de tu negocio:"
+                android:textColor="@color/FC_grey_1"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="left"
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <include
+                android:id="@+id/et_telefono"
+                layout="@layout/fc_edit_text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_consent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/FC_blue_4" />
+
+                <TextView
+                    style="@style/FC_Regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Otorgo mi consentimiento para el tratamiento de mis datos personales. Acepto el uso de términos y condiciones"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_aviso"
+                style="@style/Graphik_Regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/leer_aviso_privacidad"
+                android:textColor="@color/colorGrayBlack"
+                android:textSize="@dimen/_12sdp"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:layout_marginTop="@dimen/_10sdp"/>
+
+            <Button
+                android:id="@+id/btn_send"
+                style="@style/Signika_Semibold"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="ENVIAR"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textAllCaps="false"
+                android:background="@drawable/background_selector_green"
+                android:textColor="@drawable/button_text_color"
+                android:textSize="@dimen/_10sdp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

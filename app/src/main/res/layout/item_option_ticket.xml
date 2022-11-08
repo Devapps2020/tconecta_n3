@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white_white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:gravity="left"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/dusk_blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cantidad: "
+                            android:gravity="left"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_5sdp"/>
+
+                        <TextView
+                            android:id="@+id/text_cantidad"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:gravity="left"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/clear_blue"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Costo: "
+                            android:gravity="right"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_5sdp"/>
+
+                        <TextView
+                            android:id="@+id/text_costo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_purchase_13"
+                            android:gravity="right"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/dusk_blue"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IEPS: "
+                            android:gravity="right"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_5sdp"/>
+
+                        <TextView
+                            android:id="@+id/text_costo_tax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_purchase_13"
+                            android:gravity="right"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/dusk_blue"
+                            android:textSize="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total: "
+                            android:gravity="left"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/brownish_grey"
+                            android:textSize="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingRight="@dimen/_5sdp"/>
+
+                        <TextView
+                            android:id="@+id/text_costo_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_purchase_13"
+                            android:gravity="right"
+                            android:fontFamily="@font/roboto_bold"
+                            android:textColor="@color/dusk_blue"
+                            android:textSize="@dimen/_12sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
