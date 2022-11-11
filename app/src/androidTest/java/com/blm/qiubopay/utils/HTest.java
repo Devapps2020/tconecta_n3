@@ -40,7 +40,7 @@ import androidx.test.platform.app.InstrumentationRegistry;
 
 import com.blm.qiubopay.R;
 import com.blm.qiubopay.helpers.AppPreferences;
-import com.blm.qiubopay.k206.DATA;
+import com.blm.qiubopay.n3.DATA;
 import com.reginald.editspinner.EditSpinner;
 
 import org.hamcrest.Description;
