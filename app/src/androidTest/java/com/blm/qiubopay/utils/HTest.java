@@ -22,7 +22,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -32,7 +31,6 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
@@ -61,18 +59,14 @@ public final class HTest {
 
     private static String TAG = "";
 
-    //PUBLICO
-
     public static void start(Class<?> context) {
         timer(DATA.TIEMPO_INICIO);
         COUNT = 0;
         TAG = context.getSimpleName();
-        logger( null, new HItem("START", 0, "VIEW"));
     }
 
     public static void finish() {
         HItem item = new HItem("FINISH", 0, "VIEW");
-        logger( null, item);
         timer(DATA.TIEMPO_FIN);
     }
 
@@ -113,8 +107,8 @@ public final class HTest {
         viewEditSpinner(item);
         if(!item.getCheck()) { error(item); }
         timer(DATA.TIEMPO_ACCION);
-        //onData(allOf(is(instanceOf(String.class)), is(item.getValue())))
-        //        .perform(ViewActions.click());
+        onData(allOf(is(instanceOf(String.class)), is(item.getValue())))
+                .perform(ViewActions.click());
     }
 
 
@@ -206,16 +200,11 @@ public final class HTest {
                 EditText edit = (EditText) view;
                 String hint = edit.getHint().toString().toUpperCase();
 
-                Log.d("withIndex", hint);
-                Log.d("withIndex", item.getName().toUpperCase());
-                Log.d("withIndex", hint.equals(item.getName().toUpperCase()) + "");
-
                 if(hint.equals(item.getName().toUpperCase())) {
                     edit.getParent().requestChildFocus(edit,edit);
                     edit.requestFocus();
                     item.setCheck(true);
                     if(date) edit.setText(item.getValue());
-                    logger( edit, item);
                 }
             }
         });
@@ -244,7 +233,6 @@ public final class HTest {
                 spinner.requestFocus();
                 item.setCheck(true);
                 spinner.performClick();
-                logger( spinner, item);
             }
         });
     }
@@ -265,8 +253,6 @@ public final class HTest {
                 spinner.performClick();
                 timer(1);
                 spinner.selectItem(0);
-
-                logger( spinner, item);
             }
         });
     }
@@ -283,8 +269,6 @@ public final class HTest {
                 pin.getParent().requestChildFocus(pin,pin);
                 pin.requestFocus();
                 item.setCheck(true);
-                //pin.setText(item.getValue());
-                logger( pin, item);
             }
         });
 
@@ -315,7 +299,6 @@ public final class HTest {
                     item.setCheck(true);
                     button.performClick();
                     timer(2);
-                    logger( button, item);
                 }
             }
         });
@@ -337,7 +320,6 @@ public final class HTest {
                     radio.requestFocus();
                     item.setCheck(true);
                     radio.performClick();
-                    logger( radio, item);
                 }
             }
         });
@@ -360,7 +342,6 @@ public final class HTest {
                     item.setCheck(true);
                     image.performClick();
                     image.callOnClick();
-                    logger( image, item);
                 }
             }
         });
@@ -382,7 +363,6 @@ public final class HTest {
                     label.requestFocus();
                     item.setCheck(true);
                     label.performClick();
-                    logger( label, item);
                 }
             }
         });
@@ -403,7 +383,6 @@ public final class HTest {
                 gif.requestFocus();
                 item.setCheck(true);
                 gif.performClick();
-                logger( gif, item);
             }
         });
 
@@ -424,7 +403,6 @@ public final class HTest {
                     layout.requestFocus();
                     item.setCheck(true);
                     layout.performClick();
-                    logger( layout, item);
                 }
             }
         });
@@ -443,10 +421,6 @@ public final class HTest {
                 TextView label = (TextView) view;
                 String text = label.getText().toString().toUpperCase();
 
-                Log.d("viewTextElement",  " inicio " + text);
-                Log.d("viewTextElement",  item.getName().toUpperCase());
-                Log.d("viewTextElement",  text.equals(item.getName().toUpperCase()) + "");
-
                 if(text.equals(item.getName().toUpperCase())) {
                     label.getParent().requestChildFocus(label,label);
                     label.requestFocus();
@@ -457,7 +431,6 @@ public final class HTest {
                     for(int i=0; i<item.getIndex(); i++) {
                         cont = (View) cont.getParent();
                         cont.performClick();
-                        Log.d("viewTextElement", "" + cont.getClass().getSimpleName());
                     }
 
                     if(item.getOption()) {
@@ -465,8 +438,6 @@ public final class HTest {
                             v.performClick();
                         }
                     }
-
-                    logger( label, item);
                 }
             }
         });
@@ -503,58 +474,6 @@ public final class HTest {
 
             @Override
             public boolean matchesSafely(View view) {
-                //Log.d("matchesSafely", view.getClass().getSimpleName() + " => " + currentIndex + " : " + view.getId());
-                switch (item.getTag()) {
-
-                    case "AlertDialog":
-                        if ( view.getClass().getSimpleName().equals(item.getTag())) {
-                            Log.d("withIndex", "AlertDialog => " + currentIndex + " : " + view.getId());
-                        }
-                        break;
-                    case "TextView":
-                        if ((view instanceof TextView)) {
-                            TextView element = (TextView) view;
-                            Log.d("withIndex", "TextView => " + currentIndex + " : " + element.getText());
-                        }
-                        break;
-                    case "LinearLayout":
-                        if ((view instanceof LinearLayout)) {
-                            LinearLayout element = (LinearLayout) view;
-                            Log.d("withIndex", "LinearLayout => " + currentIndex + " : " + element.getId());
-                        }
-                        break;
-                    case "PinView":
-                    case "EditText":
-                        if ((view instanceof EditText)) {
-                            EditText element = (EditText) view;
-                            Log.d("withIndex", "EditText => " + currentIndex + " : " + element.getHint());
-                        }
-                        break;
-                    case "Button":
-                        if ((view instanceof Button)) {
-                            Button element = (Button) view;
-                            Log.d("withIndex", "Button => " + currentIndex + " : " + element.getText());
-                        }
-                        break;
-                    case "ImageView":
-                        if ((view instanceof ImageView)) {
-                            ImageView element = (ImageView) view;
-                            Log.d("withIndex", "ImageView => " + currentIndex + " : " +element.getId() + " : " + (element.getVisibility() == View.VISIBLE));
-                        }
-                        break;
-                    case "RadioButton":
-                        if ((view instanceof RadioButton)) {
-                            RadioButton element = (RadioButton) view;
-                            Log.d("withIndex", "RadioButton => " + currentIndex + " : " + element.getId());
-                        }
-                    case "CardView":
-                        if ((view instanceof CardView)) {
-                            CardView element = (CardView) view;
-                            Log.d("withIndex", "CardView => " + currentIndex + " : " + element.getId());
-                        }
-                        break;
-                }
-
                 return matcher.matches(view) && currentIndex++ == item.getIndex();
             }
         };
@@ -585,10 +504,6 @@ public final class HTest {
         String[] tags = TAG.split("_");
         String message = (++COUNT + "_" + tags[2] + "_ERROR_"  + item.getTag() + "_" + item.getName()).toUpperCase().replaceAll(" ", "_");
 
-        Log.d("HMatcher", TAG + " " + message);
-
-        takeScreen(tags[1], message);
-
         fail(item.getText());
 
     }
@@ -599,28 +514,6 @@ public final class HTest {
             context.startActivity(intent);
             context.finish();
         } catch (Exception ex) { }
-    }
-
-    private static void logger(View view, HItem item) {
-
-        timer(DATA.TIEMPO_ACCION);
-
-        String[] tags = TAG.split("_");
-
-        String message = (++COUNT + "_" + tags[2] + "_" + item.getTag() + "_" + item.getName()).toUpperCase().replaceAll(" ", "_");
-
-        Log.d("HMatcher", TAG + " " + message);
-
-        takeScreen(tags[1], message);
-
-    }
-
-    private static void takeScreen(String folder, String file) {
-
-        try {
-            HScreenshot.capture(folder, TAG, file);
-        }catch (Exception ex) { }
-
     }
 
     private static void clickElement(HItem item) {
@@ -648,25 +541,28 @@ public final class HTest {
                     break;
             }
 
-            Log.d("elements", type + " : " + id + " : " + text);
-
             if(item.getName().equalsIgnoreCase(text)) {
 
                 id = view.getId();
 
                 if(item.getOption()) {
                     viewTextElement(item);
+                    break;
                 } else {
-                    onView(allOf(withId(id), withText(item.getName())))
-                            .check(matches(isDisplayed()))
-                        .perform(click());
+                    try {
 
-                    item.setCheck(true);
-                    logger( view, item);
+                        onView(allOf(withId(id), withText(item.getName())))
+                                .check(matches(isDisplayed()))
+                                .perform(click());
+
+                        item.setCheck(true);
+                        break;
+
+                    } catch (AssertionError ex) {
+
+                    }
                 }
 
-
-                break;
             }
 
         }

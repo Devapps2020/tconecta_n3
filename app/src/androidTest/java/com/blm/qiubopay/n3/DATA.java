@@ -159,9 +159,11 @@ public class DATA {
      */
     public static class SERVICIOS {
 
+        public static final String NUMERO_INC_IZZI = getProperty("NUMERO_INC_IZZI");
         public static final String NUMERO_IZZI = getProperty("NUMERO_IZZI");
         public static final String MONTO_IZZI = getProperty("MONTO_IZZI");
 
+        public static final String NUMERO_MEGA_INC_CABLE = getProperty("NUMERO_MEGA_INC_CABLE");
         public static final String NUMERO_MEGA_CABLE = getProperty("NUMERO_MEGA_CABLE");
         public static final String MONTO_MEGA_CABLE = getProperty("MONTO_MEGA_CABLE");
 
@@ -169,34 +171,48 @@ public class DATA {
         public static final String NUMERO_TELMEX = getProperty("NUMERO_TELMEX");
         public static final String NUMERO_TELMEX_VERIFICADOR = getProperty("NUMERO_TELMEX_VERIFICADOR");
 
+        public static final String NUMERO_REFERENCIA_INV_SKY = getProperty("NUMERO_REFERENCIA_INV_SKY");
+        public static final String NUMERO_REFERENCIA_INC_SKY = getProperty("NUMERO_REFERENCIA_INC_SKY");
         public static final String NUMERO_REFERENCIA_SKY = getProperty("NUMERO_REFERENCIA_SKY");
         public static final String MONTO_SKY = getProperty("MONTO_SKY");
 
+        public static final String NUMERO_REFERENCIA_INC_VETV = getProperty("NUMERO_REFERENCIA_INC_VETV");
         public static final String NUMERO_REFERENCIA_VETV = getProperty("NUMERO_REFERENCIA_VETV");
         public static final String MONTO_VETV = getProperty("MONTO_VETV");
 
+        public static final String NUMERO_REFERENCIA_INC_CFE = getProperty("NUMERO_REFERENCIA_INC_CFE");
         public static final String NUMERO_REFERENCIA_CFE = getProperty("NUMERO_REFERENCIA_CFE");
+
 
         public static final String NUMERO_CUPON_DISH = getProperty("NUMERO_CUPON_DISH");
         public static final String NUMERO_REFERENCIA_DISH = getProperty("NUMERO_REFERENCIA_DISH");
+        public static final String NUMERO_REFERENCIA_INC_DISH = getProperty("NUMERO_REFERENCIA_INC_DISH");
 
-        public static final String NUMERO_REFERENCIA_TELEVIA = getProperty("NUMERO_REFERENCIA_TELEVIA");
+        public static final String NUMERO_REFERENCIA_TELEVIA = getProperty("NUMERO_REFERENCIA_DISH");
+        public static final String NUMERO_REFERENCIA_INC_TELEVIA = getProperty("NUMERO_REFERENCIA_INC_DISH");
 
 
         public static final String NUMERO_NATURGY1 = getProperty("NUMERO_NATURGY1");
         public static final String NUMERO_NATURGY2 = getProperty("NUMERO_NATURGY2");
+        public static final String NUMERO_INC_NATURGY = getProperty("NUMERO_INC_NATURGY");
+
         public static final String MONTO_NATURGY = getProperty("MONTO_NATURGY");
 
+        public static final String NUMERO_INC_PASE_URBANO = getProperty("NUMERO_INC_PASE_URBANO");
         public static final String NUMERO_PASE_URBANO = getProperty("NUMERO_PASE_URBANO");
 
+        public static final String NUMERO_INC_TOTALPLAY = getProperty("NUMERO_INC_TOTALPLAY");
         public static final String NUMERO_TOTALPLAY = getProperty("NUMERO_TOTALPLAY");
         public static final String MONTO_TOTALPLAY= getProperty("MONTO_TOTALPLAY");
 
+        public static final String NUMERO_INC_CEAQ = getProperty("NUMERO_INC_CEAQ");
         public static final String NUMERO_CEAQ = getProperty("NUMERO_CEAQ");
         public static final String MONTO_CEAQ= getProperty("MONTO_CEAQ");
 
+        public static final String NUMERO_INC_STAR_TV = getProperty("NUMERO_INC_STAR_TV");
         public static final String NUMERO_STAR_TV = getProperty("NUMERO_STAR_TV");
 
+        public static final String NUMERO_INC_VEOLIA = getProperty("NUMERO_INC_VEOLIA");
         public static final String NUMERO_VEOLIA = getProperty("NUMERO_VEOLIA");
         public static final String MONTO_VEOLIA = getProperty("MONTO_VEOLIA");
 
