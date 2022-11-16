@@ -4,7 +4,6 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
 
 import com.blm.qiubopay.utils.HBase;
-import com.blm.qiubopay.utils.HItem;
 import com.blm.qiubopay.utils.HTest;
 
 import org.junit.Test;

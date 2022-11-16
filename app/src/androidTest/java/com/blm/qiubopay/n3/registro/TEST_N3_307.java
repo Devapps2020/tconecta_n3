@@ -9,7 +9,6 @@ import com.blm.qiubopay.utils.HBase;
 import com.blm.qiubopay.utils.HItem;
 import com.blm.qiubopay.utils.HTest;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

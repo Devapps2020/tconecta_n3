@@ -30,6 +30,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
@@ -43,6 +44,7 @@ import com.blm.qiubopay.helpers.AppPreferences;
 import com.blm.qiubopay.n3.DATA;
 import com.reginald.editspinner.EditSpinner;
 
+import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
@@ -113,8 +115,8 @@ public final class HTest {
         viewEditSpinner(item);
         if(!item.getCheck()) { error(item); }
         timer(DATA.TIEMPO_ACCION);
-        //onData(allOf(is(instanceOf(String.class)), is(item.getValue())))
-        //        .perform(ViewActions.click());
+        onData(allOf(is(instanceOf(String.class)), is(item.getValue())))
+                .perform(ViewActions.click());
     }
 
 
@@ -158,6 +160,11 @@ public final class HTest {
     public static void scrollRecycler(HItem item) {
         timer(DATA.TIEMPO_ACCION);
         scrollRecyclerView(item.getPosition());
+    }
+
+    public static void scrollGlobal(boolean bottom) {
+        timer(DATA.TIEMPO_ACCION);
+        scrollView(bottom);
     }
 
     public static void clickTextElement(HItem item) {
@@ -204,7 +211,7 @@ public final class HTest {
         ).check((view, noViewFoundException) -> {
             if ((view instanceof EditText)) {
                 EditText edit = (EditText) view;
-                String hint = edit.getHint().toString().toUpperCase();
+                String hint = edit.getHint() != null ? edit.getHint().toString().toUpperCase() : "";
 
                 Log.d("withIndex", hint);
                 Log.d("withIndex", item.getName().toUpperCase());
@@ -443,10 +450,6 @@ public final class HTest {
                 TextView label = (TextView) view;
                 String text = label.getText().toString().toUpperCase();
 
-                Log.d("viewTextElement",  " inicio " + text);
-                Log.d("viewTextElement",  item.getName().toUpperCase());
-                Log.d("viewTextElement",  text.equals(item.getName().toUpperCase()) + "");
-
                 if(text.equals(item.getName().toUpperCase())) {
                     label.getParent().requestChildFocus(label,label);
                     label.requestFocus();
@@ -644,29 +647,52 @@ public final class HTest {
                     TextView textView = (TextView) view;
                     text = textView.getText().toString();
                     break;
+                case "Button" :
+                    Button button = (Button) view;
+                    text = button.getText().toString();
+                    break;
                 default:
                     break;
             }
 
-            Log.d("elements", type + " : " + id + " : " + text);
-
             if(item.getName().equalsIgnoreCase(text)) {
+
+                Log.d("elements", type + " : " + id + " : " + text);
 
                 id = view.getId();
 
                 if(item.getOption()) {
                     viewTextElement(item);
+                    break;
                 } else {
-                    onView(allOf(withId(id), withText(item.getName())))
-                            .check(matches(isDisplayed()))
-                        .perform(click());
+                    try {
 
-                    item.setCheck(true);
-                    logger( view, item);
+                        onView(allOf(withId(id), withText(item.getName())))
+                                .check(matches(isDisplayed()))
+                                .perform(click());
+
+                        item.setCheck(true);
+                        logger( view, item);
+                        break;
+
+                    } catch (Exception ex) {
+
+                        try {
+
+                            onView(first(allOf(withId(id), withText(item.getName()))))
+                                    .perform(click());
+
+                            item.setCheck(true);
+                            logger( view, item);
+                            break;
+
+                        } catch (Exception x) {
+                            Log.d("getMessage", x.getMessage());
+                        }
+
+                    }
                 }
 
-
-                break;
             }
 
         }
@@ -754,6 +780,35 @@ public final class HTest {
         }
     }
 
+    private static void scrollView(boolean bottom) {
+
+        List<View> list = new ArrayList<>();
+
+        onView((elements(
+                withClassName(equalTo(ScrollView.class.getSimpleName())), list)))
+                .check((view, noViewFoundException) -> { });
+
+        for(View view : list) {
+
+            String type = view.getClass().getSimpleName().replace("AppCompat", "");
+
+            switch (type) {
+                case "ScrollView":
+                    ScrollView scroll = (ScrollView) view;
+                    new Handler(Looper.getMainLooper()).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(bottom) {
+                                scroll.scrollTo(0, scroll.getBottom());
+                            }
+                        }
+                    });
+                    break;
+            }
+
+        }
+    }
+
     private static Matcher<View> elements(final Matcher<View> matcher, final List<View> list) {
         return new TypeSafeMatcher<View>() {
             int index = 0;
@@ -774,4 +829,24 @@ public final class HTest {
         };
     }
 
+    private static <T> Matcher<T> first(final Matcher<T> matcher) {
+        return new BaseMatcher<T>() {
+            boolean isFirst = true;
+
+            @Override
+            public boolean matches(final Object item) {
+                if (isFirst && matcher.matches(item)) {
+                    isFirst = false;
+                    return true;
+                }
+
+                return false;
+            }
+
+            @Override
+            public void describeTo(final Description description) {
+                description.appendText("should return first matching item");
+            }
+        };
+    }
 }
