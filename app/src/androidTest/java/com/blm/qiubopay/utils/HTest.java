@@ -7,13 +7,17 @@ import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasToString;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.fail;
 
 import android.app.Activity;
@@ -24,16 +28,22 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.test.espresso.DataInteraction;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.matcher.RootMatchers;
 import androidx.test.platform.app.InstrumentationRegistry;
 
 import com.blm.qiubopay.R;
@@ -41,6 +51,7 @@ import com.blm.qiubopay.helpers.AppPreferences;
 import com.blm.qiubopay.n3.DATA;
 import com.reginald.editspinner.EditSpinner;
 
+import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
@@ -106,12 +117,14 @@ public final class HTest {
         timer(DATA.TIEMPO_ACCION);
         viewEditSpinner(item);
         if(!item.getCheck()) { error(item); }
+
         timer(DATA.TIEMPO_ACCION);
-        onData(allOf(is(instanceOf(String.class)), is(item.getValue())))
-                .perform(ViewActions.click());
+
+        onView(withText(item.getValue()))
+                .inRoot(RootMatchers.isPlatformPopup())
+                .perform(click());
+
     }
-
-
 
     public static void clickButton(HItem item) {
         timer(DATA.TIEMPO_ACCION);
@@ -152,6 +165,11 @@ public final class HTest {
     public static void scrollRecycler(HItem item) {
         timer(DATA.TIEMPO_ACCION);
         scrollRecyclerView(item.getPosition());
+    }
+
+    public static void scrollGlobal(boolean bottom) {
+        timer(DATA.TIEMPO_ACCION);
+        scrollView(bottom);
     }
 
     public static void clickTextElement(HItem item) {
@@ -198,7 +216,7 @@ public final class HTest {
         ).check((view, noViewFoundException) -> {
             if ((view instanceof EditText)) {
                 EditText edit = (EditText) view;
-                String hint = edit.getHint().toString().toUpperCase();
+                String hint = edit.getHint() != null ? edit.getHint().toString().toUpperCase() : "";
 
                 if(hint.equals(item.getName().toUpperCase())) {
                     edit.getParent().requestChildFocus(edit,edit);
@@ -244,15 +262,22 @@ public final class HTest {
         onView(withIndex(
                 withClassName(containsString(EditSpinner.class.getSimpleName())), item)
         ).check((view, noViewFoundException) -> {
+
+            if(view != null)
+                Log.d("EditSpinner", view.getClass().getSimpleName());
+
             if ((view instanceof EditSpinner)) {
                 EditSpinner spinner = (EditSpinner) view;
                 spinner.getParent().requestChildFocus(spinner,spinner);
                 spinner.requestFocus();
+                spinner.showDropDown();
                 item.setCheck(true);
 
                 spinner.performClick();
                 timer(1);
                 spinner.selectItem(0);
+
+                logger( spinner, item);
             }
         });
     }
@@ -269,6 +294,8 @@ public final class HTest {
                 pin.getParent().requestChildFocus(pin,pin);
                 pin.requestFocus();
                 item.setCheck(true);
+                //pin.setText(item.getValue());
+                logger( pin, item);
             }
         });
 
@@ -299,6 +326,7 @@ public final class HTest {
                     item.setCheck(true);
                     button.performClick();
                     timer(2);
+                    logger( button, item);
                 }
             }
         });
@@ -537,6 +565,10 @@ public final class HTest {
                     TextView textView = (TextView) view;
                     text = textView.getText().toString();
                     break;
+                case "Button" :
+                    Button button = (Button) view;
+                    text = button.getText().toString();
+                    break;
                 default:
                     break;
             }
@@ -551,18 +583,12 @@ public final class HTest {
                 } else {
                     try {
 
-                        onView(allOf(withId(id), withText(item.getName())))
-                                .check(matches(isDisplayed()))
-                                .perform(click());
-
-                        item.setCheck(true);
-                        break;
-
-                    } catch (AssertionError ex) {
-
-                    }
+                    item.setCheck(true);
+                    logger( view, item);
                 }
 
+
+                break;
             }
 
         }
@@ -650,6 +676,35 @@ public final class HTest {
         }
     }
 
+    private static void scrollView(boolean bottom) {
+
+        List<View> list = new ArrayList<>();
+
+        onView((elements(
+                withClassName(equalTo(ScrollView.class.getSimpleName())), list)))
+                .check((view, noViewFoundException) -> { });
+
+        for(View view : list) {
+
+            String type = view.getClass().getSimpleName().replace("AppCompat", "");
+
+            switch (type) {
+                case "ScrollView":
+                    ScrollView scroll = (ScrollView) view;
+                    new Handler(Looper.getMainLooper()).post(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(bottom) {
+                                scroll.scrollTo(0, scroll.getBottom());
+                            }
+                        }
+                    });
+                    break;
+            }
+
+        }
+    }
+
     private static Matcher<View> elements(final Matcher<View> matcher, final List<View> list) {
         return new TypeSafeMatcher<View>() {
             int index = 0;
@@ -665,7 +720,41 @@ public final class HTest {
             public boolean matchesSafely(View view) {
                 view.setContentDescription("" + index);
                 list.add(view);
+
+                String type = view.getClass().getSimpleName().replace("AppCompat", "");
+                Log.d("elements", view.getClass().getSimpleName());
+
+                switch (type) {
+                    case "TextView" :
+                        TextView textView = (TextView) view;
+                        Log.d("xd", view.getClass().getSimpleName() + " : " + textView.getText().toString());
+                        break;
+                    default:
+                        break;
+                }
+
                 return false;
+            }
+        };
+    }
+
+    private static <T> Matcher<T> first(final Matcher<T> matcher) {
+        return new BaseMatcher<T>() {
+            boolean isFirst = true;
+
+            @Override
+            public boolean matches(final Object item) {
+                if (isFirst && matcher.matches(item)) {
+                    isFirst = false;
+                    return true;
+                }
+
+                return false;
+            }
+
+            @Override
+            public void describeTo(final Description description) {
+                description.appendText("should return first matching item");
             }
         };
     }

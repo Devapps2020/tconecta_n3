@@ -37,15 +37,15 @@ public class TEST_N3_332 extends HBase {
 
         HTest.setValueInput(new HItem("Segundo apellido", DATA.USUARIO.APELLIDO_MATERNO, 15));
 
-        HTest.setValueSpinner(new HItem("Canal", DATA.USUARIO.CANAL,8));
+        HTest.setValueSpinner(new HItem("Canal", DATA.USUARIO.CANAL,16));
 
         HTest.setValueInput(new HItem("Número de colaborador", DATA.USUARIO.COLABORADOR, 17));
 
         HTest.setValueInput(new HItem("Código Bimbo", DATA.USUARIO.CODIGO_BIMBO, 19));
 
-        HTest.clickRadio(new HItem(R.id.rad_aceptar_tyc + "",2));
+        HTest.clickRadio(new HItem(R.id.rad_aceptar_tyc + "",3));
 
-        HTest.clickButton(new HItem("ENVIAR DATOS",0));
+        HTest.clickButton(new HItem("ENVIAR DATOS",1));
 
         HTest.finish();
 
