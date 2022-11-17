@@ -7,13 +7,17 @@ import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasToString;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.fail;
 
 import android.app.Activity;
@@ -23,20 +27,27 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewParent;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.test.espresso.DataInteraction;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.matcher.RootMatchers;
 import androidx.test.platform.app.InstrumentationRegistry;
 
 import com.blm.qiubopay.R;
@@ -114,12 +125,14 @@ public final class HTest {
         timer(DATA.TIEMPO_ACCION);
         viewEditSpinner(item);
         if(!item.getCheck()) { error(item); }
+
         timer(DATA.TIEMPO_ACCION);
-        onData(allOf(is(instanceOf(String.class)), is(item.getValue())))
-                .perform(ViewActions.click());
+
+        onView(withText(item.getValue()))
+                .inRoot(RootMatchers.isPlatformPopup())
+                .perform(click());
+
     }
-
-
 
     public static void clickButton(HItem item) {
         timer(DATA.TIEMPO_ACCION);
@@ -213,10 +226,6 @@ public final class HTest {
                 EditText edit = (EditText) view;
                 String hint = edit.getHint() != null ? edit.getHint().toString().toUpperCase() : "";
 
-                Log.d("withIndex", hint);
-                Log.d("withIndex", item.getName().toUpperCase());
-                Log.d("withIndex", hint.equals(item.getName().toUpperCase()) + "");
-
                 if(hint.equals(item.getName().toUpperCase())) {
                     edit.getParent().requestChildFocus(edit,edit);
                     edit.requestFocus();
@@ -263,16 +272,16 @@ public final class HTest {
         onView(withIndex(
                 withClassName(containsString(EditSpinner.class.getSimpleName())), item)
         ).check((view, noViewFoundException) -> {
+
+            if(view != null)
+                Log.d("EditSpinner", view.getClass().getSimpleName());
+
             if ((view instanceof EditSpinner)) {
                 EditSpinner spinner = (EditSpinner) view;
                 spinner.getParent().requestChildFocus(spinner,spinner);
                 spinner.requestFocus();
+                spinner.showDropDown();
                 item.setCheck(true);
-
-                spinner.performClick();
-                timer(1);
-                spinner.selectItem(0);
-
                 logger( spinner, item);
             }
         });
@@ -290,7 +299,6 @@ public final class HTest {
                 pin.getParent().requestChildFocus(pin,pin);
                 pin.requestFocus();
                 item.setCheck(true);
-                //pin.setText(item.getValue());
                 logger( pin, item);
             }
         });
@@ -319,9 +327,10 @@ public final class HTest {
                 if(text.equals(item.getName().toUpperCase())) {
                     button.getParent().requestChildFocus(button,button);
                     button.requestFocus();
-                    item.setCheck(true);
-                    button.performClick();
-                    timer(2);
+                    if(button.isEnabled()) {
+                        item.setCheck(true);
+                        button.performClick();
+                    }
                     logger( button, item);
                 }
             }
@@ -657,8 +666,6 @@ public final class HTest {
 
             if(item.getName().equalsIgnoreCase(text)) {
 
-                Log.d("elements", type + " : " + id + " : " + text);
-
                 id = view.getId();
 
                 if(item.getOption()) {
@@ -824,6 +831,19 @@ public final class HTest {
             public boolean matchesSafely(View view) {
                 view.setContentDescription("" + index);
                 list.add(view);
+
+                String type = view.getClass().getSimpleName().replace("AppCompat", "");
+                Log.d("elements", view.getClass().getSimpleName());
+
+                switch (type) {
+                    case "TextView" :
+                        TextView textView = (TextView) view;
+                        Log.d("xd", view.getClass().getSimpleName() + " : " + textView.getText().toString());
+                        break;
+                    default:
+                        break;
+                }
+
                 return false;
             }
         };
@@ -849,4 +869,5 @@ public final class HTest {
             }
         };
     }
+
 }

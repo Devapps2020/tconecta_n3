@@ -37,13 +37,13 @@ public class TEST_N3_328 extends HBase {
 
         HTest.setValueInput(new HItem("Segundo apellido", DATA.USUARIO.APELLIDO_MATERNO, 15));
 
-        HTest.setValueSpinner(new HItem("Canal", DATA.USUARIO.CANAL,8));
+        HTest.setValueSpinner(new HItem("Canal", DATA.USUARIO.CANAL,16));
 
         HTest.setValueInput(new HItem("Número de colaborador", DATA.USUARIO.COLABORADOR, 17));
 
-        HTest.clickRadio(new HItem(R.id.rad_aceptar_tyc + "",2));
+        HTest.clickRadio(new HItem(R.id.rad_aceptar_tyc + "",3));
 
-        HTest.clickButton(new HItem("ENVIAR DATOS",0));
+        HTest.clickButton(new HItem("ENVIAR DATOS",1));
 
         HTest.clickButton(new HItem("ACEPTAR",4));
 
@@ -65,7 +65,7 @@ public class TEST_N3_328 extends HBase {
 
         HTest.setValueInput(new HItem("Contraseña", DATA.USUARIO.CONTRASENA,0));
 
-        HTest.setValueInput(new HItem("Confirma contraseña", DATA.CONTRASENA_DIFERENTE, 1));
+        HTest.setValueInput(new HItem("Confirma contraseña", DATA.USUARIO.CONTRASENA, 1));
 
         HTest.clickButton(new HItem("ENVIAR",2));
 
