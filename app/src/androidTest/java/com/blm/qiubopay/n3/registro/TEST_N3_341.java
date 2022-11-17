@@ -69,6 +69,8 @@ public class TEST_N3_341 extends HBase {
 
         HTest.clickButton(new HItem("ENVIAR",2));
 
+        HTest.checkLoading();
+
         HTest.finish();
 
     }
