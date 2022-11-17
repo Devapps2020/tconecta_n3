@@ -7,17 +7,13 @@ import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
-import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
-import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.hasToString;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.fail;
 
 import android.app.Activity;
@@ -28,19 +24,15 @@ import android.os.Handler;
 import android.os.Looper;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.PopupWindow;
 import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.test.espresso.DataInteraction;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.matcher.RootMatchers;
@@ -66,18 +58,11 @@ import pl.droidsonroids.gif.GifImageView;
 
 public final class HTest {
 
-    private static Integer COUNT = 0;
-
-    private static String TAG = "";
-
     public static void start(Class<?> context) {
         timer(DATA.TIEMPO_INICIO);
-        COUNT = 0;
-        TAG = context.getSimpleName();
     }
 
     public static void finish() {
-        HItem item = new HItem("FINISH", 0, "VIEW");
         timer(DATA.TIEMPO_FIN);
     }
 
@@ -195,8 +180,6 @@ public final class HTest {
         Espresso.pressBack();
     }
 
-    //PRIVADO
-
     private static void setValue(HItem item) {
         viewEdit(item, false);
         if(!item.getCheck()) { error(item); }
@@ -263,21 +246,12 @@ public final class HTest {
                 withClassName(containsString(EditSpinner.class.getSimpleName())), item)
         ).check((view, noViewFoundException) -> {
 
-            if(view != null)
-                Log.d("EditSpinner", view.getClass().getSimpleName());
-
             if ((view instanceof EditSpinner)) {
                 EditSpinner spinner = (EditSpinner) view;
                 spinner.getParent().requestChildFocus(spinner,spinner);
                 spinner.requestFocus();
                 spinner.showDropDown();
                 item.setCheck(true);
-
-                spinner.performClick();
-                timer(1);
-                spinner.selectItem(0);
-
-                logger( spinner, item);
             }
         });
     }
@@ -294,8 +268,6 @@ public final class HTest {
                 pin.getParent().requestChildFocus(pin,pin);
                 pin.requestFocus();
                 item.setCheck(true);
-                //pin.setText(item.getValue());
-                logger( pin, item);
             }
         });
 
@@ -325,8 +297,6 @@ public final class HTest {
                     button.requestFocus();
                     item.setCheck(true);
                     button.performClick();
-                    timer(2);
-                    logger( button, item);
                 }
             }
         });
@@ -529,9 +499,6 @@ public final class HTest {
             item.setText("\n- " + item.getTag() + " element not found - " + item.getName());
         }
 
-        String[] tags = TAG.split("_");
-        String message = (++COUNT + "_" + tags[2] + "_ERROR_"  + item.getTag() + "_" + item.getName()).toUpperCase().replaceAll(" ", "_");
-
         fail(item.getText());
 
     }
@@ -583,12 +550,28 @@ public final class HTest {
                 } else {
                     try {
 
-                    item.setCheck(true);
-                    logger( view, item);
+                        onView(allOf(withId(id), withText(item.getName())))
+                                .check(matches(isDisplayed()))
+                                .perform(click());
+
+                        item.setCheck(true);
+                        break;
+
+                    } catch (Exception ex) {
+
+                        try {
+
+                            onView(first(allOf(withId(id), withText(item.getName()))))
+                                    .perform(click());
+
+                            item.setCheck(true);
+                            break;
+
+                        } catch (Exception x) { }
+
+                    }
                 }
 
-
-                break;
             }
 
         }
@@ -720,19 +703,6 @@ public final class HTest {
             public boolean matchesSafely(View view) {
                 view.setContentDescription("" + index);
                 list.add(view);
-
-                String type = view.getClass().getSimpleName().replace("AppCompat", "");
-                Log.d("elements", view.getClass().getSimpleName());
-
-                switch (type) {
-                    case "TextView" :
-                        TextView textView = (TextView) view;
-                        Log.d("xd", view.getClass().getSimpleName() + " : " + textView.getText().toString());
-                        break;
-                    default:
-                        break;
-                }
-
                 return false;
             }
         };
