@@ -30,7 +30,7 @@ public class TEST_N3_772 extends HBase {
 
         HTest.clickTextElement(new HItem("Préstamo personal"));
 
-        HTest.clickButton(new HItem("Consúltalo sin compromiso",0));
+        HTest.clickText(new HItem("No, gracias",0));
 
         HTest.finish();
 
