@@ -29,7 +29,7 @@ public class TEST_N3_705 extends HBase {
 
         HTest.clickLinearLayout(new HItem(R.id.btn_user + "",22));
 
-        HTest.clickLinearLayout(new HItem(R.id.btn_option + "",77));
+        HTest.clickTextElement(new HItem("Restablecer PIN"));
 
         HTest.clickButton(new HItem("SI",3));
 

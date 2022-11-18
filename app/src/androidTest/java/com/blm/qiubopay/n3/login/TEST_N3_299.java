@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
 public class TEST_N3_299 extends HBase {
 
     @Test
-    public void TEST_N3_298() {
+    public void TEST_N3_299() {
 
         HTest.start(this.getClass());
 

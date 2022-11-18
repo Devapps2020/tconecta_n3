@@ -27,7 +27,7 @@ public class TEST_N3_702 extends HBase {
 
         HTest.clickLinearLayout(new HItem(R.id.btn_user + "",22));
 
-        HTest.clickLinearLayout(new HItem(R.id.btn_option + "",74));
+        HTest.clickTextElement(new HItem("Datos Personales"));
 
         HTest.clickImage(new HItem(R.id.help_pin + "",19));
 

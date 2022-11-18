@@ -29,7 +29,7 @@ public class TEST_N3_703 extends HBase {
 
         HTest.clickLinearLayout(new HItem(R.id.btn_user + "",22));
 
-        HTest.clickLinearLayout(new HItem(R.id.btn_option + "",75));
+        HTest.clickTextElement(new HItem("Datos de Comercio"));
 
         HTest.finish();
     }
