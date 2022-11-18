@@ -33,9 +33,9 @@ public class TEST_N3_721 extends HBase {
 
         HTest.setValueESpinner(new HItem("Elige un producto de la lista","Básico Oro", 0));
 
-        HTest.clickButton(new HItem( "COMPRAR CON MI SALDO", 0));
+        HTest.clickButton(new HItem( "COMPRAR CON MI SALDO", 1));
 
-        HTest.clickButton(new HItem( "SI", 0));
+        HTest.clickButton(new HItem("SI",3));
 
         HTest.finish();
     }

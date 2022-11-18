@@ -33,15 +33,15 @@ public class TEST_N3_722 extends HBase {
 
         HTest.setValueESpinner(new HItem("Elige un producto de la lista","Básico Oro", 0));
 
-        HTest.clickButton(new HItem( "COMPRAR CON MI SALDO", 0));
+        HTest.clickButton(new HItem( "COMPRAR CON MI SALDO", 1));
 
-        HTest.clickButton(new HItem( "SI", 0));
+        HTest.clickButton(new HItem( "SI", 3));
 
-        HTest.setValueInput(new HItem("Entre calles",DATA.USUARIO.ENTRE_CALLES));
+        HTest.setValueInput(new HItem("Entre calles",DATA.USUARIO.ENTRE_CALLES,8));
 
-        HTest.setValueInput(new HItem("Entre calles",DATA.USUARIO.REFERENCIAS));
+        HTest.setValueInput(new HItem("Referencias",DATA.USUARIO.REFERENCIAS,9));
 
-        HTest.clickButton(new HItem("CONTINUAR",0));
+        HTest.clickButton(new HItem("CONTINUAR",1));
 
 
         HTest.finish();
