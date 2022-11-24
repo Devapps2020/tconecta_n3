@@ -35,7 +35,9 @@ public class TEST_N3_154 extends HBase {
 
         HTest.clickTextElement(new HItem("$100.00",3));
 
-        HTest.clickButton(new HItem("REALIZAR PAGO",3));
+        HTest.clickButton(new HItem("REALIZAR PAGO",2));
+
+        HTest.checkLoading();
 
         HTest.finish();
     }

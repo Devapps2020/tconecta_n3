@@ -20,11 +20,9 @@ public class TEST_N3_191 extends HBase {
 
         HTest.start(this.getClass());
 
-        HTest.setValueInput(new HItem("Correo electrónico", DATA.USUARIO.CORREO_ELECTRONICO, 0));
+        HTest.setValuePin(new HItem( "****", DATA.USUARIO.PIN,0));
 
-        HTest.setValueInput(new HItem("Contraseña", DATA.USUARIO.CONTRASENA, 1));
-
-        HTest.clickButton(new HItem("ACCEDER",0));
+        HTest.clickButton(new HItem( "CONFIRMAR", 0));
 
         HTest.checkLoading();
 
@@ -43,6 +41,8 @@ public class TEST_N3_191 extends HBase {
         HTest.clickButton(new HItem("CONFIRMAR",2));
 
         HTest.clickButton(new HItem("REALIZAR PAGO",3));
+
+        HTest.checkLoading();
 
         HTest.finish();
     }

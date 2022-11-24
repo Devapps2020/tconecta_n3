@@ -27,12 +27,17 @@ public class TEST_K206_001 extends HBase {
 
         HTest.start(this.getClass());
 
-                HTest.setValueInput(new HItem("Dirección de email", DATA.USUARIO.CORREO_ELECTRONICO, 0));
-
+        HTest.setValueInput(new HItem("Dirección de email", DATA.USUARIO.CORREO_ELECTRONICO, 0));
 
         HTest.setValueInput(new HItem("Contraseña", DATA.USUARIO.CONTRASENA, 1));
 
         HTest.clickButton(new HItem("ACCEDER",0));
+
+        HTest.checkLoading();
+
+        HTest.setValueInput(new HItem("Código PIN", DATA.USUARIO.PIN, 0));
+
+        HTest.setValueInput(new HItem("Confirmar PIN", DATA.USUARIO.PIN, 1));
 
         HTest.checkLoading();
 

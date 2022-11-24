@@ -29,6 +29,7 @@ public class TEST_N3_198 extends HBase {
         HTest.scrollRecycler(new HItem(13));
 
         HTest.clickTextElement(new HItem("CEA Queretaro",1, true));
+
         HTest.setValueInput(new HItem("Número de referencia - 224",DATA.SERVICIOS.NUMERO_CEAQ,0));
 
         HTest.clickButton(new HItem("CONTINUAR",1));
@@ -36,6 +37,8 @@ public class TEST_N3_198 extends HBase {
         HTest.clickButton(new HItem("CONFIRMAR",2));
 
         HTest.clickButton(new HItem("REALIZAR PAGO",3));
+
+        HTest.checkLoading();
 
         HTest.finish();
     }

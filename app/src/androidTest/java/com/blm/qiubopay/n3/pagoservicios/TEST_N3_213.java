@@ -32,13 +32,15 @@ public class TEST_N3_213 extends HBase {
 
         HTest.setValueInput(new HItem("Número de cuenta",DATA.SERVICIOS.NUMERO_VEOLIA,0));
 
-        HTest.setValueInput(new HItem("Monto",DATA.SERVICIOS.MONTO_VEOLIA,0));
-
         HTest.clickButton(new HItem("CONTINUAR",1));
+
+        HTest.setValueInput(new HItem("Monto",DATA.SERVICIOS.MONTO_VEOLIA,0));
 
         HTest.clickButton(new HItem("CONFIRMAR",2));
 
         HTest.clickButton(new HItem("REALIZAR PAGO",3));
+
+        HTest.checkLoading();
 
         HTest.finish();
     }
