@@ -26,7 +26,7 @@ public class TEST_N3_115 extends HBase {
 
         HTest.clickTextElement(new HItem("Pago de Servicios",3));
 
-        HTest.clickTextElement(new HItem("SKY",1,true));
+        HTest.clickTextElement(new HItem("Sky",1,true));
 
         HTest.finish();
     }

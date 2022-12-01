@@ -29,15 +29,17 @@ public class TEST_N3_706 extends HBase {
 
         HTest.clickLinearLayout(new HItem(R.id.btn_user + "",22));
 
-        HTest.clickLinearLayout(new HItem(R.id.btn_option + "",77));
+        HTest.clickTextElement(new HItem("Restablecer PIN"));
 
         HTest.clickButton(new HItem("SI",3));
 
         HTest.setValuePin(new HItem( "****", DATA.USUARIO.PIN,0));
 
-        HTest.clickButton(new HItem( "CONFIRMAR", 0));
+        HTest.clickButton(new HItem( "CONFIRMAR", 1));
 
         HTest.setValueInput(new HItem("Código PIN", DATA.USUARIO.PIN, 0));
+
+        HTest.clickImage(new HItem(R.id.text_input_layout_icon+"",22));
 
         HTest.finish();
     }

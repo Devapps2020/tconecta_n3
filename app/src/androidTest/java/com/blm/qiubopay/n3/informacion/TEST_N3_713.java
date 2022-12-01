@@ -31,7 +31,7 @@ public class TEST_N3_713 extends HBase {
 
         HTest.clickTextElement(new HItem("Compra de Rollos"));
 
-        HTest.setValueESpinner(new HItem("Productos disponibles","Compra paquete rollos 30", 0));
+        HTest.setValueESpinner(new HItem("Productos disponibles","Compra paquete rollos 30"));
 
         HTest.clickButton(new HItem("COMPRAR CON MI SALDO",2));
 

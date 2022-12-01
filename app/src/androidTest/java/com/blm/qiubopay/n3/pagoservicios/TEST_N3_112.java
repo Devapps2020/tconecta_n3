@@ -36,7 +36,7 @@ public class TEST_N3_112 extends HBase {
 
         HTest.clickButton(new HItem("CONTINUAR",1));
 
-        HTest.setValueInput(new HItem("Monto",DATA.SERVICIOS.MONTO_TELMEX,2));
+        HTest.setValueInput(new HItem("Monto",DATA.SERVICIOS.MONTO_TELMEX,0));
 
         HTest.clickButton(new HItem("CONFIRMAR",2));
 
