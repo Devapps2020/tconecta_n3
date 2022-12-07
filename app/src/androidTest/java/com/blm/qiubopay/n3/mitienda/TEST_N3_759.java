@@ -28,7 +28,9 @@ public class TEST_N3_759 extends HBase {
 
         HTest.clickTextElement(new HItem("Fiado",3));
 
-        HTest.clickTextElement(new HItem("Clientes con adeudos",3));
+        HTest.clickTextElement(new HItem("Nuevo fiado",3));
+
+        HTest.clickTextElement(new HItem("Cliente existente",3));
 
         HTest.checkLoading();
 

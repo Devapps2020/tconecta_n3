@@ -34,8 +34,6 @@ public class TEST_N3_767 extends HBase {
 
         HTest.clickTextElement(new HItem("Ganados",3));
 
-        HTest.clickButton(new HItem("IMPRIMIR"));
-
         HTest.finish();
     }
 
