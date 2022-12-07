@@ -327,10 +327,8 @@ public final class HTest {
                 if(text.equals(item.getName().toUpperCase())) {
                     button.getParent().requestChildFocus(button,button);
                     button.requestFocus();
-                    if(button.isEnabled()) {
-                        item.setCheck(true);
-                        button.performClick();
-                    }
+                    item.setCheck(true);
+                    button.performClick();
                     logger( button, item);
                 }
             }
@@ -682,7 +680,7 @@ public final class HTest {
                         logger( view, item);
                         break;
 
-                    } catch (Exception ex) {
+                    } catch (Exception | AssertionError ex) {
 
                         try {
 

@@ -26,6 +26,8 @@ public class TEST_N3_1678 extends HBase {
 
         HTest.clickTextElement(new HItem("Abonar Saldo",3));
 
+        HTest.scrollGlobal(true);
+
         HTest.clickTextElement(new HItem("Cargo a tarjetas",3));
 
         HTest.finish();
