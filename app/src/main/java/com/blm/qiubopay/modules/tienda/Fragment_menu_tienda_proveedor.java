@@ -289,7 +289,7 @@ public class Fragment_menu_tienda_proveedor extends HFragment implements IMenuCo
         try {
 
             QPAY_SalesRetailer data = new QPAY_SalesRetailer();
-            data.setRetailer_id(AppPreferences.getUserProfile().getQpay_object()[0].getQpay_bimbo_id());
+            data.setRetailer_id("1234567890");
 
             IGetSalesByRetailerId petition = new WSHelper(new IGenericConnectionDelegate() {
                 @Override

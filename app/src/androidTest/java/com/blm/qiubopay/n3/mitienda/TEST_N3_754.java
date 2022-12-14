@@ -43,7 +43,7 @@ public class TEST_N3_754 extends HBase {
 
         HTest.clickButton(new HItem("CONFIRMAR",2));
 
-        HTest.clickButton(new HItem("Si",4));
+        HTest.clickButton(new HItem("Si",3));
 
         HTest.clickRadio(new HItem(R.id.radLimitarMonto+"", 0));
 

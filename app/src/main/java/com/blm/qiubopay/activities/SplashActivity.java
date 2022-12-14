@@ -9,6 +9,7 @@ import com.blm.qiubopay.CApplication;
 import com.blm.qiubopay.R;
 import com.blm.qiubopay.helpers.AppPreferences;
 import com.blm.qiubopay.helpers.N3Helper;
+import com.blm.qiubopay.models.QPAY_UserProfile;
 import com.blm.qiubopay.modules.chambitas.Fragment_chambitas_menu;
 import com.blm.qiubopay.tools.Tools;
 import com.blm.qiubopay.utils.Globals;
@@ -28,6 +29,10 @@ public class SplashActivity extends HActivity {
         super.onCreate(savedInstanceState);
 
         //handleLink(getIntent());
+
+        QPAY_UserProfile profile = AppPreferences.getUserProfile();
+        profile.getQpay_object()[0].setQpay_bimbo_id("1234567890");
+        AppPreferences.setUserProfile(profile);
 
         if(Tools.isN3Terminal()){
             FirebaseCrashlytics crashlytics = FirebaseCrashlytics.getInstance();

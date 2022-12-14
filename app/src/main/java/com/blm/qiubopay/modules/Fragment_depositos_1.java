@@ -104,9 +104,6 @@ public class Fragment_depositos_1 extends HFragment {
         //View view_vas_financiero = view.findViewById(R.id.view_vas_financiero);
         CardView card_vas_financiero = view.findViewById(R.id.card_vas_financiero);
 
-        if(AppPreferences.getUserProfile().getQpay_object()[0].getQpay_bimbo_id() == null ||
-                AppPreferences.getUserProfile().getQpay_object()[0].getQpay_bimbo_id().isEmpty())
-            card_bimbo.setVisibility(View.GONE);
 
         card_bimbo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,20 +129,16 @@ public class Fragment_depositos_1 extends HFragment {
 
         //20200416 RSB. MultiUser MultiDevice.
         if(AppPreferences.isCashier()) {
-            card_prestamos.setVisibility(View.GONE);
             //view_vas_financiero.setVisibility(View.GONE);
-            card_vas_financiero.setVisibility(View.GONE);
         }
 
         if(Tools.userIsOnlyVAS()){
             //view_vas_financiero.setVisibility(View.GONE);
-            card_vas_financiero.setVisibility(View.GONE);
         }
 
         //20200813 RSB. Validar VAS con Financiero
         if(!AppPreferences.isVASFinancieroActive()){
             //view_vas_financiero.setVisibility(View.GONE);
-            card_vas_financiero.setVisibility(View.GONE);
         }
 
         card_prestamos.setOnClickListener(new View.OnClickListener() {

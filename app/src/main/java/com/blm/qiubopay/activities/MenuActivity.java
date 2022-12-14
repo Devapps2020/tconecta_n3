@@ -3089,23 +3089,8 @@ public class MenuActivity extends HLocActivity {
 
     public void validaBimboId(IFunction function) {
 
-        if(AppPreferences.getUserProfile().getQpay_object()[0].getQpay_bimbo_id() == null ||
-                AppPreferences.getUserProfile().getQpay_object()[0].getQpay_bimbo_id().isEmpty()) {
+        function.execute();
 
-            getContext().alert(R.drawable.warning, R.color.mango, R.string.text_register_24, new IAlertButton() {
-                @Override
-                public String onText() {
-                    return getContext().getResources().getString(R.string.accept_button);
-                }
-                @Override
-                public void onClick() {
-
-                }
-            });
-
-        } else {
-            function.execute();
-        }
 
     }
 
