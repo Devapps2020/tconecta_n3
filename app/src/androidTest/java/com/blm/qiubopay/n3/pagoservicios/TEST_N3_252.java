@@ -31,7 +31,8 @@ public class TEST_N3_252 extends HBase {
         HTest.scrollRecycler(new HItem(21));
 
         HTest.clickTextElement(new HItem("Gobierno EDOMEX",1, true));
-        HTest.setValueInput(new HItem("Número de código de barras",DATA.SERVICIOS.NUMERO_GOB_EDOMEX,0));
+
+        HTest.setValueInput(new HItem("Número de código de barras","000",0));
 
         HTest.finish();
     }

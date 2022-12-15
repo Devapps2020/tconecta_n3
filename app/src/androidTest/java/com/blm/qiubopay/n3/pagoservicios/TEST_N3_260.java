@@ -29,7 +29,8 @@ public class TEST_N3_260 extends HBase {
         HTest.scrollRecycler(new HItem(22));
         
         HTest.clickTextElement(new HItem("AyDM Monterrey",1, true));
-        HTest.setValueInput(new HItem("Número de código de barras",DATA.SERVICIOS.NUMERO_AYDM,0));
+
+        HTest.setValueInput(new HItem("Número de código de barras","000",0));
 
         HTest.finish();
     }

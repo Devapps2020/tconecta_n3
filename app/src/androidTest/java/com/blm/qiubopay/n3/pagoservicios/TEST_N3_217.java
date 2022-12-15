@@ -30,7 +30,7 @@ public class TEST_N3_217 extends HBase {
 
         HTest.clickTextElement(new HItem("Blue Telecomm",1, true));
 
-        HTest.setValueInput(new HItem("Número de cuenta",DATA.SERVICIOS.NUMERO_BLUE_TELECOMM,0));
+        HTest.setValueInput(new HItem("Número de cuenta","000",0));
 
         HTest.finish();
     }

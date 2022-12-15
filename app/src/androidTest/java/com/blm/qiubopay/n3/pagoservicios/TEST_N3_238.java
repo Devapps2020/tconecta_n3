@@ -30,7 +30,7 @@ public class TEST_N3_238 extends HBase {
         
         HTest.clickTextElement(new HItem("SACMEX",1, true));
 
-        HTest.setValueInput(new HItem("Línea de captura",DATA.SERVICIOS.NUMERO_SACMEX,0));
+        HTest.setValueInput(new HItem("Línea de captura","000",0));
 
         HTest.finish();
     }

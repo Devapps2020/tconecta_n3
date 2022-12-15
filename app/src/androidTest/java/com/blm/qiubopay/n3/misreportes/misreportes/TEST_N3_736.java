@@ -1,4 +1,4 @@
-package com.blm.qiubopay.n3.misreportes;
+package com.blm.qiubopay.n3.misreportes.misreportes;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
@@ -13,10 +13,10 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class TEST_N3_735 extends HBase {
+public class TEST_N3_736 extends HBase {
 
     @Test
-    public void TEST_N3_735() {
+    public void TEST_N3_736() {
 
         HTest.start(this.getClass());
 
@@ -26,7 +26,7 @@ public class TEST_N3_735 extends HBase {
 
         HTest.clickTextElement(new HItem("Reportes",1, true));
 
-        HTest.clickTextElement(new HItem("Cargos y abonos"));
+        HTest.clickTextElement(new HItem("Comisiones del día"));
 
         HTest.finish();
     }

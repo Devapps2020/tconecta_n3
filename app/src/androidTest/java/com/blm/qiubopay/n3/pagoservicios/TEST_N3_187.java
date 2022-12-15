@@ -30,7 +30,8 @@ public class TEST_N3_187 extends HBase {
         HTest.scrollRecycler(new HItem(11));
 
         HTest.clickTextElement(new HItem("Totalplay",1, true));
-        HTest.setValueInput(new HItem("Número de referencia",DATA.SERVICIOS.NUMERO_TOTALPLAY,0));
+
+        HTest.setValueInput(new HItem("Número de referencia","000",0));
 
         HTest.finish();
     }

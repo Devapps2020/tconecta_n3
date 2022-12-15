@@ -30,7 +30,7 @@ public class TEST_N3_224 extends HBase {
 
         HTest.clickTextElement(new HItem("Plan AT&T",1, true));
 
-        HTest.setValueInput(new HItem("Número celular",DATA.SERVICIOS.NUMERO_PLAN_ATT,0));
+        HTest.setValueInput(new HItem("Número celular","000",0));
 
         HTest.finish();
     }

@@ -38,6 +38,8 @@ public class TEST_N3_183 extends HBase {
 
         HTest.clickButton(new HItem("REALIZAR PAGO",2));
 
+        HTest.checkLoading();
+
         HTest.finish();
     }
 

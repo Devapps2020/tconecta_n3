@@ -32,7 +32,7 @@ public class TEST_N3_179 extends HBase {
 
         HTest.clickTextElement(new HItem("Pase Urbano",1, true));
 
-        HTest.setValueInput(new HItem("Número de referencia - IMDM",DATA.SERVICIOS.NUMERO_PASE_URBANO,0));
+        HTest.setValueInput(new HItem("Número de referencia - IMDM","000",0));
 
         HTest.finish();
 

@@ -30,7 +30,7 @@ public class TEST_N3_268 extends HBase {
         
         HTest.clickTextElement(new HItem("SIAPA Guadalajara",1, true));
 
-        HTest.setValueInput(new HItem("Número de código de barras",DATA.SERVICIOS.NUMERO_SIAPA,0));
+        HTest.setValueInput(new HItem("Número de código de barras","000",0));
 
         HTest.finish();
     }

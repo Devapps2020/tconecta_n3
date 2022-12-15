@@ -57,6 +57,8 @@ public class TEST_N3_753 extends HBase {
 
         HTest.clickButton(new HItem("Guardar cambios",6));
 
+        HTest.checkLoading();
+
         HTest.finish();
     }
 

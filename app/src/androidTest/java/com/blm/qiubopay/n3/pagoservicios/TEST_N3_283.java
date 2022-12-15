@@ -29,7 +29,8 @@ public class TEST_N3_283 extends HBase {
         HTest.scrollRecycler(new HItem(25));
         
         HTest.clickTextElement(new HItem("CESPT Tijuana",1, true));
-        HTest.setValueInput(new HItem("Número de código de barras",DATA.SERVICIOS.NUMERO_CESPT,0));
+
+        HTest.setValueInput(new HItem("Número de código de barras","000",0));
 
         HTest.finish();
     }

@@ -24,11 +24,11 @@ public class TEST_N3_771 extends HBase {
 
         HTest.clickButton(new HItem( "CONFIRMAR", 0));
 
-        HTest.checkLoading();
-
-        HTest.scrollRecycler(new HItem(8));
+        HTest.scrollRecycler(new HItem(0));
 
         HTest.clickTextElement(new HItem("Préstamo personal"));
+
+        HTest.checkLoading();
 
         HTest.clickButton(new HItem("Consúltalo sin compromiso",0));
 

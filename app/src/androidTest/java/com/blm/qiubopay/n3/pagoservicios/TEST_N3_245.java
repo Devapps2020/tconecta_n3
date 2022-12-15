@@ -30,7 +30,7 @@ public class TEST_N3_245 extends HBase {
         
         HTest.clickTextElement(new HItem("Gobierno CDMX",1, true));
 
-        HTest.setValueInput(new HItem("Línea de captura",DATA.SERVICIOS.NUMERO_GOB_CDMX,0));
+        HTest.setValueInput(new HItem("Línea de captura","000",0));
 
         HTest.finish();
     }

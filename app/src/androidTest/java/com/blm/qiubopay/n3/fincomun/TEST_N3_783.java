@@ -24,9 +24,7 @@ public class TEST_N3_783 extends HBase {
 
         HTest.clickButton(new HItem( "CONFIRMAR", 0));
 
-        HTest.checkLoading();
-
-        HTest.scrollRecycler(new HItem(8));
+        HTest.scrollRecycler(new HItem(0));
 
         HTest.clickTextElement(new HItem("Préstamo personal"));
 

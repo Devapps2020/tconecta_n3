@@ -1,4 +1,4 @@
-package com.blm.qiubopay.n3.misreportes.reportes;
+package com.blm.qiubopay.n3.misreportes.misreportes;
 
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;

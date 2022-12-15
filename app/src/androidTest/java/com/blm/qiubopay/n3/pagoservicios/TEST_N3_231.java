@@ -30,7 +30,7 @@ public class TEST_N3_231 extends HBase {
         
         HTest.clickTextElement(new HItem("Plan Movistar",1, true));
 
-        HTest.setValueInput(new HItem("Número celular",DATA.SERVICIOS.NUMERO_PLAN_MOVISTAR,0));
+        HTest.setValueInput(new HItem("Número celular","000",0));
 
         HTest.finish();
     }

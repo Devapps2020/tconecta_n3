@@ -30,7 +30,7 @@ public class TEST_N3_210 extends HBase {
 
         HTest.clickTextElement(new HItem("Veolia",1, true));
 
-        HTest.setValueInput(new HItem("Número de cuenta",DATA.SERVICIOS.NUMERO_VEOLIA,0));
+        HTest.setValueInput(new HItem("Número de cuenta","000",0));
 
         HTest.finish();
     }

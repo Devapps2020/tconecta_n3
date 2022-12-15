@@ -29,7 +29,8 @@ public class TEST_N3_276 extends HBase {
         HTest.scrollRecycler(new HItem(24));
         
         HTest.clickTextElement(new HItem("OPDM Tlalnepantla",1, true));
-        HTest.setValueInput(new HItem("Ingresa referencia - 222",DATA.SERVICIOS.NUMERO_OPDM,0));
+
+        HTest.setValueInput(new HItem("Ingresa referencia - 222","000",0));
 
         HTest.finish();
     }

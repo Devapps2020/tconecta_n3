@@ -31,7 +31,8 @@ public class TEST_N3_195 extends HBase {
         HTest.scrollRecycler(new HItem(13));
 
         HTest.clickTextElement(new HItem("CEA Queretaro",1, true));
-        HTest.setValueInput(new HItem("Número de referencia - 224",DATA.SERVICIOS.NUMERO_CEAQ,0));
+
+        HTest.setValueInput(new HItem("Número de referencia - 224","000",0));
 
         HTest.finish();
     }

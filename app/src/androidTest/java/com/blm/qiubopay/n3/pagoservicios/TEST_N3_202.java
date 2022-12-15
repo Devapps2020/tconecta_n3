@@ -29,7 +29,8 @@ public class TEST_N3_202 extends HBase {
         HTest.scrollRecycler(new HItem(12));
 
         HTest.clickTextElement(new HItem("Star TV",1, true));
-        HTest.setValueInput(new HItem("Número de contrato - 819",DATA.SERVICIOS.NUMERO_STAR_TV,0));
+
+        HTest.setValueInput(new HItem("Número de contrato - 819","000",0));
 
         HTest.finish();
     }
