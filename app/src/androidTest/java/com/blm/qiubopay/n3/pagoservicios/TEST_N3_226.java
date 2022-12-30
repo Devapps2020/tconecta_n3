@@ -34,6 +34,8 @@ public class TEST_N3_226 extends HBase {
 
         HTest.clickButton(new HItem("CONTINUAR",1));
 
+        HTest.checkLoading();
+
         HTest.clickButton(new HItem("CONFIRMAR",2));
 
         HTest.finish();

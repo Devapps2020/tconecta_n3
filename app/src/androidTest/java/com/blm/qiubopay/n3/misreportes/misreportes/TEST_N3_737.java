@@ -26,6 +26,8 @@ public class TEST_N3_737 extends HBase {
 
         HTest.clickTextElement(new HItem("Reportes",1, true));
 
+        HTest.scrollGlobal(true);
+
         HTest.clickTextElement(new HItem("Total de pagos y retiros con tarjeta"));
 
         HTest.finish();

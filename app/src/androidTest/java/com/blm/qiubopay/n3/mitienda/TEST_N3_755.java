@@ -61,13 +61,11 @@ public class TEST_N3_755 extends HBase {
 
         HTest.checkLoading();
 
-        HTest.setValueInput(new HItem("Monto a fiar", DATA.FIADO.MONTO, 2));
+        HTest.setValueInput(new HItem("Monto a fiar", DATA.FIADO.MONTO, 3));
 
-        HTest.clickButton(new HItem("CONFIRMAR",0));
+        HTest.setValueInput(new HItem("Detalle", DATA.FIADO.DETALLE, 4));
 
-        HTest.setValueInput(new HItem("Detalle", DATA.FIADO.DETALLE, 3));
-
-        HTest.clickButton(new HItem("CONFIRMAR",0));
+        HTest.clickButton(new HItem("CONFIRMAR",4));
 
         HTest.checkLoading();
 

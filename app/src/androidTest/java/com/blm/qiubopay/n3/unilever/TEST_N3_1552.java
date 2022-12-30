@@ -40,7 +40,11 @@ public class TEST_N3_1552 extends HBase {
 
         HTest.clickButton(new HItem("Enviar pedido",5));
 
+        HTest.checkLoading();
+
         HTest.clickButton(new HItem("Enviar pedido",3));
+
+        HTest.checkLoading();
 
         HTest.finish();
 

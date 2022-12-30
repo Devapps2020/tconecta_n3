@@ -28,15 +28,15 @@ public class TEST_N3_191 extends HBase {
 
         HTest.clickTextElement(new HItem("Pago de Servicios",3));
 
-
         HTest.scrollRecycler(new HItem(11));
 
         HTest.clickTextElement(new HItem("Totalplay",1, true));
+
         HTest.setValueInput(new HItem("Número de referencia",DATA.SERVICIOS.NUMERO_TOTALPLAY,0));
 
         HTest.clickButton(new HItem("CONTINUAR",1));
 
-        HTest.setValueInput(new HItem("Monto",DATA.SERVICIOS.NUMERO_TOTALPLAY,0));
+        HTest.setValueInput(new HItem("Monto",DATA.SERVICIOS.MONTO_TOTALPLAY,0));
 
         HTest.clickButton(new HItem("CONFIRMAR",2));
 

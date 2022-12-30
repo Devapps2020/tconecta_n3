@@ -26,7 +26,7 @@ public class TEST_N3_739 extends HBase {
 
         HTest.clickTextElement(new HItem("Reportes",1, true));
 
-        HTest.clickButton(new HItem("CORTE DE CAJA"));
+        HTest.clickButton(new HItem("CORTE DE CAJA", 1));
 
         HTest.finish();
     }
