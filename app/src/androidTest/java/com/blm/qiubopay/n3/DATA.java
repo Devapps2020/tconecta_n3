@@ -227,6 +227,9 @@ public class DATA {
 
         public static final String NUMERO_CESPT = getProperty("NUMERO_CESPT");
         public static final String MONTO_CESPT = getProperty("MONTO_CESPT");
+
+        public static final String OPERACION_TARJETA = getProperty("OPERACION_TARJETA");
+
     }
 
     /**

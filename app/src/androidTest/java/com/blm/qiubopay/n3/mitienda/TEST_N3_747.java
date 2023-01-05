@@ -30,6 +30,8 @@ public class TEST_N3_747 extends HBase {
 
         HTest.clickTextElement(new HItem("Comprar con Ricolino"));
 
+        HTest.checkLoading();
+
         HTest.finish();
     }
 

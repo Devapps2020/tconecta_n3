@@ -28,7 +28,7 @@ public class TEST_N3_734 extends HBase {
 
         HTest.clickTextElement(new HItem("Operaciones con tarjeta"));
 
-        HTest.clickTextElement(new HItem("PLAN MOVISTAR"));
+        HTest.clickTextElement(new HItem(DATA.SERVICIOS.OPERACION_TARJETA));
 
         HTest.clickButton(new HItem("IMPRIMIR",2));
 

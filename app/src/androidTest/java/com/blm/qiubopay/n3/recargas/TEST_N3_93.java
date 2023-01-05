@@ -36,7 +36,7 @@ public class TEST_N3_93 extends HBase {
 
         HTest.setValueInput(new HItem("Número de teléfono",DATA.RECARGAS.NUMERO_FOBO,0));
 
-        HTest.setValueInput(new HItem("Confirma número de teléfono",DATA.RECARGAS.NUMERO_FOBO,1));
+        HTest.setValueInput(new HItem("Confirma número de teléfono",DATA.RECARGAS.NUMERO_DIFERENTE,1));
 
         HTest.finish();
     }

@@ -28,6 +28,8 @@ public class TEST_N3_1529 extends HBase {
 
         HTest.clickTextElement(new HItem("Línea de crédito",3));
 
+        HTest.scrollGlobal(true);
+
         HTest.clickButton(new HItem("Disposición de la línea de crédito",3));
 
         HTest.setValueInput(new HItem("Monto",DATA.DEPOSITO.OLC.MONTO));

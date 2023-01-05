@@ -28,7 +28,7 @@ public class TEST_N3_1653 extends HBase {
 
         HTest.clickTextElement(new HItem("Depósito Bancario",3));
 
-        HTest.clickTextElement(new HItem("Santander",1, true));
+        HTest.clickTextElement(new HItem("BBVA",1, true));
 
         HTest.finish();
 

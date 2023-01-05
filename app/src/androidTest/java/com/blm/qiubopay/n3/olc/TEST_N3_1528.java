@@ -26,6 +26,8 @@ public class TEST_N3_1528 extends HBase {
 
         HTest.clickTextElement(new HItem("Abonar Saldo",3));
 
+        HTest.scrollGlobal(true);
+
         HTest.clickTextElement(new HItem("Línea de crédito",3));
 
         HTest.clickButton(new HItem("Disposición de la línea de crédito",3));

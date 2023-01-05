@@ -28,6 +28,8 @@ public class TEST_N3_739 extends HBase {
 
         HTest.clickButton(new HItem("CORTE DE CAJA", 1));
 
+        HTest.checkLoading();
+
         HTest.finish();
     }
 
